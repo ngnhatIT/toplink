@@ -1,5 +1,6 @@
 /* TOPLINKS - Design System CSS (Anti-Slop Taste Edition / taste-skill 2.5) */
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap');
+/* Be Vietnam Pro: full Vietnamese glyph coverage (Poppins lacks U+1EA0–1EF9, stacked tone marks fell back to system font) */
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap');
 
 :root {
   /* Brand colors directly extracted from toplinks.vn */
@@ -23,22 +24,28 @@
   --color-muted-foreground: #5A6872;
   --color-border: #E2E8EC;
   --color-ring: #153e4d;
+  --color-ring-on-dark: #fbee41;
+  /* Yellow-family ink for icons on light surfaces (#fbee41 on white is only 1.21:1) */
+  --color-accent-ink: #b45309;
 
   /* Fonts */
-  --font-heading: 'Poppins', sans-serif;
-  --font-body: 'Plus Jakarta Sans', sans-serif;
+  --font-heading: 'Be Vietnam Pro', sans-serif;
+  --font-body: 'Be Vietnam Pro', sans-serif;
+}
+
+html, body {
+  font-family: var(--font-body);
 }
 
 html {
   scroll-behavior: smooth;
-  font-family: var(--font-body);
   background-color: var(--color-background);
   color: var(--color-foreground);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .font-heading {
   font-family: var(--font-heading);
 }
 
@@ -149,10 +156,40 @@ h1, h2, h3, h4, h5, h6 {
   transform: scale(1.02);
 }
 
-/* WCAG Compliant Focus States */
-a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+/* WCAG 2.4.7 / 1.4.11 focus: navy ring + white halo stays visible on light AND dark surfaces */
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible, [tabindex]:focus-visible {
   outline: 2px solid var(--color-ring);
   outline-offset: 2px;
+  box-shadow: 0 0 0 2px #ffffff;
+}
+/* On navy / deep-navy sections switch the ring to brand yellow (9.5:1 / 12.1:1) */
+.bg-\[\#153e4d\] :focus-visible,
+.bg-\[\#0f2c37\] :focus-visible {
+  outline-color: var(--color-ring-on-dark);
+  box-shadow: none;
+}
+
+/* Skip link: hidden until focused */
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -100px;
+  z-index: 100;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  background: var(--color-accent);
+  color: var(--color-on-accent);
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+.skip-link:focus { top: 1rem; }
+
+/* Rating stars: yellow fill + dark amber stroke so the shape reads on white */
+.rating-stars svg { stroke: var(--color-accent-ink); }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
 }
 
 /* Custom Scrollbar */

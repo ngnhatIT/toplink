@@ -20,24 +20,52 @@ const ToplinksCore = {
 
     if (!toggleBtn || !mobileMenu) return;
 
-    const toggle = () => {
-      const isHidden = mobileMenu.classList.contains('hidden');
-      if (isHidden) {
-        mobileMenu.classList.remove('hidden');
-        document.body.classList.add('overflow-hidden');
-      } else {
-        mobileMenu.classList.add('hidden');
-        document.body.classList.remove('overflow-hidden');
-      }
+    toggleBtn.setAttribute('aria-controls', 'mobile-menu');
+    toggleBtn.setAttribute('aria-expanded', 'false');
+    mobileMenu.setAttribute('role', 'dialog');
+    mobileMenu.setAttribute('aria-modal', 'true');
+    mobileMenu.setAttribute('aria-label', 'Menu điều hướng');
+
+    const focusables = () => [...mobileMenu.querySelectorAll('a[href], button:not([disabled])')];
+    const isOpen = () => !mobileMenu.classList.contains('hidden');
+
+    const open = () => {
+      mobileMenu.classList.remove('hidden');
+      document.body.classList.add('overflow-hidden');
+      toggleBtn.setAttribute('aria-expanded', 'true');
+      (focusables()[1] || focusables()[0])?.focus(); // first nav link (index 0 is the close button)
+    };
+    const close = () => {
+      mobileMenu.classList.add('hidden');
+      document.body.classList.remove('overflow-hidden');
+      toggleBtn.setAttribute('aria-expanded', 'false');
+      toggleBtn.focus();
     };
 
-    toggleBtn.addEventListener('click', toggle);
-    if (closeBtn) closeBtn.addEventListener('click', toggle);
+    toggleBtn.addEventListener('click', () => (isOpen() ? close() : open()));
+    if (closeBtn) closeBtn.addEventListener('click', close);
 
     // Close on backdrop click
     mobileMenu.addEventListener('click', (e) => {
-      if (e.target === mobileMenu) {
-        toggle();
+      if (e.target === mobileMenu) close();
+    });
+
+    // Esc closes; Tab stays inside the open drawer
+    document.addEventListener('keydown', (e) => {
+      if (!isOpen()) return;
+      if (e.key === 'Escape') {
+        close();
+      } else if (e.key === 'Tab') {
+        const items = focusables();
+        const first = items[0];
+        const last = items[items.length - 1];
+        if (e.shiftKey && document.activeElement === first) {
+          e.preventDefault();
+          last.focus();
+        } else if (!e.shiftKey && document.activeElement === last) {
+          e.preventDefault();
+          first.focus();
+        }
       }
     });
   },
@@ -46,15 +74,10 @@ const ToplinksCore = {
     const header = document.getElementById('site-header');
     if (!header) return;
 
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 20) {
-        header.classList.add('shadow-md', 'bg-white/95', 'backdrop-blur-md');
-        header.classList.remove('bg-white');
-      } else {
-        header.classList.remove('shadow-md', 'bg-white/95', 'backdrop-blur-md');
-        header.classList.add('bg-white');
-      }
-    });
+    // v2 pages style the scrolled state with .is-scrolled (hairline + soft shadow)
+    const onScroll = () => header.classList.toggle('is-scrolled', window.scrollY > 8);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
   },
 
   initActiveNav() {
@@ -64,15 +87,8 @@ const ToplinksCore = {
     navLinks.forEach((link) => {
       const href = link.getAttribute('href');
       if (href === currentPath || (currentPath === '' && href === 'index.html')) {
-        link.classList.add('text-sky-600', 'font-semibold');
-        link.classList.remove('text-slate-600', 'text-slate-700');
-        // Add subtle active indicator if desktop
-        if (link.dataset.navLink === 'desktop') {
-          const indicator = document.createElement('span');
-          indicator.className = 'absolute -bottom-1 left-0 w-full h-0.5 bg-sky-600 rounded-full';
-          link.classList.add('relative');
-          link.appendChild(indicator);
-        }
+        // Active styling lives in the HTML (brand navy + border); JS only exposes it to assistive tech
+        link.setAttribute('aria-current', 'page');
       }
     });
   },
@@ -121,11 +137,12 @@ const ToplinksCore = {
     const toast = document.createElement('div');
     const isSuccess = type === 'success';
     toast.className = `pointer-events-auto flex items-start gap-3 p-4 rounded-xl shadow-xl border transform transition-all duration-300 translate-y-4 opacity-0 ${
-      isSuccess ? 'bg-slate-900 border-sky-500 text-white' : 'bg-red-900 border-red-500 text-white'
+      isSuccess ? 'bg-[#153e4d] border-[#fbee41] text-white' : 'bg-red-900 border-red-500 text-white'
     }`;
+    toast.setAttribute('role', isSuccess ? 'status' : 'alert');
 
     toast.innerHTML = `
-      <div class="p-1 rounded-full ${isSuccess ? 'bg-sky-500/20 text-sky-400' : 'bg-red-500/20 text-red-400'}">
+      <div class="p-1 rounded-full ${isSuccess ? 'bg-[#fbee41]/20 text-[#fbee41]' : 'bg-red-500/20 text-red-400'}">
         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="${
             isSuccess ? 'M5 13l4 4L19 7' : 'M6 18L18 6M6 6l12 12'
@@ -136,7 +153,7 @@ const ToplinksCore = {
         <p class="text-sm font-semibold">${isSuccess ? 'Thông báo' : 'Lỗi'}</p>
         <p class="text-xs text-slate-300 mt-0.5 leading-relaxed">${message}</p>
       </div>
-      <button class="text-slate-400 hover:text-white" onclick="this.parentElement.remove()">
+      <button type="button" aria-label="Đóng thông báo" class="text-slate-400 hover:text-white" onclick="this.parentElement.remove()">
         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
         </svg>
@@ -157,6 +174,9 @@ const ToplinksCore = {
     }, 4500);
   }
 };
+
+// top-level const is not a window property; pages check window.ToplinksCore before calling showToast
+window.ToplinksCore = ToplinksCore;
 
 document.addEventListener('DOMContentLoaded', () => {
   ToplinksCore.init();

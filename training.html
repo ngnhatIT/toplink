@@ -1,471 +1,318 @@
 <!DOCTYPE html>
-<html lang="vi" class="scroll-smooth" data-type="service">
+<html lang="vi">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="page-type" content="service">
-  <meta name="site-kind" content="other">
-  <title>Đào Tạo & Khai Vấn (Coaching) - TOPLINKS | Co-Creation For Success</title>
-  <meta name="description" content="Các khóa đào tạo thực chiến AI Competency Framework, phát triển năng lực lãnh đạo, quản lý cấp trung và dịch vụ Coaching 1:1 chuyên nghiệp tại TOPLINKS.">
-  
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <title>Đào tạo và coaching | TOPLINKS</title>
+  <meta name="description" content="Các khóa đào tạo thực chiến AI Competency Framework, năng lực lãnh đạo, quản lý cấp trung, chuyên môn nhân sự, khởi nghiệp và coaching 1:1 cùng chuyên gia TOPLINKS.">
+  <meta name="theme-color" content="#08353c">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/v2.css">
+  <link rel="stylesheet" href="assets/css/pages/training.css">
+  <script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js" defer></script>
 </head>
-<body class="bg-white text-[#0a0a0a] font-sans antialiased flex flex-col min-h-screen">
+<body class="v2">
+  <a href="#main" class="skip-link">Bỏ qua, tới nội dung chính</a>
 
-  <!-- Top Announcement Bar -->
-  <div class="bg-[#153e4d] text-slate-200 text-xs py-2 px-4 border-b border-[#0f2c37]">
-    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
-      <div class="flex items-center gap-3">
-        <span class="inline-flex items-center gap-2 text-[#fbee41] font-semibold">
-          <i data-lucide="zap" class="w-3.5 h-3.5 fill-[#fbee41]"></i>
-          Ưu đãi: Hỗ trợ 15% cho doanh nghiệp đăng ký đào tạo In-house từ 15 học viên trở lên
-        </span>
-      </div>
-      <div class="flex items-center gap-6 text-slate-300">
-        <a href="tel:0909000000" class="hover:text-[#fbee41] flex items-center gap-1.5 transition-colors">
-          <i data-lucide="phone" class="w-3.5 h-3.5 text-[#fbee41]"></i> Hotline: 0909.xxx.xxx
-        </a>
-        <a href="mailto:academy@toplinks.vn" class="hover:text-[#fbee41] flex items-center gap-1.5 transition-colors">
-          <i data-lucide="mail" class="w-3.5 h-3.5 text-[#fbee41]"></i> academy@toplinks.vn
-        </a>
-      </div>
-    </div>
-  </div>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  </svg>
 
-  <!-- Header -->
-  <header id="site-header" class="sticky top-0 z-40 bg-white/95 backdrop-blur-sm transition-all duration-200 border-b border-slate-200">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-      <a href="index.html" class="flex items-center gap-3 group focus:outline-none">
-        <img src="assets/images/logo.png" alt="TOPLINKS" class="h-11 w-auto object-contain transition-transform">
+  <header id="site-header" class="site-header">
+    <div class="wrap header-inner">
+      <a href="index.html" class="brand" aria-label="TOPLINKS, về trang chủ">
+        <img src="assets/images/logo-mark.png" width="44" height="46" alt="">
+        <span class="brand-text"><span class="brand-word">TOPLINKS</span><span class="brand-tag">Co-Creation for Success</span></span>
       </a>
-
-      <nav class="hidden md:flex items-center gap-8">
-        <a href="index.html" data-nav-link="desktop" class="text-sm font-medium text-slate-700 hover:text-[#153e4d] transition-colors py-1">Trang chủ</a>
-        <a href="about.html" data-nav-link="desktop" class="text-sm font-medium text-slate-700 hover:text-[#153e4d] transition-colors py-1">Về chúng tôi</a>
-        <a href="solutions.html" data-nav-link="desktop" class="text-sm font-medium text-slate-700 hover:text-[#153e4d] transition-colors py-1">Giải pháp Doanh nghiệp</a>
-        <a href="training.html" data-nav-link="desktop" class="text-sm font-semibold text-[#153e4d] py-1 border-b-2 border-[#153e4d]">Đào tạo & Coaching</a>
-        <a href="tools.html" data-nav-link="desktop" class="text-sm font-medium text-slate-700 hover:text-[#153e4d] transition-colors py-1">Bộ công cụ trắc nghiệm</a>
-        <a href="contact.html" data-nav-link="desktop" class="text-sm font-medium text-slate-700 hover:text-[#153e4d] transition-colors py-1">Liên hệ</a>
+      <nav class="nav" aria-label="Điều hướng chính">
+        <a href="index.html" data-nav-link="desktop">Trang chủ</a>
+        <a href="about.html" data-nav-link="desktop">Về chúng tôi</a>
+        <a href="solutions.html" data-nav-link="desktop">Giải pháp</a>
+        <a href="training.html" data-nav-link="desktop" aria-current="page">Đào tạo &amp; coaching</a>
+        <a href="tools.html" data-nav-link="desktop">Công cụ trắc nghiệm</a>
+        <a href="contact.html" data-nav-link="desktop">Liên hệ</a>
       </nav>
-
-      <div class="hidden md:flex items-center gap-3">
-        <a href="contact.html" class="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-lg text-sm font-bold text-[#0a0a0a] bg-[#fbee41] hover:bg-[#f0de2b] shadow-sm transition-all">
-          <span>Đăng ký tư vấn</span>
-          <i data-lucide="arrow-right" class="w-4 h-4"></i>
-        </a>
-      </div>
-
-      <button id="mobile-menu-btn" type="button" class="md:hidden p-2 rounded-lg text-slate-700 hover:text-[#153e4d]" aria-label="Mở menu">
-        <i data-lucide="menu" class="w-6 h-6"></i>
-      </button>
-    </div>
-
-    <!-- Mobile Drawer -->
-    <div id="mobile-menu" class="hidden md:hidden fixed inset-0 z-50 bg-[#153e4d]/70 backdrop-blur-sm">
-      <div class="fixed inset-y-0 right-0 w-full max-w-xs bg-white shadow-2xl p-6 flex flex-col justify-between">
-        <div>
-          <div class="flex items-center justify-between pb-6 border-b border-slate-100">
-            <img src="assets/images/logo.png" alt="TOPLINKS" class="h-9 w-auto object-contain">
-            <button id="close-mobile-menu" class="p-2 text-slate-500 hover:text-slate-900">
-              <i data-lucide="x" class="w-5 h-5"></i>
-            </button>
-          </div>
-          <div class="flex flex-col gap-4 mt-6">
-            <a href="index.html" data-nav-link="mobile" class="text-base font-medium text-slate-800 hover:text-[#153e4d] py-2 border-b border-slate-100">Trang chủ</a>
-            <a href="about.html" data-nav-link="mobile" class="text-base font-medium text-slate-800 hover:text-[#153e4d] py-2 border-b border-slate-100">Về chúng tôi</a>
-            <a href="solutions.html" data-nav-link="mobile" class="text-base font-medium text-slate-800 hover:text-[#153e4d] py-2 border-b border-slate-100">Giải pháp Doanh nghiệp</a>
-            <a href="training.html" data-nav-link="mobile" class="text-base font-semibold text-[#153e4d] py-2 border-b border-slate-100">Đào tạo & Coaching</a>
-            <a href="tools.html" data-nav-link="mobile" class="text-base font-medium text-slate-800 hover:text-[#153e4d] py-2 border-b border-slate-100">Bộ công cụ trắc nghiệm</a>
-            <a href="contact.html" data-nav-link="mobile" class="text-base font-medium text-slate-800 hover:text-[#153e4d] py-2">Liên hệ</a>
-          </div>
-        </div>
-        <div class="pt-6 border-t border-slate-100">
-          <a href="contact.html" class="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-lg bg-[#fbee41] hover:bg-[#f0de2b] text-[#0a0a0a] font-bold text-center text-sm shadow">
-            <span>Đăng ký tư vấn miễn phí</span>
-            <i data-lucide="arrow-right" class="w-4 h-4"></i>
-          </a>
-        </div>
+      <div class="header-actions">
+        <a href="tel:0934011500" class="header-phone"><svg aria-hidden="true"><use href="#i-phone"/></svg>0934 011 500</a>
+        <a href="contact.html#consultation-form" class="btn btn-deep header-cta">Đặt lịch tư vấn</a>
+        <button id="mobile-menu-btn" type="button" class="menu-btn" aria-label="Mở menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg>
+        </button>
       </div>
     </div>
   </header>
 
-  <main class="flex-grow">
-    
-    <!-- Hero Banner with Actual Workshop Image (Toplinks Deep Navy Style) -->
-    <section class="relative bg-[#153e4d] text-white py-20">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-          <div class="lg:col-span-7">
-            <div class="badge-toplinks mb-4">
-              <i data-lucide="graduation-cap" class="w-3.5 h-3.5"></i>
-              Đào tạo Thực chiến & Khai vấn
-            </div>
-            <h1 class="text-4xl sm:text-5xl font-bold font-heading text-white tracking-tight leading-tight">
-              Nâng Tầm Năng Lực Con Người & Lãnh Đạo
-            </h1>
-            <p class="mt-6 text-lg text-slate-200 leading-relaxed font-normal">
-              Chuyển hóa từ tư duy đến năng lực hành động với các chương trình đào tạo chuẩn quốc tế, ứng dụng công nghệ AI tiên phong và huấn luyện khai vấn 1:1 chuyên sâu.
-            </p>
-            <div class="mt-8 flex gap-4">
-              <a href="contact.html" class="px-6 py-3.5 rounded-xl bg-[#fbee41] hover:bg-[#f0de2b] font-bold text-sm shadow text-[#0a0a0a] flex items-center gap-2">
-                <span>Đăng ký tư vấn khóa học In-house</span>
-                <i data-lucide="arrow-right" class="w-4 h-4"></i>
-              </a>
-            </div>
-          </div>
-          <div class="lg:col-span-5">
-            <div class="rounded-2xl overflow-hidden shadow-2xl border border-white/20 photo-frame">
-              <img src="assets/images/hero-workshop.jpg" alt="Lớp đào tạo thực tế Toplinks" class="w-full h-80 object-cover">
-            </div>
-          </div>
+  <div id="mobile-menu" class="drawer-backdrop hidden">
+    <div class="drawer">
+      <div class="drawer-top">
+        <a href="index.html" class="brand">
+          <img src="assets/images/logo-mark.png" width="36" height="38" alt="">
+          <span class="brand-word">TOPLINKS</span>
+        </a>
+        <button id="close-mobile-menu" type="button" class="menu-btn" aria-label="Đóng menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+        </button>
+      </div>
+      <nav aria-label="Điều hướng trên di động">
+        <a href="index.html" data-nav-link="mobile">Trang chủ</a>
+        <a href="about.html" data-nav-link="mobile">Về chúng tôi</a>
+        <a href="solutions.html" data-nav-link="mobile">Giải pháp</a>
+        <a href="training.html" data-nav-link="mobile" aria-current="page">Đào tạo &amp; coaching</a>
+        <a href="tools.html" data-nav-link="mobile">Công cụ trắc nghiệm</a>
+        <a href="contact.html" data-nav-link="mobile">Liên hệ</a>
+      </nav>
+      <a href="contact.html#consultation-form" class="btn btn-deep">Đặt lịch tư vấn miễn phí</a>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <!-- Hero -->
+    <section class="page-hero has-figure">
+      <div class="page-hero-media portrait">
+        <img src="assets/images/tile-training.webp" width="768" height="900" alt="" fetchpriority="high">
+      </div>
+      <div class="wrap">
+        <nav class="crumbs" aria-label="Đường dẫn">
+          <a href="index.html">Trang chủ</a><span aria-hidden="true">/</span><span aria-current="page">Đào tạo và coaching</span>
+        </nav>
+        <h1>Nâng tầm năng lực con người và lãnh đạo</h1>
+        <p class="lead">Chuyển hóa từ tư duy đến năng lực hành động với các chương trình đào tạo thực chiến, ứng dụng AI vào công việc và coaching 1:1 chuyên sâu cùng chuyên gia TOPLINKS.</p>
+        <div class="hero-actions">
+          <a href="contact.html#consultation-form" class="btn btn-gold">Đăng ký tư vấn khóa học in-house <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <a href="#khoa-hoc" class="btn btn-ghost">Xem các khóa học</a>
         </div>
       </div>
     </section>
 
-    <!-- Interactive Course Filter & Catalog -->
-    <section class="py-20 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        <!-- Filter Tabs -->
-        <div class="flex flex-wrap items-center justify-center gap-3 mb-12">
-          <button data-filter="all" class="px-5 py-2.5 rounded-full text-sm font-semibold bg-[#153e4d] text-white shadow-sm transition-all filter-tab-active">
-            Tất cả khóa học
-          </button>
-          <button data-filter="ai" class="px-5 py-2.5 rounded-full text-sm font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition-all">
-            HRAI & Chuyển đổi số
-          </button>
-          <button data-filter="leadership" class="px-5 py-2.5 rounded-full text-sm font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition-all">
-            Lãnh đạo & Quản lý
-          </button>
-          <button data-filter="hr" class="px-5 py-2.5 rounded-full text-sm font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition-all">
-            Chuyên môn Nhân sự
-          </button>
+    <!-- Course catalogue -->
+    <section class="section" id="khoa-hoc" aria-labelledby="courses-title">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="kicker">Chương trình đào tạo</p>
+            <h2 id="courses-title" class="section-title">Khóa học may đo cho từng cấp trong doanh nghiệp</h2>
+            <p class="section-lead">Tổ chức in-house ngay tại doanh nghiệp hoặc lớp public, nội dung bám theo tình huống thật của đội ngũ bạn.</p>
+          </div>
         </div>
 
-        <!-- Course Cards Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="course-grid">
-          
-          <!-- Course 1: AI Competency (Featured) -->
-          <div data-category="ai" class="course-card bg-white rounded-2xl border border-slate-200 overflow-hidden taste-card flex flex-col justify-between group p-0">
-            <div class="h-48 overflow-hidden relative photo-frame">
-              <img src="assets/images/classroom.jpg" alt="Lớp học AI Competency" class="w-full h-full object-cover">
-              <div class="absolute top-3 left-3 bg-[#153e4d] text-white px-2.5 py-1 rounded text-xs font-semibold">
-                AI & Digital (24 Giờ)
-              </div>
-            </div>
-            <div class="p-6 flex-1 flex flex-col justify-between">
-              <div>
-                <h3 class="text-lg font-bold font-heading text-[#0a0a0a]">
-                  AI Competency Framework - Làm Chủ Trí Tuệ Nhân Tạo
-                </h3>
-                <p class="mt-2 text-slate-600 text-xs sm:text-sm leading-relaxed">
-                  Khung năng lực toàn diện giúp quản lý và nhân sự ứng dụng generative AI vào công việc: tự động hóa báo cáo, phân tích dữ liệu, tối ưu hóa tuyển dụng và truyền thông.
-                </p>
-                <div class="mt-4 space-y-1.5 text-xs text-slate-600">
-                  <div class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-[#153e4d]"></i> Prompt Engineering cho Doanh nghiệp</div>
-                  <div class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-[#153e4d]"></i> Ứng dụng AI trong tuyển dụng và nhân sự</div>
-                  <div class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-[#153e4d]"></i> Xây dựng trợ lý ảo chuyên trách bộ phận</div>
-                </div>
-              </div>
-              <div class="mt-5 pt-3 border-t border-slate-100 flex items-center justify-between">
-                <span class="text-xs font-semibold text-slate-500">In-house / Public</span>
-                <a href="contact.html" class="inline-flex items-center gap-1 text-sm font-bold text-[#153e4d] hover:text-[#165751]">
-                  Nhận đề cương <i data-lucide="arrow-right" class="w-4 h-4"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Course 2: Lãnh đạo -->
-          <div data-category="leadership" class="course-card bg-white rounded-2xl border border-slate-200 overflow-hidden taste-card flex flex-col justify-between group p-0">
-            <div class="h-48 overflow-hidden relative photo-frame">
-              <img src="assets/images/leadership-training.jpg" alt="Đào tạo năng lực lãnh đạo" class="w-full h-full object-cover">
-              <div class="absolute top-3 left-3 bg-[#153e4d] text-white px-2.5 py-1 rounded text-xs font-semibold">
-                Lãnh đạo (32 Giờ)
-              </div>
-            </div>
-            <div class="p-6 flex-1 flex flex-col justify-between">
-              <div>
-                <h3 class="text-lg font-bold font-heading text-[#0a0a0a]">
-                  Đào Tạo Năng Lực Lãnh Đạo (Leadership Excellence)
-                </h3>
-                <p class="mt-2 text-slate-600 text-xs sm:text-sm leading-relaxed">
-                  Dành cho C-Level và Giám đốc điều hành. Rèn luyện tư duy chiến lược trong thời kỳ biến động, kỹ năng truyền cảm hứng và dẫn dắt đội ngũ vượt qua thử thách.
-                </p>
-                <div class="mt-4 space-y-1.5 text-xs text-slate-600">
-                  <div class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-[#153e4d]"></i> Tư duy chiến lược và quản trị rủi ro</div>
-                  <div class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-[#153e4d]"></i> Nghệ thuật giao quyền và trao quyền</div>
-                  <div class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-[#153e4d]"></i> Xây dựng tầm ảnh hưởng và văn hóa</div>
-                </div>
-              </div>
-              <div class="mt-5 pt-3 border-t border-slate-100 flex items-center justify-between">
-                <span class="text-xs font-semibold text-slate-500">CEO / Directors</span>
-                <a href="contact.html" class="inline-flex items-center gap-1 text-sm font-bold text-[#153e4d] hover:text-[#165751]">
-                  Xem chi tiết <i data-lucide="arrow-right" class="w-4 h-4"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Course 3: Quản lý cấp trung -->
-          <div data-category="leadership" class="course-card bg-white rounded-2xl border border-slate-200 overflow-hidden taste-card flex flex-col justify-between group p-0">
-            <div class="h-48 overflow-hidden relative photo-frame">
-              <img src="assets/images/workshop-discussion.jpg" alt="Đào tạo quản lý cấp trung" class="w-full h-full object-cover">
-              <div class="absolute top-3 left-3 bg-[#165751] text-white px-2.5 py-1 rounded text-xs font-semibold">
-                Quản lý (24 Giờ)
-              </div>
-            </div>
-            <div class="p-6 flex-1 flex flex-col justify-between">
-              <div>
-                <h3 class="text-lg font-bold font-heading text-[#0a0a0a]">
-                  Năng Lực Quản Lý Cấp Trung Thực Chiến
-                </h3>
-                <p class="mt-2 text-slate-600 text-xs sm:text-sm leading-relaxed">
-                  Được mệnh danh là "xương sống của tổ chức", quản lý cấp trung cần trang bị bộ kỹ năng giao việc, kiểm soát tiến độ, kèm cặp nhân viên và giải quyết mâu thuẫn phòng ban.
-                </p>
-                <div class="mt-4 space-y-1.5 text-xs text-slate-600">
-                  <div class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-[#165751]"></i> Lập kế hoạch và phân bổ KPI</div>
-                  <div class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-[#165751]"></i> Kèm cặp & phản hồi tạo động lực</div>
-                  <div class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-[#165751]"></i> Quản trị xung đột phòng ban</div>
-                </div>
-              </div>
-              <div class="mt-5 pt-3 border-t border-slate-100 flex items-center justify-between">
-                <span class="text-xs font-semibold text-slate-500">Trưởng / Phó phòng</span>
-                <a href="contact.html" class="inline-flex items-center gap-1 text-sm font-bold text-[#153e4d] hover:text-[#165751]">
-                  Xem chi tiết <i data-lucide="arrow-right" class="w-4 h-4"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Course 4: HR Masterclass -->
-          <div data-category="hr" class="course-card bg-white rounded-2xl border border-slate-200 overflow-hidden taste-card flex flex-col justify-between group p-0">
-            <div class="h-48 overflow-hidden relative photo-frame">
-              <img src="assets/images/about-team.jpg" alt="Chuyên môn nhân sự toàn diện" class="w-full h-full object-cover">
-              <div class="absolute top-3 left-3 bg-[#153e4d] text-white px-2.5 py-1 rounded text-xs font-semibold">
-                Nhân sự (40 Giờ)
-              </div>
-            </div>
-            <div class="p-6 flex-1 flex flex-col justify-between">
-              <div>
-                <h3 class="text-lg font-bold font-heading text-[#0a0a0a]">
-                  Đào Tạo Chuyên Môn Nhân Sự Toàn Diện (HR Masterclass)
-                </h3>
-                <p class="mt-2 text-slate-600 text-xs sm:text-sm leading-relaxed">
-                  Đào tạo chuyên sâu từ pháp luật lao động, xây dựng quy chế lương 3P, xây dựng khung năng lực cho đến chiến lược trở thành HR Business Partner (HRBP) chiến lược.
-                </p>
-                <div class="mt-4 space-y-1.5 text-xs text-slate-600">
-                  <div class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-[#153e4d]"></i> Kỹ thuật phỏng vấn hành vi STAR</div>
-                  <div class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-[#153e4d]"></i> Thiết kế hệ thống đãi ngộ Total Rewards</div>
-                  <div class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-[#153e4d]"></i> Pháp lý lao động & xử lý kỷ luật</div>
-                </div>
-              </div>
-              <div class="mt-5 pt-3 border-t border-slate-100 flex items-center justify-between">
-                <span class="text-xs font-semibold text-slate-500">Chuyên viên HR / HRBP</span>
-                <a href="contact.html" class="inline-flex items-center gap-1 text-sm font-bold text-[#153e4d] hover:text-[#165751]">
-                  Xem chi tiết <i data-lucide="arrow-right" class="w-4 h-4"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Course 5: Khởi nghiệp -->
-          <div data-category="leadership" class="course-card bg-white rounded-2xl border border-slate-200 overflow-hidden taste-card flex flex-col justify-between group p-0">
-            <div class="h-48 overflow-hidden relative photo-frame">
-              <img src="assets/images/business-meeting.jpg" alt="Đào tạo khởi nghiệp thực chiến" class="w-full h-full object-cover">
-              <div class="absolute top-3 left-3 bg-[#165751] text-white px-2.5 py-1 rounded text-xs font-semibold">
-                Khởi nghiệp (20 Giờ)
-              </div>
-            </div>
-            <div class="p-6 flex-1 flex flex-col justify-between">
-              <div>
-                <h3 class="text-lg font-bold font-heading text-[#0a0a0a]">
-                  Đào Tạo Khởi Nghiệp & Vận Hành Thực Chiến
-                </h3>
-                <p class="mt-2 text-slate-600 text-xs sm:text-sm leading-relaxed">
-                  Trang bị những kiến thức sống còn cho các Nhà sáng lập: thẩm định mô hình kinh doanh, quản trị dòng tiền, pháp lý sơ khởi và tuyển dụng đội ngũ nòng cốt.
-                </p>
-                <div class="mt-4 space-y-1.5 text-xs text-slate-600">
-                  <div class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-[#165751]"></i> Mô hình Business Model Canvas</div>
-                  <div class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-[#165751]"></i> Kỹ năng gọi vốn và định giá</div>
-                  <div class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-[#165751]"></i> Quản trị tài chính dòng tiền</div>
-                </div>
-              </div>
-              <div class="mt-5 pt-3 border-t border-slate-100 flex items-center justify-between">
-                <span class="text-xs font-semibold text-slate-500">Founders / Co-founders</span>
-                <a href="contact.html" class="inline-flex items-center gap-1 text-sm font-bold text-[#153e4d] hover:text-[#165751]">
-                  Xem chi tiết <i data-lucide="arrow-right" class="w-4 h-4"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
+        <div class="chips" role="group" aria-label="Lọc khóa học theo chủ đề">
+          <button type="button" class="chip" data-filter="all" aria-pressed="true">Tất cả khóa học</button>
+          <button type="button" class="chip" data-filter="ai" aria-pressed="false">AI và chuyển đổi số</button>
+          <button type="button" class="chip" data-filter="leadership" aria-pressed="false">Lãnh đạo và quản lý</button>
+          <button type="button" class="chip" data-filter="hr" aria-pressed="false">Chuyên môn nhân sự</button>
         </div>
+        <p id="course-status" class="catalogue-status" aria-live="polite">Đang hiển thị 5 khóa học</p>
 
-      </div>
-    </section>
-
-    <!-- Dedicated Coaching 1:1 Section -->
-    <section class="py-20 bg-[#153e4d] text-white relative">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          
-          <div class="lg:col-span-7 space-y-6">
-            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 text-[#fbee41] text-xs font-bold uppercase tracking-wider border border-white/20">
-              <i data-lucide="user-check" class="w-3.5 h-3.5"></i>
-              Dịch vụ Cao cấp
-            </div>
-            <h2 class="text-3xl sm:text-4xl font-bold font-heading tracking-tight">
-              Executive & Career Coaching 1:1: Khai Vấn Đỉnh Cao
-            </h2>
-            <p class="text-slate-200 leading-relaxed text-sm sm:text-base">
-              Khai vấn (Coaching) không phải là đưa ra lời khuyên mà là quá trình đồng hành chuyên sâu cùng chuyên gia đạt chứng chỉ quốc tế ICF (International Coaching Federation), giúp bạn tự gỡ bỏ các rào cản tâm lý, định hình tầm nhìn lãnh đạo và tìm ra câu trả lời xuất sắc nhất cho bài toán của chính mình.
-            </p>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
-              <div class="p-4 rounded-xl bg-white/10 border border-white/15">
-                <h4 class="font-bold text-white text-sm mb-1">Executive Coaching</h4>
-                <p class="text-xs text-slate-200">Dành cho CEO, Chủ tịch, C-Level cần đối tác tư duy độc lập (Sounding Board) để giải quyết các quyết định chiến lược cân não.</p>
-              </div>
-              <div class="p-4 rounded-xl bg-white/10 border border-white/15">
-                <h4 class="font-bold text-white text-sm mb-1">Career Coaching</h4>
-                <p class="text-xs text-slate-200">Dành cho các quản lý muốn bứt phá lên cấp giám đốc, chuyển đổi ngành nghề hoặc tìm kiếm mục đích sự nghiệp thực sự.</p>
-              </div>
-            </div>
-
-            <div class="pt-4 flex flex-wrap items-center gap-4">
-              <a href="contact.html" class="px-6 py-3.5 rounded-xl bg-[#fbee41] hover:bg-[#f0de2b] text-[#0a0a0a] font-bold text-sm shadow transition-all flex items-center gap-2">
-                <span>Đặt lịch phiên Khai vấn thử nghiệm (30 Phút)</span>
-                <i data-lucide="arrow-right" class="w-4 h-4"></i>
-              </a>
-            </div>
-          </div>
-
-          <div class="lg:col-span-5 bg-white/10 p-6 rounded-2xl border border-white/20">
-            <div class="flex items-center gap-4 pb-4 border-b border-white/15 mb-4">
-              <img src="assets/images/speaker-nguyen-ngo-che.jpg" alt="Cố vấn khai vấn Toplinks" class="w-16 h-16 rounded-xl object-cover border border-white/20">
-              <div>
-                <p class="text-white font-bold text-sm">Chuyên Gia Khai Vấn Cao Cấp</p>
-                <p class="text-xs text-[#fbee41] font-semibold">Chứng nhận ICF & Cố vấn Quản trị</p>
-              </div>
-            </div>
-            <ul class="space-y-3 text-xs text-slate-200">
-              <li class="flex items-start gap-2.5">
-                <i data-lucide="shield" class="w-4 h-4 text-[#fbee41] shrink-0 mt-0.5"></i>
-                <span><strong>Bảo mật 100%:</strong> Mọi nội dung trao đổi đều được bảo vệ bằng thỏa thuận NDA pháp lý.</span>
-              </li>
-              <li class="flex items-start gap-2.5">
-                <i data-lucide="award" class="w-4 h-4 text-[#fbee41] shrink-0 mt-0.5"></i>
-                <span><strong>Chuyên gia chuẩn ICF:</strong> Đội ngũ Coach giàu trải nghiệm thực tế điều hành doanh nghiệp lớn.</span>
-              </li>
-              <li class="flex items-start gap-2.5">
-                <i data-lucide="trending-up" class="w-4 h-4 text-[#fbee41] shrink-0 mt-0.5"></i>
-                <span><strong>Lộ trình cá nhân hóa:</strong> Thiết kế từ 6 đến 12 phiên kèm bài tập hành động đo lường rõ ràng sau mỗi tuần.</span>
-              </li>
+        <div class="card-grid" id="course-grid">
+          <article class="card course-card" data-category="ai">
+            <div class="card-media"><img src="assets/images/event-hoi-thao-2024.webp" width="820" height="547" alt="Diễn giả TOPLINKS tại hội thảo An toàn thông tin trong chuyển đổi số 2024" loading="lazy"></div>
+            <ul class="card-meta"><li>AI và chuyển đổi số</li><li>24 giờ</li><li>In-house hoặc public</li></ul>
+            <h3>AI Competency Framework: làm chủ trí tuệ nhân tạo</h3>
+            <p>Khung năng lực toàn diện giúp quản lý và nhân sự ứng dụng generative AI vào công việc: tự động hóa báo cáo, phân tích dữ liệu, tối ưu tuyển dụng và truyền thông.</p>
+            <ul class="card-points">
+              <li><svg aria-hidden="true"><use href="#i-check"/></svg>Prompt engineering cho doanh nghiệp</li>
+              <li><svg aria-hidden="true"><use href="#i-check"/></svg>Ứng dụng AI trong tuyển dụng và nhân sự</li>
+              <li><svg aria-hidden="true"><use href="#i-check"/></svg>Xây dựng trợ lý ảo chuyên trách cho từng bộ phận</li>
             </ul>
-          </div>
+            <p class="card-for">Dành cho quản lý và nhân sự các phòng ban</p>
+            <a href="contact.html#consultation-form" class="text-link">Nhận đề cương <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </article>
 
+          <article class="card course-card" data-category="leadership">
+            <div class="card-media"><img src="assets/images/leadership-training.webp" width="800" height="417" alt="Buổi đào tạo năng lực lãnh đạo" loading="lazy"></div>
+            <ul class="card-meta"><li>Lãnh đạo</li><li>32 giờ</li></ul>
+            <h3>Đào tạo năng lực lãnh đạo (Leadership Excellence)</h3>
+            <p>Rèn luyện tư duy chiến lược trong thời kỳ biến động, kỹ năng truyền cảm hứng và dẫn dắt đội ngũ vượt qua thử thách.</p>
+            <ul class="card-points">
+              <li><svg aria-hidden="true"><use href="#i-check"/></svg>Tư duy chiến lược và quản trị rủi ro</li>
+              <li><svg aria-hidden="true"><use href="#i-check"/></svg>Nghệ thuật giao quyền và trao quyền</li>
+              <li><svg aria-hidden="true"><use href="#i-check"/></svg>Xây dựng tầm ảnh hưởng và văn hóa</li>
+            </ul>
+            <p class="card-for">Dành cho CEO, C-level và giám đốc điều hành</p>
+            <a href="contact.html#consultation-form" class="text-link">Nhận đề cương <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </article>
+
+          <article class="card course-card" data-category="leadership">
+            <div class="card-media"><img src="assets/images/workshop-discussion.jpg" width="1500" height="1000" alt="Học viên thảo luận nhóm trong buổi workshop" loading="lazy"></div>
+            <ul class="card-meta"><li>Quản lý</li><li>24 giờ</li></ul>
+            <h3>Năng lực quản lý cấp trung thực chiến</h3>
+            <p>Quản lý cấp trung là xương sống của tổ chức, cần bộ kỹ năng giao việc, kiểm soát tiến độ, kèm cặp nhân viên và giải quyết mâu thuẫn giữa các phòng ban.</p>
+            <ul class="card-points">
+              <li><svg aria-hidden="true"><use href="#i-check"/></svg>Lập kế hoạch và phân bổ KPI</li>
+              <li><svg aria-hidden="true"><use href="#i-check"/></svg>Kèm cặp và phản hồi tạo động lực</li>
+              <li><svg aria-hidden="true"><use href="#i-check"/></svg>Quản trị xung đột phòng ban</li>
+            </ul>
+            <p class="card-for">Dành cho trưởng phòng và phó phòng</p>
+            <a href="contact.html#consultation-form" class="text-link">Nhận đề cương <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </article>
+
+          <article class="card course-card" data-category="hr">
+            <div class="card-media"><img src="assets/images/about-team.jpg" width="425" height="455" alt="Đội ngũ chuyên gia nhân sự TOPLINKS" loading="lazy"></div>
+            <ul class="card-meta"><li>Nhân sự</li><li>40 giờ</li></ul>
+            <h3>Đào tạo chuyên môn nhân sự toàn diện (HR Masterclass)</h3>
+            <p>Đào tạo chuyên sâu từ pháp luật lao động, quy chế lương 3P, khung năng lực đến chiến lược trở thành HR Business Partner.</p>
+            <ul class="card-points">
+              <li><svg aria-hidden="true"><use href="#i-check"/></svg>Kỹ thuật phỏng vấn hành vi STAR</li>
+              <li><svg aria-hidden="true"><use href="#i-check"/></svg>Thiết kế hệ thống đãi ngộ Total Rewards</li>
+              <li><svg aria-hidden="true"><use href="#i-check"/></svg>Pháp lý lao động và xử lý kỷ luật</li>
+            </ul>
+            <p class="card-for">Dành cho chuyên viên nhân sự và HRBP</p>
+            <a href="contact.html#consultation-form" class="text-link">Nhận đề cương <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </article>
+
+          <article class="card course-card" data-category="leadership">
+            <div class="card-media"><img src="assets/images/business-meeting.webp" width="800" height="480" alt="Nhà sáng lập trao đổi về mô hình kinh doanh" loading="lazy"></div>
+            <ul class="card-meta"><li>Khởi nghiệp</li><li>20 giờ</li></ul>
+            <h3>Đào tạo khởi nghiệp và vận hành thực chiến</h3>
+            <p>Kiến thức sống còn cho nhà sáng lập: thẩm định mô hình kinh doanh, quản trị dòng tiền, pháp lý sơ khởi và tuyển dụng đội ngũ nòng cốt.</p>
+            <ul class="card-points">
+              <li><svg aria-hidden="true"><use href="#i-check"/></svg>Mô hình Business Model Canvas</li>
+              <li><svg aria-hidden="true"><use href="#i-check"/></svg>Kỹ năng gọi vốn và định giá</li>
+              <li><svg aria-hidden="true"><use href="#i-check"/></svg>Quản trị tài chính dòng tiền</li>
+            </ul>
+            <p class="card-for">Dành cho founder và co-founder</p>
+            <a href="contact.html#consultation-form" class="text-link">Nhận đề cương <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Coaching 1:1 -->
+    <section class="section paper" id="coaching" aria-labelledby="coach-title">
+      <div class="wrap split">
+        <figure class="split-media coach-figure">
+          <img src="assets/images/experts/le-thi-thao-trang.webp" width="480" height="600" alt="Bà Lê Thị Thảo Trang, CEO TOPLINKS" loading="lazy">
+          <figcaption><strong>Lê Thị Thảo Trang</strong>, CEO TOPLINKS</figcaption>
+        </figure>
+        <div class="prose">
+          <p class="kicker">Coaching 1:1</p>
+          <h2 id="coach-title" class="section-title">Executive và career coaching: khai vấn 1:1 cùng chuyên gia</h2>
+          <p style="margin-top:20px">Khai vấn không phải là đưa ra lời khuyên. Đó là quá trình đồng hành chuyên sâu cùng chuyên gia đạt chứng chỉ quốc tế ICF, giúp bạn gỡ bỏ rào cản, định hình tầm nhìn lãnh đạo và tự tìm ra câu trả lời tốt nhất cho bài toán của chính mình.</p>
+          <div class="card-grid coach-types">
+            <div class="card">
+              <h3>Executive coaching</h3>
+              <p>Dành cho CEO, chủ tịch, C-level cần một đối tác tư duy độc lập khi đưa ra các quyết định chiến lược.</p>
+            </div>
+            <div class="card">
+              <h3>Career coaching</h3>
+              <p>Dành cho quản lý muốn bứt phá lên cấp giám đốc, chuyển đổi ngành nghề hoặc tìm mục đích sự nghiệp.</p>
+            </div>
+          </div>
+          <ul class="card-points coach-points">
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg><span><strong>Bảo mật:</strong> mọi nội dung trao đổi được bảo vệ bằng thỏa thuận NDA.</span></li>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg><span><strong>Chuyên gia chuẩn ICF:</strong> giàu trải nghiệm thực tế điều hành doanh nghiệp.</span></li>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg><span><strong>Lộ trình cá nhân hóa:</strong> từ 6 đến 12 phiên, kèm bài tập hành động đo lường được sau mỗi tuần.</span></li>
+          </ul>
+          <div class="coach-actions">
+            <a href="contact.html#consultation-form" class="btn btn-deep">Đặt lịch phiên khai vấn thử 30 phút <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How a programme runs -->
+    <section class="section band" aria-labelledby="process-title">
+      <div class="band-media"><img src="assets/images/workshop-discussion.jpg" width="1500" height="1000" alt="" loading="lazy"></div>
+      <div class="wrap">
+        <p class="kicker">Cách một chương trình diễn ra</p>
+        <h2 id="process-title">Đào tạo bắt đầu từ năng lực thật của đội ngũ, kết thúc bằng hành vi thay đổi.</h2>
+        <ol class="steps">
+          <li class="step"><span class="step-num" aria-hidden="true">1</span><h3>Đánh giá năng lực</h3><p>Khảo sát và đánh giá năng lực đội ngũ trước khi đào tạo để biết đang thiếu ở đâu.</p></li>
+          <li class="step"><span class="step-num" aria-hidden="true">2</span><h3>Thiết kế may đo</h3><p>Xây chương trình theo tình huống thật của doanh nghiệp, không dùng giáo án đóng sẵn.</p></li>
+          <li class="step"><span class="step-num" aria-hidden="true">3</span><h3>Đào tạo thực chiến</h3><p>Học ngay tại doanh nghiệp hoặc lớp public, thực hành trên chính công việc hằng ngày.</p></li>
+          <li class="step"><span class="step-num" aria-hidden="true">4</span><h3>Theo dõi sau khóa học</h3><p>Đo thay đổi hành vi sau khóa học và tinh chỉnh khi cần.</p></li>
+        </ol>
+        <div class="band-foot">
+          <p><strong>Đào tạo in-house</strong> từ 15 học viên được hỗ trợ 15% học phí.</p>
+          <a href="contact.html#consultation-form" class="btn btn-gold">Đăng ký tư vấn in-house <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="section" aria-labelledby="cta-title">
+      <div class="wrap">
+        <div class="cta-panel">
+          <div>
+            <h2 id="cta-title">Bắt đầu bằng một buổi chẩn đoán 1:1, miễn phí</h2>
+            <p>Chúng tôi lắng nghe, tìm điểm nghẽn gốc và gợi ý một đến hai việc nên làm trước, dù bạn có làm tiếp cùng TOPLINKS hay không.</p>
+          </div>
+          <div class="cta-actions">
+            <a href="contact.html#consultation-form" class="btn btn-gold">Đặt lịch tư vấn miễn phí <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            <a href="tel:0934011500" class="cta-phone"><span>Hoặc gọi hotline</span><strong>0934 011 500</strong></a>
+          </div>
         </div>
       </div>
     </section>
 
   </main>
 
-  <!-- Global Footer -->
-  <footer class="bg-[#0f2c37] text-slate-300 text-sm border-t border-[#153e4d]">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
-        
-        <div class="lg:col-span-2 space-y-4">
-          <div class="flex items-center gap-3">
-            <img src="assets/images/logo.png" alt="TOPLINKS" class="h-10 w-auto bg-white p-1.5 rounded-lg">
-            <div>
-              <span class="font-bold text-white text-lg font-heading">CÔNG TY TNHH TOPLINKS</span>
-              <p class="text-xs text-[#fbee41] uppercase font-bold">Co-Creation for Success</p>
-            </div>
-          </div>
-          <p class="text-slate-300 text-xs sm:text-sm leading-relaxed max-w-sm">
-            Nơi hội tụ các Chuyên gia hàng đầu đầy khát vọng cho sự đổi mới, hiệp lực kiến tạo nên các giải pháp tiên phong và tối ưu giúp Doanh nghiệp, Cá nhân sẵn sàng chuyển hóa để phát triển vượt trội và bền vững.
-          </p>
-          <div class="space-y-2 text-xs text-slate-200 pt-2">
-            <p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-[#fbee41] shrink-0"></i> Trụ sở chính: 152 Võ Văn Kiệt, Phường Nguyễn Thái Bình, Quận 1, Tp.HCM</p>
-            <p class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-[#fbee41] shrink-0"></i> Hotline: 0909.xxx.xxx</p>
-            <p class="flex items-center gap-2"><i data-lucide="mail" class="w-4 h-4 text-[#fbee41] shrink-0"></i> Email: academy@toplinks.vn | info@toplinks.vn</p>
-          </div>
-        </div>
-
-        <div>
-          <h4 class="text-white font-bold text-sm mb-4 font-heading">Về TOPLINKS</h4>
-          <ul class="space-y-2.5 text-xs sm:text-sm">
-            <li><a href="about.html" class="hover:text-[#fbee41] transition-colors">Giới thiệu chung</a></li>
-            <li><a href="about.html#philosophy" class="hover:text-[#fbee41] transition-colors">Triết lý Co-Creation</a></li>
-            <li><a href="about.html#team" class="hover:text-[#fbee41] transition-colors">Đội ngũ chuyên gia</a></li>
-            <li><a href="contact.html" class="hover:text-[#fbee41] transition-colors">Tin tức & Sự kiện</a></li>
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="index.html" class="brand">
+            <img src="assets/images/logo-mark-light.png" width="50" height="53" alt="">
+            <span class="brand-text"><span class="brand-word">TOPLINKS</span><span class="brand-tag">Hiệp lực kiến tạo</span></span>
+          </a>
+          <p><span class="slogan">Co-Creation for Success.</span> Công ty TNHH TOPLINKS, nơi các chuyên gia hiệp lực kiến tạo giải pháp giúp doanh nghiệp và cá nhân phát triển bền vững.</p>
+          <ul class="footer-contact">
+            <li><i data-lucide="map-pin" aria-hidden="true"></i><span>TINI Building, 152 Võ Văn Kiệt, phường Nguyễn Thái Bình, quận 1, TP.HCM</span></li>
+            <li><i data-lucide="phone" aria-hidden="true"></i><a href="tel:0934011500">0934 011 500</a></li>
+            <li><i data-lucide="mail" aria-hidden="true"></i><a href="mailto:academy@toplinks.vn">academy@toplinks.vn</a></li>
           </ul>
         </div>
-
-        <div>
-          <h4 class="text-white font-bold text-sm mb-4 font-heading">Giải Pháp & Dịch Vụ</h4>
-          <ul class="space-y-2.5 text-xs sm:text-sm">
-            <li><a href="solutions.html" class="hover:text-[#fbee41] transition-colors">Tư vấn Doanh nghiệp</a></li>
-            <li><a href="solutions.html" class="hover:text-[#fbee41] transition-colors">Thiết lập hệ thống KPI</a></li>
-            <li><a href="solutions.html" class="hover:text-[#fbee41] transition-colors">Dịch vụ Nhân sự (HR)</a></li>
-            <li><a href="training.html" class="hover:text-[#fbee41] transition-colors">Đào tạo năng lực lãnh đạo</a></li>
-            <li><a href="training.html" class="hover:text-[#fbee41] transition-colors">AI Competency Framework</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h4 class="text-white font-bold text-sm mb-4 font-heading">Công Cụ & Khảo Sát</h4>
-          <ul class="space-y-2.5 text-xs sm:text-sm">
-            <li><a href="tools.html" class="hover:text-[#fbee41] transition-colors">Sinh trắc vân tay (STVT)</a></li>
-            <li><a href="tools.html" class="hover:text-[#fbee41] transition-colors">Trắc nghiệm MBTI</a></li>
-            <li><a href="tools.html" class="hover:text-[#fbee41] transition-colors">Đánh giá hành vi DISC</a></li>
-            <li><a href="contact.html" class="hover:text-[#fbee41] transition-colors">Liên hệ hỗ trợ</a></li>
-          </ul>
-        </div>
-
+        <nav aria-labelledby="f-about">
+          <h2 id="f-about">Về TOPLINKS</h2>
+          <a href="about.html">Giới thiệu</a>
+          <a href="about.html#team">Đội ngũ chuyên gia</a>
+          <a href="about.html#philosophy">Triết lý Co-Creation</a>
+          <a href="contact.html">Liên hệ</a>
+        </nav>
+        <nav aria-labelledby="f-solutions">
+          <h2 id="f-solutions">Giải pháp</h2>
+          <a href="solutions.html">Tư vấn doanh nghiệp</a>
+          <a href="solutions.html">Dịch vụ nhân sự</a>
+          <a href="training.html">Đào tạo lãnh đạo</a>
+          <a href="training.html">AI Competency</a>
+        </nav>
+        <nav aria-labelledby="f-tools">
+          <h2 id="f-tools">Công cụ</h2>
+          <a href="tools.html">Sinh trắc vân tay</a>
+          <a href="tools.html">Trắc nghiệm MBTI</a>
+          <a href="tools.html">Đánh giá DISC</a>
+        </nav>
       </div>
-
-      <div class="mt-12 pt-8 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-4">
-        <p>&copy; <span id="current-year">2026</span> CÔNG TY TNHH TOPLINKS. Tất cả quyền được bảo lưu.</p>
-        <div class="flex items-center gap-6">
-          <a href="contact.html" class="hover:text-white">Điều khoản dịch vụ</a>
-          <a href="contact.html" class="hover:text-white">Chính sách bảo mật</a>
-          <a href="contact.html" class="hover:text-white">Quy định bản quyền</a>
-        </div>
+      <div class="footer-bottom">
+        <p>© <span id="current-year">2026</span> Công ty TNHH TOPLINKS, MST 0317381989</p>
+        <nav aria-label="Pháp lý">
+          <a href="contact.html">Điều khoản dịch vụ</a>
+          <a href="contact.html">Chính sách bảo mật</a>
+        </nav>
       </div>
     </div>
   </footer>
 
   <script src="assets/js/main.js"></script>
   <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const filterBtns = document.querySelectorAll('[data-filter]');
-      const cards = document.querySelectorAll('.course-card');
-
-      filterBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
-          const filter = btn.dataset.filter;
-
-          filterBtns.forEach(b => {
-            b.classList.remove('bg-[#153e4d]', 'text-white', 'filter-tab-active');
-            b.classList.add('bg-slate-100', 'text-slate-700');
-          });
-          btn.classList.add('bg-[#153e4d]', 'text-white', 'filter-tab-active');
-          btn.classList.remove('bg-slate-100', 'text-slate-700');
-
-          cards.forEach(card => {
-            const category = card.dataset.category;
-            if (filter === 'all' || category === filter) {
-              card.classList.remove('hidden');
-            } else {
-              card.classList.add('hidden');
-            }
-          });
+    // Course filter: chips toggle aria-pressed, non-matching cards get .hidden
+    const chips = document.querySelectorAll('.chip[data-filter]');
+    const courses = document.querySelectorAll('.course-card');
+    const status = document.getElementById('course-status');
+    chips.forEach((chip) => {
+      chip.addEventListener('click', () => {
+        const filter = chip.dataset.filter;
+        chips.forEach((c) => c.setAttribute('aria-pressed', String(c === chip)));
+        let shown = 0;
+        courses.forEach((card) => {
+          const match = filter === 'all' || card.dataset.category === filter;
+          card.classList.toggle('hidden', !match);
+          if (match) shown++;
         });
+        status.textContent = `Đang hiển thị ${shown} khóa học`;
       });
     });
   </script>

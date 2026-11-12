@@ -1,0 +1,18 @@
+/* training.html only: course point lists, coach portrait, catalogue status line */
+.card-points { display: grid; gap: 8px; font-size: var(--fs-small); color: var(--muted); }
+.card-points li { display: grid; grid-template-columns: 18px 1fr; gap: 10px; }
+.card-points svg { width: 18px; height: 18px; margin-top: 3px; color: var(--teal-ink); }
+.card-for { margin-top: auto; padding-top: 16px; border-top: 1px solid var(--line); font-size: 0.875rem; }
+.card-for + .text-link { margin-top: 0; }
+.catalogue-status { margin: -16px 0 24px; font-size: var(--fs-small); color: var(--muted); }
+
+.coach-figure img { width: 100%; max-width: 440px; aspect-ratio: 4 / 5; object-fit: cover; object-position: top; border-radius: 24px; }
+.coach-figure figcaption { margin-top: 14px; font-size: var(--fs-small); color: var(--muted); }
+.coach-figure figcaption strong { color: var(--text); }
+.coach-types { margin-top: 28px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); }
+.coach-types .card { padding: 24px; }
+.coach-types h3 { font-size: 1.0625rem; }
+.coach-points { margin-top: 28px; }
+.coach-points p { color: var(--muted); }
+.coach-points strong { color: var(--text); }
+.coach-actions { margin-top: 32px; }

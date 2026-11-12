@@ -1,423 +1,351 @@
 <!DOCTYPE html>
-<html lang="vi" class="scroll-smooth" data-type="service">
+<html lang="vi">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="page-type" content="service">
-  <meta name="site-kind" content="other">
-  <title>Giải Pháp Doanh Nghiệp - TOPLINKS | Co-Creation For Success</title>
-  <meta name="description" content="Khám phá các giải pháp tư vấn quản trị doanh nghiệp, xây dựng hệ thống KPI/OKR, giải pháp nhân sự và tối ưu hóa vận hành chuyên sâu của TOPLINKS.">
-  
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <title>Giải pháp doanh nghiệp | TOPLINKS</title>
+  <meta name="description" content="Giải pháp tư vấn doanh nghiệp của TOPLINKS: tái cấu trúc tổ chức, hệ thống KPI và quản trị hiệu suất, dịch vụ nhân sự, coaching và hệ thống quản trị cho doanh nghiệp Việt.">
+  <meta name="theme-color" content="#08353c">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/v2.css">
+  <script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js" defer></script>
 </head>
-<body class="bg-white text-[#0a0a0a] font-sans antialiased flex flex-col min-h-screen">
+<body class="v2">
+  <a href="#main" class="skip-link">Bỏ qua, tới nội dung chính</a>
 
-  <!-- Top Announcement Bar -->
-  <div class="bg-[#153e4d] text-slate-200 text-xs py-2 px-4 border-b border-[#0f2c37]">
-    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
-      <div class="flex items-center gap-3">
-        <span class="inline-flex items-center gap-2 text-[#fbee41] font-semibold">
-          <i data-lucide="gift" class="w-3.5 h-3.5 fill-[#fbee41]"></i>
-          Ưu đãi: Tặng gói Chẩn đoán Sức khỏe Doanh nghiệp sơ bộ cho 10 đơn vị đăng ký sớm nhất
-        </span>
-      </div>
-      <div class="flex items-center gap-6 text-slate-300">
-        <a href="tel:0909000000" class="hover:text-[#fbee41] flex items-center gap-1.5 transition-colors">
-          <i data-lucide="phone" class="w-3.5 h-3.5 text-[#fbee41]"></i> Hotline: 0909.xxx.xxx
-        </a>
-        <a href="mailto:academy@toplinks.vn" class="hover:text-[#fbee41] flex items-center gap-1.5 transition-colors">
-          <i data-lucide="mail" class="w-3.5 h-3.5 text-[#fbee41]"></i> academy@toplinks.vn
-        </a>
-      </div>
-    </div>
-  </div>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  </svg>
 
-  <!-- Header -->
-  <header id="site-header" class="sticky top-0 z-40 bg-white/95 backdrop-blur-sm transition-all duration-200 border-b border-slate-200">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-      <a href="index.html" class="flex items-center gap-3 group focus:outline-none">
-        <img src="assets/images/logo.png" alt="TOPLINKS" class="h-11 w-auto object-contain transition-transform">
+  <header id="site-header" class="site-header">
+    <div class="wrap header-inner">
+      <a href="index.html" class="brand" aria-label="TOPLINKS, về trang chủ">
+        <img src="assets/images/logo-mark.png" width="44" height="46" alt="">
+        <span class="brand-text"><span class="brand-word">TOPLINKS</span><span class="brand-tag">Co-Creation for Success</span></span>
       </a>
-
-      <nav class="hidden md:flex items-center gap-8">
-        <a href="index.html" data-nav-link="desktop" class="text-sm font-medium text-slate-700 hover:text-[#153e4d] transition-colors py-1">Trang chủ</a>
-        <a href="about.html" data-nav-link="desktop" class="text-sm font-medium text-slate-700 hover:text-[#153e4d] transition-colors py-1">Về chúng tôi</a>
-        <a href="solutions.html" data-nav-link="desktop" class="text-sm font-semibold text-[#153e4d] py-1 border-b-2 border-[#153e4d]">Giải pháp Doanh nghiệp</a>
-        <a href="training.html" data-nav-link="desktop" class="text-sm font-medium text-slate-700 hover:text-[#153e4d] transition-colors py-1">Đào tạo & Coaching</a>
-        <a href="tools.html" data-nav-link="desktop" class="text-sm font-medium text-slate-700 hover:text-[#153e4d] transition-colors py-1">Bộ công cụ trắc nghiệm</a>
-        <a href="contact.html" data-nav-link="desktop" class="text-sm font-medium text-slate-700 hover:text-[#153e4d] transition-colors py-1">Liên hệ</a>
+      <nav class="nav" aria-label="Điều hướng chính">
+        <a href="index.html" data-nav-link="desktop">Trang chủ</a>
+        <a href="about.html" data-nav-link="desktop">Về chúng tôi</a>
+        <a href="solutions.html" data-nav-link="desktop" aria-current="page">Giải pháp</a>
+        <a href="training.html" data-nav-link="desktop">Đào tạo &amp; coaching</a>
+        <a href="tools.html" data-nav-link="desktop">Công cụ trắc nghiệm</a>
+        <a href="contact.html" data-nav-link="desktop">Liên hệ</a>
       </nav>
-
-      <div class="hidden md:flex items-center gap-3">
-        <a href="contact.html" class="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-lg text-sm font-bold text-[#0a0a0a] bg-[#fbee41] hover:bg-[#f0de2b] shadow-sm transition-all">
-          <span>Đăng ký tư vấn</span>
-          <i data-lucide="arrow-right" class="w-4 h-4"></i>
-        </a>
-      </div>
-
-      <button id="mobile-menu-btn" type="button" class="md:hidden p-2 rounded-lg text-slate-700 hover:text-[#153e4d]" aria-label="Mở menu">
-        <i data-lucide="menu" class="w-6 h-6"></i>
-      </button>
-    </div>
-
-    <!-- Mobile Drawer -->
-    <div id="mobile-menu" class="hidden md:hidden fixed inset-0 z-50 bg-[#153e4d]/70 backdrop-blur-sm">
-      <div class="fixed inset-y-0 right-0 w-full max-w-xs bg-white shadow-2xl p-6 flex flex-col justify-between">
-        <div>
-          <div class="flex items-center justify-between pb-6 border-b border-slate-100">
-            <img src="assets/images/logo.png" alt="TOPLINKS" class="h-9 w-auto object-contain">
-            <button id="close-mobile-menu" class="p-2 text-slate-500 hover:text-slate-900">
-              <i data-lucide="x" class="w-5 h-5"></i>
-            </button>
-          </div>
-          <div class="flex flex-col gap-4 mt-6">
-            <a href="index.html" data-nav-link="mobile" class="text-base font-medium text-slate-800 hover:text-[#153e4d] py-2 border-b border-slate-100">Trang chủ</a>
-            <a href="about.html" data-nav-link="mobile" class="text-base font-medium text-slate-800 hover:text-[#153e4d] py-2 border-b border-slate-100">Về chúng tôi</a>
-            <a href="solutions.html" data-nav-link="mobile" class="text-base font-semibold text-[#153e4d] py-2 border-b border-slate-100">Giải pháp Doanh nghiệp</a>
-            <a href="training.html" data-nav-link="mobile" class="text-base font-medium text-slate-800 hover:text-[#153e4d] py-2 border-b border-slate-100">Đào tạo & Coaching</a>
-            <a href="tools.html" data-nav-link="mobile" class="text-base font-medium text-slate-800 hover:text-[#153e4d] py-2 border-b border-slate-100">Bộ công cụ trắc nghiệm</a>
-            <a href="contact.html" data-nav-link="mobile" class="text-base font-medium text-slate-800 hover:text-[#153e4d] py-2">Liên hệ</a>
-          </div>
-        </div>
-        <div class="pt-6 border-t border-slate-100">
-          <a href="contact.html" class="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-lg bg-[#fbee41] hover:bg-[#f0de2b] text-[#0a0a0a] font-bold text-center text-sm shadow">
-            <span>Đăng ký tư vấn miễn phí</span>
-            <i data-lucide="arrow-right" class="w-4 h-4"></i>
-          </a>
-        </div>
+      <div class="header-actions">
+        <a href="tel:0934011500" class="header-phone"><svg aria-hidden="true"><use href="#i-phone"/></svg>0934 011 500</a>
+        <a href="contact.html#consultation-form" class="btn btn-deep header-cta">Đặt lịch tư vấn</a>
+        <button id="mobile-menu-btn" type="button" class="menu-btn" aria-label="Mở menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg>
+        </button>
       </div>
     </div>
   </header>
 
-  <main class="flex-grow">
-    
-    <!-- Header Banner with Real Consulting Photo (Toplinks Deep Navy Style) -->
-    <section class="relative bg-[#153e4d] text-white py-20">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-          <div class="lg:col-span-7">
-            <div class="badge-toplinks mb-4">
-              <i data-lucide="briefcase" class="w-3.5 h-3.5"></i>
-              Tư vấn Doanh nghiệp & Vận hành
-            </div>
-            <h1 class="text-4xl sm:text-5xl font-bold font-heading text-white tracking-tight leading-tight">
-              Giải Pháp Doanh Nghiệp Toàn Diện
-            </h1>
-            <p class="mt-6 text-lg text-slate-200 leading-relaxed font-normal">
-              Thiết kế và chuẩn hóa hệ thống quản trị, chỉ số KPI/OKR, tái cấu trúc tổ chức và tối ưu quy trình để biến chiến lược trên giấy thành hành động thực thi mỗi ngày.
-            </p>
-            <div class="mt-8 flex gap-4">
-              <a href="contact.html" class="px-6 py-3.5 rounded-xl bg-[#fbee41] hover:bg-[#f0de2b] text-[#0a0a0a] font-bold text-sm shadow flex items-center gap-2">
-                <span>Nhận đề xuất giải pháp</span>
-                <i data-lucide="arrow-right" class="w-4 h-4"></i>
-              </a>
-            </div>
+  <div id="mobile-menu" class="drawer-backdrop hidden">
+    <div class="drawer">
+      <div class="drawer-top">
+        <a href="index.html" class="brand">
+          <img src="assets/images/logo-mark.png" width="36" height="38" alt="">
+          <span class="brand-word">TOPLINKS</span>
+        </a>
+        <button id="close-mobile-menu" type="button" class="menu-btn" aria-label="Đóng menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+        </button>
+      </div>
+      <nav aria-label="Điều hướng trên di động">
+        <a href="index.html" data-nav-link="mobile">Trang chủ</a>
+        <a href="about.html" data-nav-link="mobile">Về chúng tôi</a>
+        <a href="solutions.html" data-nav-link="mobile" aria-current="page">Giải pháp</a>
+        <a href="training.html" data-nav-link="mobile">Đào tạo &amp; coaching</a>
+        <a href="tools.html" data-nav-link="mobile">Công cụ trắc nghiệm</a>
+        <a href="contact.html" data-nav-link="mobile">Liên hệ</a>
+      </nav>
+      <a href="contact.html#consultation-form" class="btn btn-deep">Đặt lịch tư vấn miễn phí</a>
+    </div>
+  </div>
+
+
+  <main id="main">
+
+    <!-- Page hero -->
+    <section class="page-hero has-figure" aria-labelledby="page-title">
+      <div class="page-hero-media">
+        <img src="assets/images/corporate-consulting.webp" width="960" height="640" alt="" fetchpriority="high">
+      </div>
+      <div class="wrap">
+        <nav class="crumbs" aria-label="Đường dẫn">
+          <a href="index.html">Trang chủ</a>
+          <span aria-hidden="true">/</span>
+          <span aria-current="page">Giải pháp</span>
+        </nav>
+        <h1 id="page-title">Giải pháp doanh nghiệp, may đo cho bộ máy của bạn</h1>
+        <p class="lead">Tư vấn doanh nghiệp, hệ thống KPI và quản trị hiệu suất, dịch vụ nhân sự và coaching cho lãnh đạo. Chúng tôi biến chiến lược trên giấy thành việc làm mỗi ngày, rồi ở lại đến khi hệ thống vận hành.</p>
+        <div class="hero-actions">
+          <a href="contact.html#consultation-form" class="btn btn-gold">Nhận đề xuất giải pháp <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <a href="#quy-trinh" class="btn btn-ghost">Xem cách chúng tôi làm việc</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Solutions overview -->
+    <section class="section" aria-labelledby="sol-title">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="kicker">Giải pháp</p>
+            <h2 id="sol-title" class="section-title">Sáu nhóm giải pháp, một đối tác</h2>
+            <p class="section-lead">Mỗi doanh nghiệp vướng ở một chỗ khác nhau. Chúng tôi bắt đầu từ điểm nghẽn thật, rồi ghép đúng giải pháp cần thiết.</p>
           </div>
-          <div class="lg:col-span-5">
-            <div class="rounded-2xl overflow-hidden shadow-2xl border border-white/20 photo-frame">
-              <img src="assets/images/corporate-consulting.jpg" alt="Tư vấn chiến lược doanh nghiệp Toplinks" class="w-full h-80 object-cover">
-            </div>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <span class="card-icon"><i data-lucide="briefcase" aria-hidden="true"></i></span>
+            <h3>Tư vấn doanh nghiệp và tái cấu trúc</h3>
+            <p>Chẩn đoán sức khỏe tổ chức, rà soát điểm nghẽn vận hành, tái cấu trúc sơ đồ tổ chức và phân quyền rõ ràng. Hoạch định chiến lược 3 đến 5 năm kèm kế hoạch hành động.</p>
+            <ul class="card-meta"><li>Chẩn đoán 360</li><li>JD</li><li>RACI</li></ul>
+            <a href="contact.html#consultation-form" class="text-link">Trao đổi về tái cấu trúc <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </article>
+          <article class="card">
+            <span class="card-icon"><i data-lucide="target" aria-hidden="true"></i></span>
+            <h3>Hệ thống KPI và quản trị hiệu suất</h3>
+            <p>Phân rã mục tiêu công ty thành KPI phòng ban và cá nhân, xây từ điển chỉ số với công thức và nguồn dữ liệu rõ ràng, đánh giá định kỳ công bằng.</p>
+            <ul class="card-meta"><li>KPI</li><li>BSC</li><li>OKR</li></ul>
+            <a href="contact.html#consultation-form" class="text-link">Trao đổi về KPI <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </article>
+          <article class="card">
+            <span class="card-icon"><i data-lucide="users" aria-hidden="true"></i></span>
+            <h3>Dịch vụ nhân sự toàn diện</h3>
+            <p>Tuyển dụng vị trí giám đốc và quản lý chủ chốt, cơ chế lương thưởng theo mô hình 3P, khung năng lực và lộ trình thăng tiến, kiểm toán nhân sự.</p>
+            <ul class="card-meta"><li>Tuyển dụng cấp cao</li><li>Lương 3P</li><li>Khung năng lực</li></ul>
+            <a href="contact.html#consultation-form" class="text-link">Trao đổi về nhân sự <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </article>
+          <article class="card">
+            <span class="card-icon"><i data-lucide="layers" aria-hidden="true"></i></span>
+            <h3>Hệ thống quản trị và quy trình</h3>
+            <p>Chuẩn hóa quy trình liên phòng ban, xây bộ SOP để công việc không phụ thuộc vào một vài cá nhân và nhân viên mới vào việc nhanh hơn.</p>
+            <ul class="card-meta"><li>SOP</li><li>Quy trình</li><li>Phân quyền</li></ul>
+            <a href="contact.html#consultation-form" class="text-link">Trao đổi về quy trình <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </article>
+          <article class="card">
+            <span class="card-icon"><i data-lucide="message-circle" aria-hidden="true"></i></span>
+            <h3>Coaching và mentoring cho lãnh đạo</h3>
+            <p>Coaching 1:1 cho chủ doanh nghiệp và lãnh đạo cấp cao khi công ty mở rộng, kèm cặp quản lý kế cận bằng chính tình huống đang diễn ra.</p>
+            <ul class="card-meta"><li>Coaching 1:1</li><li>Mentoring</li></ul>
+            <a href="tools.html" class="text-link">Xem công cụ đánh giá <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </article>
+          <article class="card">
+            <span class="card-icon"><i data-lucide="graduation-cap" aria-hidden="true"></i></span>
+            <h3>Đào tạo năng lực lãnh đạo</h3>
+            <p>Chương trình may đo cho lãnh đạo và quản lý cấp trung, tổ chức ngay tại doanh nghiệp để đội ngũ vận hành được hệ thống mới.</p>
+            <ul class="card-meta"><li>Quản lý cấp trung</li><li>AI Competency</li></ul>
+            <a href="training.html" class="text-link">Xem chương trình <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why it sticks -->
+    <section class="section paper" aria-labelledby="why-title">
+      <div class="wrap split">
+        <div class="split-media">
+          <img src="assets/images/business-meeting.webp" width="800" height="480" alt="Chuyên gia TOPLINKS trao đổi cùng ban lãnh đạo doanh nghiệp" loading="lazy">
+        </div>
+        <div class="prose">
+          <p class="kicker">Hiệp lực kiến tạo</p>
+          <h2 id="why-title" class="section-title">Giải pháp được dùng thật, không nằm trong ngăn kéo</h2>
+          <p style="margin-top:20px">Chúng tôi cùng trưởng phòng của bạn xây quy trình và bộ chỉ số, nên người vận hành hiểu vì sao nó tồn tại. Sau khi bàn giao, chuyên gia tiếp tục kèm thực thi giai đoạn đầu.</p>
+          <p>Đội ngũ 14 chuyên gia thực chiến đã đồng hành cùng các doanh nghiệp năng lượng, viễn thông, tài chính, sản xuất và giáo dục.</p>
+          <ul class="stats" style="margin-top:36px">
+            <li><strong>116</strong><span>dự án đã hoàn thành</span></li>
+            <li><strong>99%</strong><span>khách hàng hài lòng</span></li>
+            <li><strong>100+</strong><span>doanh nghiệp đồng hành</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Engagement process -->
+    <section class="section band" id="quy-trinh" aria-labelledby="process-title">
+      <div class="band-media"><img src="assets/images/workshop-discussion.jpg" width="1500" height="1000" alt="" loading="lazy"></div>
+      <div class="wrap">
+        <p class="kicker">Quy trình đồng hành</p>
+        <h2 id="process-title">Bốn bước, từ chẩn đoán đến khi hệ thống tự chạy</h2>
+        <ol class="steps">
+          <li class="step"><span class="step-num" aria-hidden="true">1</span><h3>Chẩn đoán hiện trạng</h3><p>Khảo sát, phỏng vấn các cấp lãnh đạo và đọc dữ liệu vận hành để tìm điểm nghẽn gốc.</p></li>
+          <li class="step"><span class="step-num" aria-hidden="true">2</span><h3>Đồng thiết kế giải pháp</h3><p>Workshop cùng đội ngũ của bạn để xây cơ cấu, quy trình và bộ KPI may đo.</p></li>
+          <li class="step"><span class="step-num" aria-hidden="true">3</span><h3>Triển khai và kèm thực thi</h3><p>Huấn luyện người vận hành, đồng hành giai đoạn đầu, bàn giao đầy đủ tài liệu.</p></li>
+          <li class="step"><span class="step-num" aria-hidden="true">4</span><h3>Đo lường và tinh chỉnh</h3><p>Đánh giá hiệu quả và thay đổi hành vi, tinh chỉnh hệ thống theo định kỳ.</p></li>
+        </ol>
+        <div class="band-foot">
+          <p><strong>Bước 1 miễn phí.</strong> Một buổi chẩn đoán 1:1 để hai bên biết có nên đi tiếp.</p>
+          <a href="contact.html#consultation-form" class="btn btn-gold">Đặt lịch chẩn đoán <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Before / after -->
+    <section class="section" aria-labelledby="impact-title">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="kicker">Hiệu quả sau triển khai</p>
+            <h2 id="impact-title" class="section-title">Trước khi và sau khi làm cùng TOPLINKS</h2>
+          </div>
+        </div>
+        <div class="compare">
+          <div class="compare-col compare-before">
+            <h3>Trước khi triển khai</h3>
+            <ul>
+              <li><i data-lucide="minus" aria-hidden="true"></i><span>KPI rời rạc, không gắn với doanh thu</span></li>
+              <li><i data-lucide="minus" aria-hidden="true"></i><span>Nhân viên không hiểu chỉ số của mình được tính thế nào</span></li>
+              <li><i data-lucide="minus" aria-hidden="true"></i><span>Quy trình chồng chéo, phòng ban đùn đẩy trách nhiệm</span></li>
+              <li><i data-lucide="minus" aria-hidden="true"></i><span>Người giỏi ở vị trí then chốt rời đi, khó tuyển thay thế</span></li>
+              <li><i data-lucide="minus" aria-hidden="true"></i><span>Ban lãnh đạo chờ tổng hợp số liệu thủ công mới ra được quyết định</span></li>
+            </ul>
+          </div>
+          <div class="compare-col compare-after">
+            <h3>Sau khi đồng hành cùng TOPLINKS</h3>
+            <ul>
+              <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>KPI gắn trực tiếp với mục tiêu kinh doanh</span></li>
+              <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Mỗi người tự theo dõi chỉ số của mình qua từ điển KPI chung</span></li>
+              <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Quy trình và phân quyền rõ ràng, ai làm gì đều có tài liệu</span></li>
+              <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Lương thưởng và lộ trình thăng tiến minh bạch, giữ được người giỏi</span></li>
+              <li><svg aria-hidden="true"><use href="#i-check"/></svg><span>Báo cáo định kỳ đủ để lãnh đạo quyết định nhanh hơn</span></li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Detailed Solutions Breakdown -->
-    <section class="py-20 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-20">
-        
-        <!-- Solution 1: Tư vấn chiến lược & tái cấu trúc -->
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          <div class="lg:col-span-6 space-y-5">
-            <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#153e4d]">
-              <span class="w-2 h-2 rounded-full bg-[#153e4d]"></span> Trụ cột 01
-            </div>
-            <h2 class="text-2xl sm:text-3xl font-bold font-heading text-[#0a0a0a]">
-              Tư Vấn Doanh Nghiệp & Tái Cấu Trúc Toàn Diện
-            </h2>
-            <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
-              Giải quyết bài toán "tăng trưởng nóng nhưng mất kiểm soát", thiếu sự liên kết giữa các phòng ban và quy trình chồng chéo gây thất thoát nguồn lực.
-            </p>
-            <div class="space-y-3 pt-2">
-              <div class="flex items-start gap-3">
-                <i data-lucide="check-circle-2" class="w-5 h-5 text-[#153e4d] shrink-0 mt-0.5"></i>
-                <span class="text-sm text-slate-700">Chẩn đoán sức khỏe tổ chức và rà soát các điểm nghẽn vận hành.</span>
-              </div>
-              <div class="flex items-start gap-3">
-                <i data-lucide="check-circle-2" class="w-5 h-5 text-[#153e4d] shrink-0 mt-0.5"></i>
-                <span class="text-sm text-slate-700">Tái cấu trúc sơ đồ tổ chức, phân định rõ chức năng nhiệm vụ (JD) và quyền hạn (RACI).</span>
-              </div>
-              <div class="flex items-start gap-3">
-                <i data-lucide="check-circle-2" class="w-5 h-5 text-[#153e4d] shrink-0 mt-0.5"></i>
-                <span class="text-sm text-slate-700">Hoạch định chiến lược kinh doanh 3-5 năm kèm kế hoạch hành động chi tiết.</span>
-              </div>
-            </div>
-            <div class="pt-4">
-              <a href="contact.html" class="inline-flex items-center gap-2 text-sm font-bold text-[#153e4d] hover:text-[#165751]">
-                Nhận tư vấn chuyên sâu về Chiến lược <i data-lucide="arrow-right" class="w-4 h-4"></i>
-              </a>
-            </div>
-          </div>
-
-          <div class="lg:col-span-6 rounded-2xl overflow-hidden shadow-sm border border-slate-200 taste-card p-0">
-            <div class="photo-frame">
-              <img src="assets/images/business-meeting.jpg" alt="Thảo luận chiến lược thực tế" class="w-full h-72 object-cover">
-            </div>
-            <div class="p-6 bg-[#f8fafb] border-t border-slate-100">
-              <h4 class="text-sm font-bold font-heading text-[#0a0a0a] mb-2 flex items-center gap-2">
-                <i data-lucide="package-check" class="w-4 h-4 text-[#153e4d]"></i> Sản phẩm bàn giao:
-              </h4>
-              <p class="text-xs text-slate-600">Báo cáo chẩn đoán 360, sơ đồ tổ chức mới tinh gọn và ma trận RACI phân quyền chuẩn mực.</p>
-            </div>
-          </div>
+    <!-- Clients -->
+    <section class="clients" aria-labelledby="clients-title">
+      <div class="wrap">
+        <div class="clients-head">
+          <p id="clients-title">Được tin chọn bởi 100+ doanh nghiệp, tập đoàn và ngân hàng</p>
+          <span>Năng lượng, viễn thông, tài chính, sản xuất, giáo dục</span>
         </div>
-
-        <!-- Solution 2: Thiết lập hệ thống KPI & OKRs -->
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          <div class="lg:col-span-6 order-2 lg:order-1 rounded-2xl overflow-hidden shadow-sm border border-slate-200 taste-card p-0">
-            <div class="photo-frame">
-              <img src="assets/images/workshop-discussion.jpg" alt="Workshop xây dựng KPI tại doanh nghiệp" class="w-full h-72 object-cover">
-            </div>
-            <div class="p-6 bg-[#f8fafb] border-t border-slate-100">
-              <h4 class="text-sm font-bold font-heading text-[#0a0a0a] mb-2 flex items-center gap-2">
-                <i data-lucide="bar-chart-3" class="w-4 h-4 text-[#153e4d]"></i> Mô hình đo lường đa tầng:
-              </h4>
-              <p class="text-xs text-slate-600">BSC 4 khía cạnh cấp công ty $\rightarrow$ KPI chức năng phòng ban $\rightarrow$ Kế hoạch hành động cá nhân.</p>
-            </div>
+        <div class="marquee">
+          <div class="marquee-track">
+            <ul>
+              <li><img src="assets/images/clients/pv-power.png" alt="PV Power" height="40"></li>
+              <li><img src="assets/images/clients/evn.png" alt="EVN" height="40"></li>
+              <li><img src="assets/images/clients/vnpt.png" alt="VNPT" height="40"></li>
+              <li><img src="assets/images/clients/techcombank.png" alt="Techcombank" height="40"></li>
+              <li><img src="assets/images/clients/toyota.png" alt="Toyota" height="40"></li>
+              <li><img src="assets/images/clients/vtv.png" alt="VTV" height="40"></li>
+              <li><img src="assets/images/clients/fpt.png" alt="FPT" height="40"></li>
+              <li><img src="assets/images/clients/aia.png" alt="AIA" height="40"></li>
+              <li><img src="assets/images/clients/vietinbank.png" alt="VietinBank" height="40"></li>
+              <li><img src="assets/images/clients/petrolimex.png" alt="Petrolimex" height="40"></li>
+              <li><img src="assets/images/clients/manulife.png" alt="Manulife" height="40"></li>
+              <li><img src="assets/images/clients/bidv.png" alt="BIDV" height="40"></li>
+              <li><img src="assets/images/clients/vietsovpetro.png" alt="Vietsovpetro" height="40"></li>
+              <li><img src="assets/images/clients/vpbank.png" alt="VPBank" height="40"></li>
+              <li><img src="assets/images/clients/ge.png" alt="GE" height="40"></li>
+              <li><img src="assets/images/clients/mb.png" alt="MB" height="40"></li>
+              <li><img src="assets/images/clients/evn-npt.png" alt="EVNNPT" height="40"></li>
+              <li><img src="assets/images/clients/pvcombank.png" alt="PVcomBank" height="40"></li>
+              <li><img src="assets/images/clients/teijin.png" alt="Teijin" height="40"></li>
+              <li><img src="assets/images/clients/nova-group.png" alt="Nova Group" height="40"></li>
+              <li><img src="assets/images/clients/apave.png" alt="Apave" height="40"></li>
+              <li><img src="assets/images/clients/duong-sat-viet-nam.png" alt="Đường sắt Việt Nam" height="40"></li>
+              <li><img src="assets/images/clients/money-forward.png" alt="Money Forward Việt Nam" height="40"></li>
+              <li><img src="assets/images/clients/aht-tech.png" alt="AHT Tech" height="40"></li>
+            </ul>
+            <ul aria-hidden="true">
+              <li><img src="assets/images/clients/pv-power.png" alt="" height="40"></li>
+              <li><img src="assets/images/clients/evn.png" alt="" height="40"></li>
+              <li><img src="assets/images/clients/vnpt.png" alt="" height="40"></li>
+              <li><img src="assets/images/clients/techcombank.png" alt="" height="40"></li>
+              <li><img src="assets/images/clients/toyota.png" alt="" height="40"></li>
+              <li><img src="assets/images/clients/vtv.png" alt="" height="40"></li>
+              <li><img src="assets/images/clients/fpt.png" alt="" height="40"></li>
+              <li><img src="assets/images/clients/aia.png" alt="" height="40"></li>
+              <li><img src="assets/images/clients/vietinbank.png" alt="" height="40"></li>
+              <li><img src="assets/images/clients/petrolimex.png" alt="" height="40"></li>
+              <li><img src="assets/images/clients/manulife.png" alt="" height="40"></li>
+              <li><img src="assets/images/clients/bidv.png" alt="" height="40"></li>
+              <li><img src="assets/images/clients/vietsovpetro.png" alt="" height="40"></li>
+              <li><img src="assets/images/clients/vpbank.png" alt="" height="40"></li>
+              <li><img src="assets/images/clients/ge.png" alt="" height="40"></li>
+              <li><img src="assets/images/clients/mb.png" alt="" height="40"></li>
+              <li><img src="assets/images/clients/evn-npt.png" alt="" height="40"></li>
+              <li><img src="assets/images/clients/pvcombank.png" alt="" height="40"></li>
+              <li><img src="assets/images/clients/teijin.png" alt="" height="40"></li>
+              <li><img src="assets/images/clients/nova-group.png" alt="" height="40"></li>
+              <li><img src="assets/images/clients/apave.png" alt="" height="40"></li>
+              <li><img src="assets/images/clients/duong-sat-viet-nam.png" alt="" height="40"></li>
+              <li><img src="assets/images/clients/money-forward.png" alt="" height="40"></li>
+              <li><img src="assets/images/clients/aht-tech.png" alt="" height="40"></li>
+            </ul>
           </div>
-
-          <div class="lg:col-span-6 order-1 lg:order-2 space-y-5">
-            <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#153e4d]">
-              <span class="w-2 h-2 rounded-full bg-[#153e4d]"></span> Trụ cột 02
-            </div>
-            <h2 class="text-2xl sm:text-3xl font-bold font-heading text-[#0a0a0a]">
-              Thiết Lập Hệ Thống Quản Trị & Đo Lường Hiệu Suất (KPI / BSC / OKRs)
-            </h2>
-            <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
-              Xây dựng hệ thống KPI thực chất, tránh tình trạng "KPI đối phó" hoặc chỉ tiêu không đo đếm được. Giúp toàn bộ nhân sự từ trên xuống dưới cùng nhìn về một mục tiêu chung.
-            </p>
-            <div class="space-y-3 pt-2">
-              <div class="flex items-start gap-3">
-                <i data-lucide="check-circle-2" class="w-5 h-5 text-[#153e4d] shrink-0 mt-0.5"></i>
-                <span class="text-sm text-slate-700">Phân rã mục tiêu chiến lược công ty thành các chỉ số KPI phòng ban và cá nhân.</span>
-              </div>
-              <div class="flex items-start gap-3">
-                <i data-lucide="check-circle-2" class="w-5 h-5 text-[#153e4d] shrink-0 mt-0.5"></i>
-                <span class="text-sm text-slate-700">Xây dựng từ điển chỉ số KPI (KPI Dictionary) chuẩn hóa công thức tính và nguồn dữ liệu.</span>
-              </div>
-              <div class="flex items-start gap-3">
-                <i data-lucide="check-circle-2" class="w-5 h-5 text-[#153e4d] shrink-0 mt-0.5"></i>
-                <span class="text-sm text-slate-700">Thiết lập quy trình đánh giá định kỳ hàng tháng/quý công bằng, minh bạch.</span>
-              </div>
-            </div>
-            <div class="pt-4">
-              <a href="contact.html" class="inline-flex items-center gap-2 text-sm font-bold text-[#153e4d] hover:text-[#165751]">
-                Nhận mẫu biểu đồ KPI tham khảo <i data-lucide="arrow-right" class="w-4 h-4"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Solution 3: Dịch vụ Nhân sự -->
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          <div class="lg:col-span-6 space-y-5">
-            <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#153e4d]">
-              <span class="w-2 h-2 rounded-full bg-[#153e4d]"></span> Trụ cột 03
-            </div>
-            <h2 class="text-2xl sm:text-3xl font-bold font-heading text-[#0a0a0a]">
-              Dịch Vụ Nhân Sự Toàn Diện (HR Solutions)
-            </h2>
-            <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
-              Nhân sự là tài sản quan trọng nhất nhưng cũng là bài toán đau đầu nhất của mọi CEO. TOPLINKS cung cấp giải pháp trọn gói từ tuyển dụng nhân tài cấp cao đến giữ chân nhân sự bằng chính sách đãi ngộ cạnh tranh.
-            </p>
-            <div class="space-y-3 pt-2">
-              <div class="flex items-start gap-3">
-                <i data-lucide="check-circle-2" class="w-5 h-5 text-[#153e4d] shrink-0 mt-0.5"></i>
-                <span class="text-sm text-slate-700">Headhunting & Tuyển dụng các vị trí Giám đốc, Quản lý chủ chốt.</span>
-              </div>
-              <div class="flex items-start gap-3">
-                <i data-lucide="check-circle-2" class="w-5 h-5 text-[#153e4d] shrink-0 mt-0.5"></i>
-                <span class="text-sm text-slate-700">Xây dựng cơ chế lương thưởng đãi ngộ theo mô hình 3P (Position - Person - Performance).</span>
-              </div>
-              <div class="flex items-start gap-3">
-                <i data-lucide="check-circle-2" class="w-5 h-5 text-[#153e4d] shrink-0 mt-0.5"></i>
-                <span class="text-sm text-slate-700">Xây dựng Khung Năng Lực (Competency Framework) và lộ trình thăng tiến nhân sự.</span>
-              </div>
-            </div>
-            <div class="pt-4">
-              <a href="contact.html" class="inline-flex items-center gap-2 text-sm font-bold text-[#153e4d] hover:text-[#165751]">
-                Tìm hiểu thêm về Dịch vụ Nhân sự <i data-lucide="arrow-right" class="w-4 h-4"></i>
-              </a>
-            </div>
-          </div>
-
-          <div class="lg:col-span-6 rounded-2xl overflow-hidden shadow-sm border border-slate-200 taste-card p-0">
-            <div class="photo-frame">
-              <img src="assets/images/about-team.jpg" alt="Đội ngũ nhân sự chuyên nghiệp" class="w-full h-72 object-cover">
-            </div>
-            <div class="p-6 bg-[#f8fafb] border-t border-slate-100">
-              <h4 class="text-sm font-bold font-heading text-[#0a0a0a] mb-2 flex items-center gap-2">
-                <i data-lucide="users" class="w-4 h-4 text-[#153e4d]"></i> Các module dịch vụ nhân sự:
-              </h4>
-              <p class="text-xs text-slate-600">Kiểm toán nhân sự, Xây dựng thang bảng lương 3P, Headhunt C-Level và Kiến tạo Văn hóa Doanh nghiệp.</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- Client Partners Banner -->
-    <section class="py-12 bg-white border-t border-slate-200">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <p class="text-xs font-bold uppercase tracking-wider text-slate-500 mb-6">
-          Doanh nghiệp tin tưởng các giải pháp của TOPLINKS
-        </p>
-        <img src="assets/images/clients-banner.png" alt="Khách hàng doanh nghiệp Toplinks" class="mx-auto max-h-24 object-contain">
-      </div>
-    </section>
-
-    <!-- Impact & ROI Comparison Table -->
-    <section class="py-20 bg-[#f8fafb] border-t border-slate-200">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        <div class="text-center max-w-2xl mx-auto mb-16">
-          <div class="badge-toplinks-navy mb-3">
-            <i data-lucide="trending-up" class="w-3.5 h-3.5"></i>
-            Hiệu quả đo lường thực tế
-          </div>
-          <h2 class="text-3xl font-bold font-heading text-[#0a0a0a] tracking-tight">
-            Trước & Sau Khi Triển Khai Cùng TOPLINKS
-          </h2>
-          <p class="mt-4 text-slate-600 text-sm sm:text-base">
-            Số liệu thống kê trung bình từ hơn 100+ dự án tư vấn doanh nghiệp mà chúng tôi đã đồng kiến tạo.
-          </p>
-        </div>
-
-        <div class="overflow-x-auto">
-          <table class="w-full bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden text-sm">
-            <thead class="bg-[#153e4d] text-white font-heading text-left">
-              <tr>
-                <th class="py-4 px-6 font-semibold">Chỉ số đánh giá</th>
-                <th class="py-4 px-6 font-semibold text-rose-300">Trước khi tư vấn</th>
-                <th class="py-4 px-6 font-semibold text-[#fbee41]">Sau khi Hiệp lực cùng Toplinks</th>
-                <th class="py-4 px-6 font-semibold text-emerald-300">Mức độ cải thiện</th>
-              </tr>
-            </thead>
-            <tbody class="divide-y divide-slate-100">
-              <tr class="hover:bg-[#f8fafb] transition-colors">
-                <td class="py-4 px-6 font-medium text-[#0a0a0a]">Tỷ lệ hoàn thành mục tiêu chiến lược công ty</td>
-                <td class="py-4 px-6 text-slate-500">Dưới 45% (kế hoạch thường vỡ sau Q2)</td>
-                <td class="py-4 px-6 font-semibold text-[#0a0a0a]">88% - 94% bám sát lộ trình</td>
-                <td class="py-4 px-6 font-bold text-emerald-600">+100% hiệu suất</td>
-              </tr>
-              <tr class="hover:bg-[#f8fafb] transition-colors">
-                <td class="py-4 px-6 font-medium text-[#0a0a0a]">Mức độ thấu hiểu KPI của nhân viên</td>
-                <td class="py-4 px-6 text-slate-500">Chỉ 30% hiểu rõ cách tính và mục tiêu</td>
-                <td class="py-4 px-6 font-semibold text-[#0a0a0a]">95% nhân sự tự chủ theo dõi chỉ số</td>
-                <td class="py-4 px-6 font-bold text-emerald-600">+65% mức độ tự chủ</td>
-              </tr>
-              <tr class="hover:bg-[#f8fafb] transition-colors">
-                <td class="py-4 px-6 font-medium text-[#0a0a0a]">Tỷ lệ thất thoát & biến động nhân sự then chốt</td>
-                <td class="py-4 px-6 text-slate-500">Khoảng 25% - 35% mỗi năm</td>
-                <td class="py-4 px-6 font-semibold text-[#0a0a0a]">Giảm xuống dưới 8%</td>
-                <td class="py-4 px-6 font-bold text-emerald-600">Giảm 75% rủi ro turnover</td>
-              </tr>
-              <tr class="hover:bg-[#f8fafb] transition-colors">
-                <td class="py-4 px-6 font-medium text-[#0a0a0a]">Thời gian ra quyết định quản trị của Ban Lãnh đạo</td>
-                <td class="py-4 px-6 text-slate-500">3 - 5 ngày để tổng hợp dữ liệu thủ công</td>
-                <td class="py-4 px-6 font-semibold text-[#0a0a0a]">Thời gian thực (Real-time dashboard)</td>
-                <td class="py-4 px-6 font-bold text-emerald-600">Tối ưu 80% thời gian họp</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- Bottom Conversion Banner -->
-    <section class="py-16 bg-[#153e4d] text-white text-center">
-      <div class="max-w-4xl mx-auto px-4">
-        <h2 class="text-3xl font-bold font-heading">Doanh Nghiệp Của Bạn Đang Gặp Điểm Nghẽn Nào?</h2>
-        <p class="mt-3 text-slate-200 text-sm sm:text-base">
-          Gặp gỡ chuyên gia TOPLINKS để cùng ngồi lại phân tích và xây dựng lộ trình giải pháp phù hợp nhất với quy mô doanh nghiệp bạn.
-        </p>
-        <div class="mt-6 flex flex-col sm:flex-row justify-center gap-4">
-          <a href="contact.html" class="px-7 py-3 rounded-lg bg-[#fbee41] hover:bg-[#f0de2b] text-[#0a0a0a] font-bold text-sm shadow">
-            Đăng ký khảo sát & tư vấn miễn phí
-          </a>
         </div>
       </div>
     </section>
+
+    <!-- Final CTA -->
+    <section class="section" aria-labelledby="cta-title">
+      <div class="wrap">
+        <div class="cta-panel">
+          <div>
+            <h2 id="cta-title">Bắt đầu bằng một buổi chẩn đoán 1:1, miễn phí</h2>
+            <p>Chúng tôi lắng nghe, tìm điểm nghẽn gốc và gợi ý một đến hai việc nên làm trước, dù bạn có làm tiếp cùng TOPLINKS hay không.</p>
+          </div>
+          <div class="cta-actions">
+            <a href="contact.html#consultation-form" class="btn btn-gold">Đặt lịch tư vấn miễn phí <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            <a href="tel:0934011500" class="cta-phone"><span>Hoặc gọi hotline</span><strong>0934 011 500</strong></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
 
   </main>
 
-  <!-- Global Footer -->
-  <footer class="bg-[#0f2c37] text-slate-300 text-sm border-t border-[#153e4d]">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
-        
-        <div class="lg:col-span-2 space-y-4">
-          <div class="flex items-center gap-3">
-            <img src="assets/images/logo.png" alt="TOPLINKS" class="h-10 w-auto bg-white p-1.5 rounded-lg">
-            <div>
-              <span class="font-bold text-white text-lg font-heading">CÔNG TY TNHH TOPLINKS</span>
-              <p class="text-xs text-[#fbee41] uppercase font-bold">Co-Creation for Success</p>
-            </div>
-          </div>
-          <p class="text-slate-300 text-xs sm:text-sm leading-relaxed max-w-sm">
-            Nơi hội tụ các Chuyên gia hàng đầu đầy khát vọng cho sự đổi mới, hiệp lực kiến tạo nên các giải pháp tiên phong và tối ưu giúp Doanh nghiệp, Cá nhân sẵn sàng chuyển hóa để phát triển vượt trội và bền vững.
-          </p>
-          <div class="space-y-2 text-xs text-slate-200 pt-2">
-            <p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-[#fbee41] shrink-0"></i> Trụ sở chính: 152 Võ Văn Kiệt, Phường Nguyễn Thái Bình, Quận 1, Tp.HCM</p>
-            <p class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-[#fbee41] shrink-0"></i> Hotline: 0909.xxx.xxx</p>
-            <p class="flex items-center gap-2"><i data-lucide="mail" class="w-4 h-4 text-[#fbee41] shrink-0"></i> Email: academy@toplinks.vn | info@toplinks.vn</p>
-          </div>
-        </div>
-
-        <div>
-          <h4 class="text-white font-bold text-sm mb-4 font-heading">Về TOPLINKS</h4>
-          <ul class="space-y-2.5 text-xs sm:text-sm">
-            <li><a href="about.html" class="hover:text-[#fbee41] transition-colors">Giới thiệu chung</a></li>
-            <li><a href="about.html#philosophy" class="hover:text-[#fbee41] transition-colors">Triết lý Co-Creation</a></li>
-            <li><a href="about.html#team" class="hover:text-[#fbee41] transition-colors">Đội ngũ chuyên gia</a></li>
-            <li><a href="contact.html" class="hover:text-[#fbee41] transition-colors">Tin tức & Sự kiện</a></li>
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="index.html" class="brand">
+            <img src="assets/images/logo-mark-light.png" width="50" height="53" alt="">
+            <span class="brand-text"><span class="brand-word">TOPLINKS</span><span class="brand-tag">Hiệp lực kiến tạo</span></span>
+          </a>
+          <p><span class="slogan">Co-Creation for Success.</span> Công ty TNHH TOPLINKS, nơi các chuyên gia hiệp lực kiến tạo giải pháp giúp doanh nghiệp và cá nhân phát triển bền vững.</p>
+          <ul class="footer-contact">
+            <li><i data-lucide="map-pin" aria-hidden="true"></i><span>TINI Building, 152 Võ Văn Kiệt, phường Nguyễn Thái Bình, quận 1, TP.HCM</span></li>
+            <li><i data-lucide="phone" aria-hidden="true"></i><a href="tel:0934011500">0934 011 500</a></li>
+            <li><i data-lucide="mail" aria-hidden="true"></i><a href="mailto:academy@toplinks.vn">academy@toplinks.vn</a></li>
           </ul>
         </div>
-
-        <div>
-          <h4 class="text-white font-bold text-sm mb-4 font-heading">Giải Pháp & Dịch Vụ</h4>
-          <ul class="space-y-2.5 text-xs sm:text-sm">
-            <li><a href="solutions.html" class="hover:text-[#fbee41] transition-colors">Tư vấn Doanh nghiệp</a></li>
-            <li><a href="solutions.html" class="hover:text-[#fbee41] transition-colors">Thiết lập hệ thống KPI</a></li>
-            <li><a href="solutions.html" class="hover:text-[#fbee41] transition-colors">Dịch vụ Nhân sự (HR)</a></li>
-            <li><a href="training.html" class="hover:text-[#fbee41] transition-colors">Đào tạo năng lực lãnh đạo</a></li>
-            <li><a href="training.html" class="hover:text-[#fbee41] transition-colors">AI Competency Framework</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h4 class="text-white font-bold text-sm mb-4 font-heading">Công Cụ & Khảo Sát</h4>
-          <ul class="space-y-2.5 text-xs sm:text-sm">
-            <li><a href="tools.html" class="hover:text-[#fbee41] transition-colors">Sinh trắc vân tay (STVT)</a></li>
-            <li><a href="tools.html" class="hover:text-[#fbee41] transition-colors">Trắc nghiệm MBTI</a></li>
-            <li><a href="tools.html" class="hover:text-[#fbee41] transition-colors">Đánh giá hành vi DISC</a></li>
-            <li><a href="contact.html" class="hover:text-[#fbee41] transition-colors">Liên hệ hỗ trợ</a></li>
-          </ul>
-        </div>
-
+        <nav aria-labelledby="f-about">
+          <h2 id="f-about">Về TOPLINKS</h2>
+          <a href="about.html">Giới thiệu</a>
+          <a href="about.html#team">Đội ngũ chuyên gia</a>
+          <a href="about.html#philosophy">Triết lý Co-Creation</a>
+          <a href="contact.html">Liên hệ</a>
+        </nav>
+        <nav aria-labelledby="f-solutions">
+          <h2 id="f-solutions">Giải pháp</h2>
+          <a href="solutions.html">Tư vấn doanh nghiệp</a>
+          <a href="solutions.html">Dịch vụ nhân sự</a>
+          <a href="training.html">Đào tạo lãnh đạo</a>
+          <a href="training.html">AI Competency</a>
+        </nav>
+        <nav aria-labelledby="f-tools">
+          <h2 id="f-tools">Công cụ</h2>
+          <a href="tools.html">Sinh trắc vân tay</a>
+          <a href="tools.html">Trắc nghiệm MBTI</a>
+          <a href="tools.html">Đánh giá DISC</a>
+        </nav>
       </div>
-
-      <div class="mt-12 pt-8 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-4">
-        <p>&copy; <span id="current-year">2026</span> CÔNG TY TNHH TOPLINKS. Tất cả quyền được bảo lưu.</p>
-        <div class="flex items-center gap-6">
-          <a href="contact.html" class="hover:text-white">Điều khoản dịch vụ</a>
-          <a href="contact.html" class="hover:text-white">Chính sách bảo mật</a>
-          <a href="contact.html" class="hover:text-white">Quy định bản quyền</a>
-        </div>
+      <div class="footer-bottom">
+        <p>© <span id="current-year">2026</span> Công ty TNHH TOPLINKS, MST 0317381989</p>
+        <nav aria-label="Pháp lý">
+          <a href="contact.html">Điều khoản dịch vụ</a>
+          <a href="contact.html">Chính sách bảo mật</a>
+        </nav>
       </div>
     </div>
   </footer>

@@ -11,8 +11,10 @@ assert(fs.existsSync(cssPath), 'style.css must exist');
 const cssContent = fs.readFileSync(cssPath, 'utf8');
 assert(cssContent.includes('--color-primary'), 'style.css must define --color-primary');
 assert(cssContent.includes('--color-accent'), 'style.css must define --color-accent');
-assert(cssContent.includes('Poppins'), 'style.css must include Poppins font');
-assert(cssContent.includes('Plus Jakarta Sans'), 'style.css must include Plus Jakarta Sans font');
+// Be Vietnam Pro replaces Poppins/Plus Jakarta Sans: Poppins has no Vietnamese subset (U+1EA0–1EF9)
+assert(cssContent.includes('Be+Vietnam+Pro'), 'style.css must load Be Vietnam Pro font');
+assert(cssContent.includes("--font-heading: 'Be Vietnam Pro'"), 'heading font token must be Be Vietnam Pro');
+assert(cssContent.includes('--color-ring-on-dark'), 'style.css must define a focus ring color for dark surfaces');
 
 assert(fs.existsSync(jsPath), 'main.js must exist');
 const jsContent = fs.readFileSync(jsPath, 'utf8');

@@ -1,659 +1,458 @@
 <!DOCTYPE html>
-<html lang="vi" class="scroll-smooth" data-type="service">
+<html lang="vi">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="page-type" content="service">
-  <meta name="site-kind" content="other">
-  <title>TOPLINKS - CO-CREATION FOR SUCCESS | Tư vấn Doanh nghiệp & Đào tạo Lãnh đạo</title>
-  <meta name="description" content="TOPLINKS - Đơn vị tiên phong tư vấn quản trị doanh nghiệp, đào tạo năng lực lãnh đạo, chuyển đổi số AI và giải pháp nhân sự toàn diện theo triết lý Hiệp lực kiến tạo.">
-  
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Lucide Icons -->
-  <script src="https://unpkg.com/lucide@latest"></script>
-  
-  <!-- Custom Design Tokens & Styles (taste-skill anti-slop standard) -->
+  <title>TOPLINKS | Tư vấn quản trị và phát triển lãnh đạo cho doanh nghiệp Việt</title>
+  <meta name="description" content="TOPLINKS tư vấn quản trị, đào tạo lãnh đạo, chuyển đổi AI và giải pháp nhân sự cho doanh nghiệp Việt, theo triết lý Hiệp lực kiến tạo (Co-Creation for Success).">
+  <meta name="theme-color" content="#08353c">
+  <link rel="preload" as="image" href="assets/images/hero-consulting.webp">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/v2.css">
+  <script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js" defer></script>
 </head>
-<body class="bg-white text-[#0a0a0a] font-sans antialiased flex flex-col min-h-screen">
+<body class="v2">
+  <a href="#main" class="skip-link">Bỏ qua, tới nội dung chính</a>
 
-  <!-- Top Notification Bar (Toplinks Deep Navy & Yellow Accent) -->
-  <div class="bg-[#153e4d] text-slate-200 text-xs py-2 px-4 border-b border-[#0f2c37]">
-    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
-      <div class="flex items-center gap-3">
-        <span class="inline-flex items-center gap-2 text-[#fbee41] font-semibold">
-          <i data-lucide="zap" class="w-3.5 h-3.5 fill-[#fbee41]"></i>
-          TOPLINKS 2035: Đồng hành cùng 1.000 Doanh nghiệp & 1.000.000 Nhân sự Việt Nam
-        </span>
-      </div>
-      <div class="flex items-center gap-6 text-slate-300">
-        <a href="tel:0909000000" class="hover:text-[#fbee41] flex items-center gap-1.5 transition-colors">
-          <i data-lucide="phone" class="w-3.5 h-3.5 text-[#fbee41]"></i> Hotline: 0909.xxx.xxx
-        </a>
-        <a href="mailto:academy@toplinks.vn" class="hover:text-[#fbee41] flex items-center gap-1.5 transition-colors">
-          <i data-lucide="mail" class="w-3.5 h-3.5 text-[#fbee41]"></i> academy@toplinks.vn
-        </a>
-      </div>
-    </div>
-  </div>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  </svg>
 
-  <!-- Main Navigation Header -->
-  <header id="site-header" class="sticky top-0 z-40 bg-white/95 backdrop-blur-sm transition-all duration-200 border-b border-slate-200">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-      
-      <!-- Brand Logo -->
-      <a href="index.html" class="flex items-center gap-3 group focus:outline-none">
-        <img src="assets/images/logo.png" alt="TOPLINKS - Co-Creation for Success" class="h-11 w-auto object-contain transition-transform">
+  <header id="site-header" class="site-header">
+    <div class="wrap header-inner">
+      <a href="index.html" class="brand" aria-label="TOPLINKS, về trang chủ">
+        <img src="assets/images/logo-mark.png" width="44" height="46" alt="">
+        <span class="brand-text"><span class="brand-word">TOPLINKS</span><span class="brand-tag">Co-Creation for Success</span></span>
       </a>
-
-      <!-- Desktop Navigation Menu -->
-      <nav class="hidden md:flex items-center gap-8">
-        <a href="index.html" data-nav-link="desktop" class="text-sm font-semibold text-[#153e4d] py-1 border-b-2 border-[#153e4d]">Trang chủ</a>
-        <a href="about.html" data-nav-link="desktop" class="text-sm font-medium text-slate-700 hover:text-[#153e4d] transition-colors py-1">Về chúng tôi</a>
-        <a href="solutions.html" data-nav-link="desktop" class="text-sm font-medium text-slate-700 hover:text-[#153e4d] transition-colors py-1">Giải pháp Doanh nghiệp</a>
-        <a href="training.html" data-nav-link="desktop" class="text-sm font-medium text-slate-700 hover:text-[#153e4d] transition-colors py-1">Đào tạo & Coaching</a>
-        <a href="tools.html" data-nav-link="desktop" class="text-sm font-medium text-slate-700 hover:text-[#153e4d] transition-colors py-1">Bộ công cụ trắc nghiệm</a>
-        <a href="contact.html" data-nav-link="desktop" class="text-sm font-medium text-slate-700 hover:text-[#153e4d] transition-colors py-1">Liên hệ</a>
+      <nav class="nav" aria-label="Điều hướng chính">
+        <a href="index.html" data-nav-link="desktop" aria-current="page">Trang chủ</a>
+        <a href="about.html" data-nav-link="desktop">Về chúng tôi</a>
+        <a href="solutions.html" data-nav-link="desktop">Giải pháp</a>
+        <a href="training.html" data-nav-link="desktop">Đào tạo &amp; coaching</a>
+        <a href="tools.html" data-nav-link="desktop">Công cụ trắc nghiệm</a>
+        <a href="contact.html" data-nav-link="desktop">Liên hệ</a>
       </nav>
-
-      <!-- Desktop CTA Button -->
-      <div class="hidden md:flex items-center gap-3">
-        <a href="contact.html" class="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-lg text-sm font-bold text-[#0a0a0a] bg-[#fbee41] hover:bg-[#f0de2b] shadow-sm hover:shadow transition-all duration-200">
-          <span>Đăng ký tư vấn</span>
-          <i data-lucide="arrow-right" class="w-4 h-4"></i>
-        </a>
-      </div>
-
-      <!-- Mobile Hamburger Button -->
-      <button id="mobile-menu-btn" type="button" class="md:hidden p-2 rounded-lg text-slate-700 hover:text-[#153e4d] hover:bg-slate-100 transition-colors" aria-label="Mở menu">
-        <i data-lucide="menu" class="w-6 h-6"></i>
-      </button>
-    </div>
-
-    <!-- Mobile Drawer Overlay -->
-    <div id="mobile-menu" class="hidden md:hidden fixed inset-0 z-50 bg-[#153e4d]/70 backdrop-blur-sm">
-      <div class="fixed inset-y-0 right-0 w-full max-w-xs bg-white shadow-2xl p-6 flex flex-col justify-between">
-        <div>
-          <div class="flex items-center justify-between pb-6 border-b border-slate-100">
-            <img src="assets/images/logo.png" alt="TOPLINKS" class="h-9 w-auto object-contain">
-            <button id="close-mobile-menu" class="p-2 text-slate-500 hover:text-slate-900">
-              <i data-lucide="x" class="w-5 h-5"></i>
-            </button>
-          </div>
-          <div class="flex flex-col gap-4 mt-6">
-            <a href="index.html" data-nav-link="mobile" class="text-base font-semibold text-[#153e4d] py-2 border-b border-slate-100">Trang chủ</a>
-            <a href="about.html" data-nav-link="mobile" class="text-base font-medium text-slate-800 hover:text-[#153e4d] py-2 border-b border-slate-100">Về chúng tôi</a>
-            <a href="solutions.html" data-nav-link="mobile" class="text-base font-medium text-slate-800 hover:text-[#153e4d] py-2 border-b border-slate-100">Giải pháp Doanh nghiệp</a>
-            <a href="training.html" data-nav-link="mobile" class="text-base font-medium text-slate-800 hover:text-[#153e4d] py-2 border-b border-slate-100">Đào tạo & Coaching</a>
-            <a href="tools.html" data-nav-link="mobile" class="text-base font-medium text-slate-800 hover:text-[#153e4d] py-2 border-b border-slate-100">Bộ công cụ trắc nghiệm</a>
-            <a href="contact.html" data-nav-link="mobile" class="text-base font-medium text-slate-800 hover:text-[#153e4d] py-2">Liên hệ</a>
-          </div>
-        </div>
-        <div class="pt-6 border-t border-slate-100">
-          <a href="contact.html" class="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-lg bg-[#fbee41] hover:bg-[#f0de2b] text-[#0a0a0a] font-bold text-center text-sm shadow">
-            <span>Đăng ký tư vấn miễn phí</span>
-            <i data-lucide="arrow-right" class="w-4 h-4"></i>
-          </a>
-        </div>
+      <div class="header-actions">
+        <a href="tel:0934011500" class="header-phone"><svg aria-hidden="true"><use href="#i-phone"/></svg>0934 011 500</a>
+        <a href="contact.html#consultation-form" class="btn btn-deep header-cta">Đặt lịch tư vấn</a>
+        <button id="mobile-menu-btn" type="button" class="menu-btn" aria-label="Mở menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg>
+        </button>
       </div>
     </div>
   </header>
 
-  <main class="flex-grow">
-    
-    <!-- Hero Section (Executive Taste Style: Confident Navy, Crisp Typography, Real Imagery) -->
-    <section class="relative bg-[#153e4d] text-white pt-20 pb-28">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          
-          <!-- Hero Left Content -->
-          <div class="lg:col-span-7 space-y-6">
-            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/20 text-[#fbee41] text-xs font-bold tracking-wide uppercase">
-              <i data-lucide="compass" class="w-3.5 h-3.5"></i>
-              Hiệp lực kiến tạo để thành công
-            </div>
-            
-            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold font-heading text-white tracking-tight leading-[1.15]">
-              CO-CREATION <br class="hidden sm:inline"><span class="text-[#fbee41]">FOR SUCCESS</span>
-            </h1>
-            
-            <p class="text-lg sm:text-xl text-slate-200 font-normal max-w-2xl leading-relaxed">
-              TOPLINKS là mắt xích chiến lược cho sự chuyển đổi và phát triển bền vững của Doanh nghiệp. Chúng tôi khai phóng tiềm năng tổ chức, hiệp lực cùng ban lãnh đạo kiến tạo giải pháp thực chiến đạt chuẩn chất lượng cao.
-            </p>
+  <div id="mobile-menu" class="drawer-backdrop hidden">
+    <div class="drawer">
+      <div class="drawer-top">
+        <a href="index.html" class="brand">
+          <img src="assets/images/logo-mark.png" width="36" height="38" alt="">
+          <span class="brand-word">TOPLINKS</span>
+        </a>
+        <button id="close-mobile-menu" type="button" class="menu-btn" aria-label="Đóng menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+        </button>
+      </div>
+      <nav aria-label="Điều hướng trên di động">
+        <a href="index.html" data-nav-link="mobile" aria-current="page">Trang chủ</a>
+        <a href="about.html" data-nav-link="mobile">Về chúng tôi</a>
+        <a href="solutions.html" data-nav-link="mobile">Giải pháp</a>
+        <a href="training.html" data-nav-link="mobile">Đào tạo &amp; coaching</a>
+        <a href="tools.html" data-nav-link="mobile">Công cụ trắc nghiệm</a>
+        <a href="contact.html" data-nav-link="mobile">Liên hệ</a>
+      </nav>
+      <a href="contact.html#consultation-form" class="btn btn-deep">Đặt lịch tư vấn miễn phí</a>
+    </div>
+  </div>
 
-            <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-4">
-              <a href="contact.html" class="inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-xl font-bold text-[#0a0a0a] bg-[#fbee41] hover:bg-[#f0de2b] shadow-md hover:shadow-lg transition-all text-base">
-                <span>Đặt lịch tư vấn chiến lược</span>
-                <i data-lucide="arrow-up-right" class="w-5 h-5"></i>
-              </a>
-              <a href="solutions.html" class="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl font-semibold text-white bg-white/10 hover:bg-white/20 border border-white/20 transition-all text-base">
-                <span>Khám phá các giải pháp</span>
-                <i data-lucide="arrow-right" class="w-4 h-4"></i>
-              </a>
-            </div>
+  <main id="main">
 
-            <!-- Trust Metrics Strip -->
-            <div class="grid grid-cols-3 gap-6 pt-10 border-t border-white/15">
-              <div>
-                <p class="text-3xl font-extrabold text-[#fbee41] font-heading">100+</p>
-                <p class="text-xs sm:text-sm text-slate-300 mt-1">Doanh nghiệp đồng hành</p>
-              </div>
-              <div>
-                <p class="text-3xl font-extrabold text-white font-heading">98%</p>
-                <p class="text-xs sm:text-sm text-slate-300 mt-1">Tỷ lệ hài lòng & tái ký</p>
-              </div>
-              <div>
-                <p class="text-3xl font-extrabold text-[#fbee41] font-heading">15+</p>
-                <p class="text-xs sm:text-sm text-slate-300 mt-1">Năm kinh nghiệm chuyên gia</p>
-              </div>
-            </div>
+    <!-- Hero: full-bleed photograph -->
+    <section class="hero">
+      <div class="hero-media">
+        <img src="assets/images/hero-consulting.webp" width="2000" height="1334" alt="" fetchpriority="high">
+      </div>
+      <div class="wrap hero-body">
+        <div class="hero-copy">
+          <p class="kicker">Tư vấn quản trị và phát triển lãnh đạo</p>
+          <h1>Hiệp lực kiến tạo doanh nghiệp bứt phá</h1>
+          <p class="hero-lead">TOPLINKS đồng hành cùng ban lãnh đạo doanh nghiệp Việt trong tư vấn quản trị, đào tạo lãnh đạo, chuyển đổi AI và giải pháp nhân sự, từ chẩn đoán đến khi hệ thống vận hành.</p>
+          <div class="hero-actions">
+            <a href="contact.html#consultation-form" class="btn btn-gold">Đặt lịch tư vấn miễn phí <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            <a href="solutions.html" class="btn btn-ghost">Khám phá giải pháp</a>
           </div>
-
-          <!-- Hero Right: Real Workshop Picture Frame -->
-          <div class="lg:col-span-5 relative">
-            <div class="relative rounded-2xl overflow-hidden border border-white/20 shadow-2xl group photo-frame">
-              <img src="assets/images/hero-workshop.jpg" alt="Hoạt động đào tạo thực tế tại Toplinks" class="w-full h-[420px] object-cover">
-              
-              <!-- Subtle bottom overlay -->
-              <div class="absolute inset-0 bg-gradient-to-t from-[#153e4d] via-transparent to-transparent"></div>
-
-              <!-- Live Badge on Image -->
-              <div class="absolute top-4 left-4 bg-[#153e4d]/90 px-3.5 py-1.5 rounded-full border border-white/20 text-xs text-[#fbee41] font-bold flex items-center gap-2">
-                <i data-lucide="check-circle" class="w-3.5 h-3.5 text-[#fbee41]"></i>
-                Chương trình đào tạo thực chiến Toplinks
-              </div>
-
-              <!-- Content Overlay at bottom -->
-              <div class="absolute bottom-0 inset-x-0 p-6 text-white">
-                <p class="text-xs uppercase tracking-wider font-bold text-[#fbee41]">Co-Creation In Action</p>
-                <h3 class="text-lg font-bold font-heading mt-1">Hiệp lực cùng đội ngũ Quản lý & Lãnh đạo</h3>
-                <p class="text-xs text-slate-200 mt-1 leading-relaxed">
-                  Phương pháp đào tạo tương tác trực tiếp, tháo gỡ điểm nghẽn thực tế ngay tại lớp học.
-                </p>
-              </div>
-            </div>
+        </div>
+        <aside class="hero-card" aria-label="Đội ngũ chuyên gia TOPLINKS">
+          <div class="avatar-stack">
+            <img src="assets/images/experts/le-thi-thao-trang-thumb.webp" width="48" height="48" alt="">
+            <img src="assets/images/experts/nguyen-huynh-minh-duy-thumb.webp" width="48" height="48" alt="">
+            <img src="assets/images/experts/pham-mai-thumb.webp" width="48" height="48" alt="">
+            <img src="assets/images/experts/le-duy-quang-thumb.webp" width="48" height="48" alt="">
+            <img src="assets/images/experts/tong-thi-nhi-ha-thumb.webp" width="48" height="48" alt="">
+            <span class="avatar-more" aria-hidden="true">+9</span>
           </div>
+          <p>14 chuyên gia thực chiến<span>Tư vấn, đào tạo và coaching cho lãnh đạo</span></p>
+          <a href="#chuyen-gia" class="text-link">Gặp đội ngũ <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </aside>
+      </div>
+      <div class="wrap">
+        <ul class="hero-facts">
+          <li><strong data-count="116">116</strong><span>dự án đã hoàn thành</span></li>
+          <li><strong data-count="99" data-suffix="%">99%</strong><span>khách hàng hài lòng</span></li>
+          <li><strong data-count="100" data-suffix="+">100+</strong><span>doanh nghiệp đồng hành</span></li>
+        </ul>
+      </div>
+    </section>
 
+    <!-- Clients -->
+    <section class="clients" aria-labelledby="clients-title">
+      <div class="wrap">
+        <div class="clients-head">
+          <p id="clients-title">Được tin chọn bởi 100+ doanh nghiệp, tập đoàn và ngân hàng</p>
+          <span>Năng lượng, viễn thông, tài chính, sản xuất, giáo dục</span>
+        </div>
+        <div class="marquee">
+          <div class="marquee-track">
+            <ul>
+              <li><img src="assets/images/clients/pv-power.png" alt="PV Power" height="40"></li>
+              <li><img src="assets/images/clients/evn.png" alt="EVN" height="40"></li>
+              <li><img src="assets/images/clients/vnpt.png" alt="VNPT" height="40"></li>
+              <li><img src="assets/images/clients/techcombank.png" alt="Techcombank" height="40"></li>
+              <li><img src="assets/images/clients/toyota.png" alt="Toyota" height="40"></li>
+              <li><img src="assets/images/clients/vtv.png" alt="VTV" height="40"></li>
+              <li><img src="assets/images/clients/fpt.png" alt="FPT" height="40"></li>
+              <li><img src="assets/images/clients/aia.png" alt="AIA" height="40"></li>
+              <li><img src="assets/images/clients/vietinbank.png" alt="VietinBank" height="40"></li>
+              <li><img src="assets/images/clients/petrolimex.png" alt="Petrolimex" height="40"></li>
+              <li><img src="assets/images/clients/manulife.png" alt="Manulife" height="40"></li>
+              <li><img src="assets/images/clients/bidv.png" alt="BIDV" height="40"></li>
+              <li><img src="assets/images/clients/vietsovpetro.png" alt="Vietsovpetro" height="40"></li>
+              <li><img src="assets/images/clients/vpbank.png" alt="VPBank" height="40"></li>
+              <li><img src="assets/images/clients/ge.png" alt="GE" height="40"></li>
+              <li><img src="assets/images/clients/mb.png" alt="MB" height="40"></li>
+              <li><img src="assets/images/clients/evn-npt.png" alt="EVNNPT" height="40"></li>
+              <li><img src="assets/images/clients/pvcombank.png" alt="PVcomBank" height="40"></li>
+              <li><img src="assets/images/clients/teijin.png" alt="Teijin" height="40"></li>
+              <li><img src="assets/images/clients/nova-group.png" alt="Nova Group" height="40"></li>
+              <li><img src="assets/images/clients/apave.png" alt="Apave" height="40"></li>
+              <li><img src="assets/images/clients/duong-sat-viet-nam.png" alt="Đường sắt Việt Nam" height="40"></li>
+              <li><img src="assets/images/clients/money-forward.png" alt="Money Forward Việt Nam" height="40"></li>
+              <li><img src="assets/images/clients/aht-tech.png" alt="AHT Tech" height="40"></li>
+            </ul>
+            <ul aria-hidden="true">
+              <li><img src="assets/images/clients/pv-power.png" alt="" height="40"></li>
+              <li><img src="assets/images/clients/evn.png" alt="" height="40"></li>
+              <li><img src="assets/images/clients/vnpt.png" alt="" height="40"></li>
+              <li><img src="assets/images/clients/techcombank.png" alt="" height="40"></li>
+              <li><img src="assets/images/clients/toyota.png" alt="" height="40"></li>
+              <li><img src="assets/images/clients/vtv.png" alt="" height="40"></li>
+              <li><img src="assets/images/clients/fpt.png" alt="" height="40"></li>
+              <li><img src="assets/images/clients/aia.png" alt="" height="40"></li>
+              <li><img src="assets/images/clients/vietinbank.png" alt="" height="40"></li>
+              <li><img src="assets/images/clients/petrolimex.png" alt="" height="40"></li>
+              <li><img src="assets/images/clients/manulife.png" alt="" height="40"></li>
+              <li><img src="assets/images/clients/bidv.png" alt="" height="40"></li>
+              <li><img src="assets/images/clients/vietsovpetro.png" alt="" height="40"></li>
+              <li><img src="assets/images/clients/vpbank.png" alt="" height="40"></li>
+              <li><img src="assets/images/clients/ge.png" alt="" height="40"></li>
+              <li><img src="assets/images/clients/mb.png" alt="" height="40"></li>
+              <li><img src="assets/images/clients/evn-npt.png" alt="" height="40"></li>
+              <li><img src="assets/images/clients/pvcombank.png" alt="" height="40"></li>
+              <li><img src="assets/images/clients/teijin.png" alt="" height="40"></li>
+              <li><img src="assets/images/clients/nova-group.png" alt="" height="40"></li>
+              <li><img src="assets/images/clients/apave.png" alt="" height="40"></li>
+              <li><img src="assets/images/clients/duong-sat-viet-nam.png" alt="" height="40"></li>
+              <li><img src="assets/images/clients/money-forward.png" alt="" height="40"></li>
+              <li><img src="assets/images/clients/aht-tech.png" alt="" height="40"></li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Social Proof / Client Brand Strip -->
-    <section class="py-12 bg-white border-b border-slate-200">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <p class="text-xs font-bold uppercase tracking-wider text-slate-500 mb-6">
-          Khách hàng & Đối tác đồng hành cùng TOPLINKS
-        </p>
-        <div class="flex justify-center items-center py-2">
-          <img src="assets/images/clients-banner.png" alt="Khách hàng tiêu biểu của Toplinks" class="max-h-24 sm:max-h-28 w-auto object-contain">
+    <!-- Solutions -->
+    <section class="section" aria-labelledby="sol-title">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="kicker">Giải pháp</p>
+            <h2 id="sol-title" class="section-title">Một đối tác cho cả bộ máy và con người</h2>
+          </div>
+          <a href="solutions.html" class="btn btn-outline">Xem tất cả giải pháp</a>
         </div>
-      </div>
-    </section>
-
-    <!-- Core Solutions Bento Grid (Clean Taste Cards, Authentic Palette) -->
-    <section class="py-24 bg-[#f8fafb]">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        <div class="text-center max-w-3xl mx-auto mb-16">
-          <div class="badge-toplinks-navy mb-3">
-            <i data-lucide="layers" class="w-3.5 h-3.5"></i>
-            Hệ sinh thái giải pháp TOPLINKS
-          </div>
-          <h2 class="text-3xl sm:text-4xl font-bold font-heading text-[#0a0a0a] tracking-tight">
-            Giải Pháp Toàn Diện Cho Sự Tăng Trưởng Bền Vững
-          </h2>
-          <p class="mt-4 text-base sm:text-lg text-slate-600 leading-relaxed">
-            Chúng tôi tích hợp các trụ cột thiết yếu giúp doanh nghiệp xây dựng nền móng quản trị vững chắc, nâng tầm đội ngũ và đón đầu công nghệ.
-          </p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          
-          <!-- Card 1: Tư vấn doanh nghiệp (Featured with real photo) -->
-          <div class="lg:col-span-2 bg-white rounded-2xl border border-slate-200 taste-card overflow-hidden flex flex-col md:flex-row justify-between group">
-            <div class="p-8 flex-1 flex flex-col justify-between">
-              <div>
-                <span class="text-xs font-bold uppercase tracking-wider text-[#153e4d]">Trọng tâm chiến lược</span>
-                <h3 class="text-2xl font-bold font-heading text-[#0a0a0a] mt-2">
-                  Tư vấn Doanh nghiệp & Hệ thống Quản trị Hiệu suất (KPI / OKR)
-                </h3>
-                <p class="mt-4 text-slate-600 leading-relaxed text-sm">
-                  Tái cấu trúc tổ chức, chuẩn hóa quy trình vận hành và thiết lập hệ thống chỉ số đo lường hiệu suất thực chất. Giúp ban lãnh đạo kiểm soát bức tranh kinh doanh minh bạch và điều hướng mục tiêu chuẩn xác.
-                </p>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-5 text-xs text-slate-700">
-                  <div class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-[#153e4d]"></i> Thiết lập KPI/BSC gắn kết</div>
-                  <div class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-[#153e4d]"></i> Tối ưu hóa quy trình (SOP)</div>
-                  <div class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-[#153e4d]"></i> Khảo sát văn hóa doanh nghiệp</div>
-                  <div class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-[#153e4d]"></i> Chẩn đoán sức khỏe tổ chức</div>
-                </div>
-              </div>
-              <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
-                <a href="solutions.html" class="inline-flex items-center gap-2 text-sm font-bold text-[#153e4d] hover:text-[#165751]">
-                  Xem chi tiết giải pháp <i data-lucide="arrow-right" class="w-4 h-4"></i>
-                </a>
-                <span class="text-xs text-slate-500 font-medium">100+ Doanh nghiệp áp dụng</span>
-              </div>
+        <div class="bento">
+          <a href="solutions.html" class="tile tile-dark t-consult">
+            <h3>Tư vấn doanh nghiệp và hệ thống quản trị hiệu suất</h3>
+            <p>Tái cấu trúc tổ chức, chuẩn hóa quy trình và thiết lập hệ thống chỉ số gắn với kết quả kinh doanh.</p>
+            <ul class="tile-tags"><li>KPI</li><li>BSC</li><li>OKR</li><li>SOP</li></ul>
+            <span class="text-link">Tìm hiểu giải pháp <svg aria-hidden="true"><use href="#i-arrow"/></svg></span>
+          </a>
+          <a href="training.html" class="tile tile-photo t-training">
+            <img src="assets/images/tile-training.webp" width="768" height="900" alt="" loading="lazy">
+            <h3>Đào tạo năng lực lãnh đạo và quản lý</h3>
+            <p>Chương trình may đo cho lãnh đạo và quản lý cấp trung, đào tạo thực chiến ngay tại doanh nghiệp.</p>
+            <span class="text-link">Xem chương trình <svg aria-hidden="true"><use href="#i-arrow"/></svg></span>
+          </a>
+          <a href="training.html" class="tile tile-teal t-ai">
+            <h3>AI Competency: làm chủ trí tuệ nhân tạo</h3>
+            <p>Đưa AI vào HR, marketing, vận hành và báo cáo.</p>
+            <span class="text-link">Xem khóa AI <svg aria-hidden="true"><use href="#i-arrow"/></svg></span>
+          </a>
+          <a href="solutions.html" class="tile tile-paper t-hr">
+            <h3>Dịch vụ nhân sự toàn diện</h3>
+            <p>Tuyển dụng nhân sự cấp cao, hệ thống lương thưởng đãi ngộ và kiểm toán nhân sự.</p>
+            <span class="text-link">Xem dịch vụ <svg aria-hidden="true"><use href="#i-arrow"/></svg></span>
+          </a>
+          <a href="tools.html" class="tile tile-gold t-coach">
+            <h3>Coaching 1:1 và bộ công cụ đánh giá con người</h3>
+            <div>
+              <p>MBTI, DISC và sinh trắc vân tay, đọc kết quả cùng chuyên gia để xếp đúng người, đúng việc.</p>
+              <span class="text-link">Khám phá công cụ <svg aria-hidden="true"><use href="#i-arrow"/></svg></span>
             </div>
-            <div class="md:w-5/12 relative overflow-hidden bg-slate-100 min-h-[220px] photo-frame">
-              <img src="assets/images/corporate-consulting.jpg" alt="Tư vấn doanh nghiệp chuyên nghiệp" class="w-full h-full object-cover">
-            </div>
-          </div>
-
-          <!-- Card 2: Dịch vụ Đào tạo (Leadership) -->
-          <div class="bg-white rounded-2xl border border-slate-200 taste-card overflow-hidden flex flex-col justify-between group">
-            <div class="h-44 overflow-hidden relative photo-frame">
-              <img src="assets/images/leadership-training.jpg" alt="Đào tạo năng lực toàn diện cho lãnh đạo" class="w-full h-full object-cover">
-              <div class="absolute top-3 left-3 bg-[#153e4d] text-white px-2.5 py-1 rounded text-xs font-semibold">
-                Đào tạo thực chiến
-              </div>
-            </div>
-            <div class="p-6 flex-1 flex flex-col justify-between">
-              <div>
-                <h3 class="text-lg font-bold font-heading text-[#0a0a0a]">
-                  Đào Tạo Năng Lực Lãnh Đạo & Quản Lý
-                </h3>
-                <p class="mt-2 text-slate-600 text-xs sm:text-sm leading-relaxed">
-                  Các chương trình đào tạo may đo sát sườn cho cấp quản lý cấp trung, năng lực lãnh đạo thực chiến, kỹ năng giao tiếp và khởi nghiệp.
-                </p>
-              </div>
-              <div class="mt-4 pt-3 border-t border-slate-100">
-                <a href="training.html" class="inline-flex items-center gap-1.5 text-sm font-bold text-[#153e4d] hover:text-[#165751]">
-                  Khám phá chương trình <i data-lucide="arrow-right" class="w-4 h-4"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 3: AI Competency Framework -->
-          <div class="bg-white rounded-2xl border border-slate-200 taste-card overflow-hidden flex flex-col justify-between group">
-            <div class="h-44 overflow-hidden relative photo-frame">
-              <img src="assets/images/classroom.jpg" alt="Lớp học AI và Chuyển đổi số" class="w-full h-full object-cover">
-              <div class="absolute top-3 left-3 bg-[#165751] text-white px-2.5 py-1 rounded text-xs font-semibold">
-                HRAI & Chuyển đổi số
-              </div>
-            </div>
-            <div class="p-6 flex-1 flex flex-col justify-between">
-              <div>
-                <h3 class="text-lg font-bold font-heading text-[#0a0a0a]">
-                  AI Competency: Làm Chủ Trí Tuệ Nhân Tạo
-                </h3>
-                <p class="mt-2 text-slate-600 text-xs sm:text-sm leading-relaxed">
-                  Đưa AI vào quy trình làm việc thực tế: từ HR, Marketing, Quản trị vận hành cho đến tự động hóa phân tích báo cáo doanh nghiệp.
-                </p>
-              </div>
-              <div class="mt-4 pt-3 border-t border-slate-100">
-                <a href="training.html" class="inline-flex items-center gap-1.5 text-sm font-bold text-[#153e4d] hover:text-[#165751]">
-                  Tìm hiểu khóa AI <i data-lucide="arrow-right" class="w-4 h-4"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 4: Dịch vụ Nhân sự toàn diện -->
-          <div class="bg-white rounded-2xl border border-slate-200 taste-card overflow-hidden flex flex-col justify-between group">
-            <div class="h-44 overflow-hidden relative photo-frame">
-              <img src="assets/images/business-meeting.jpg" alt="Tư vấn nhân sự và quản trị" class="w-full h-full object-cover">
-              <div class="absolute top-3 left-3 bg-[#153e4d] text-white px-2.5 py-1 rounded text-xs font-semibold">
-                HR Solutions
-              </div>
-            </div>
-            <div class="p-6 flex-1 flex flex-col justify-between">
-              <div>
-                <h3 class="text-lg font-bold font-heading text-[#0a0a0a]">
-                  Dịch Vụ Nhân Sự Toàn Diện (HR Solutions)
-                </h3>
-                <p class="mt-2 text-slate-600 text-xs sm:text-sm leading-relaxed">
-                  Hỗ trợ doanh nghiệp tháo gỡ điểm nghẽn tuyển dụng nhân sự cấp cao, xây dựng hệ thống lương thưởng đãi ngộ (C&B) và kiểm toán nhân sự.
-                </p>
-              </div>
-              <div class="mt-4 pt-3 border-t border-slate-100">
-                <a href="solutions.html" class="inline-flex items-center gap-1.5 text-sm font-bold text-[#153e4d] hover:text-[#165751]">
-                  Xem chi tiết HR <i data-lucide="arrow-right" class="w-4 h-4"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 5: Coaching & Bộ công cụ MBTI, STVT -->
-          <div class="bg-white rounded-2xl border border-slate-200 taste-card overflow-hidden flex flex-col justify-between group">
-            <div class="h-44 overflow-hidden relative bg-slate-100 photo-frame">
-              <img src="assets/images/mbti-assessment.png" alt="Đánh giá tính cách MBTI và Sinh trắc vân tay" class="w-full h-full object-contain p-2">
-              <div class="absolute top-3 left-3 bg-[#165751] text-white px-2.5 py-1 rounded text-xs font-semibold">
-                Đánh giá khoa học
-              </div>
-            </div>
-            <div class="p-6 flex-1 flex flex-col justify-between">
-              <div>
-                <h3 class="text-lg font-bold font-heading text-[#0a0a0a]">
-                  Coaching 1:1 & Bộ Công Cụ Trắc Nghiệm
-                </h3>
-                <p class="mt-2 text-slate-600 text-xs sm:text-sm leading-relaxed">
-                  Khai vấn sự nghiệp cho cá nhân và thẩm định phong cách hành vi tổ chức thông qua bộ công cụ chuẩn quốc tế (MBTI, DISC, Sinh trắc vân tay).
-                </p>
-              </div>
-              <div class="mt-4 pt-3 border-t border-slate-100">
-                <a href="tools.html" class="inline-flex items-center gap-1.5 text-sm font-bold text-[#153e4d] hover:text-[#165751]">
-                  Khám phá công cụ <i data-lucide="arrow-right" class="w-4 h-4"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- Co-Creation 4-Step Methodology (Clean Numbered Stepper) -->
-    <section class="py-24 bg-white border-y border-slate-200">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        <div class="text-center max-w-3xl mx-auto mb-16">
-          <div class="badge-toplinks-navy mb-3">
-            <i data-lucide="workflow" class="w-3.5 h-3.5"></i>
-            Phương pháp luận độc quyền
-          </div>
-          <h2 class="text-3xl sm:text-4xl font-bold font-heading text-[#0a0a0a] tracking-tight">
-            Mô Hình "Hiệp Lực Kiến Tạo" 4 Giai Đoạn
-          </h2>
-          <p class="mt-4 text-base sm:text-lg text-slate-600 leading-relaxed">
-            Chúng tôi không đóng gói giải pháp lý thuyết suông. Mọi can thiệp đều bắt nguồn từ sự thấu hiểu sâu sắc và cùng hành động với khách hàng.
-          </p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-          
-          <div class="bg-[#f8fafb] rounded-2xl p-6 border border-slate-200 taste-card">
-            <div class="w-10 h-10 rounded-xl bg-[#153e4d] text-white font-bold flex items-center justify-center mb-4 text-sm font-heading shadow-sm">
-              01
-            </div>
-            <h3 class="text-lg font-bold font-heading text-[#0a0a0a]">Chẩn đoán & Thấu cảm</h3>
-            <p class="mt-2 text-sm text-slate-600 leading-relaxed">
-              Khảo sát hiện trạng, phỏng vấn sâu các cấp lãnh đạo và kiểm toán các điểm nghẽn vận hành thực tế.
-            </p>
-          </div>
-
-          <div class="bg-[#f8fafb] rounded-2xl p-6 border border-slate-200 taste-card">
-            <div class="w-10 h-10 rounded-xl bg-[#fbee41] text-[#0a0a0a] font-bold flex items-center justify-center mb-4 text-sm font-heading shadow-sm">
-              02
-            </div>
-            <h3 class="text-lg font-bold font-heading text-[#0a0a0a]">Đồng kiến tạo giải pháp</h3>
-            <p class="mt-2 text-sm text-slate-600 leading-relaxed">
-              Tổ chức các workshop đồng sáng tạo (Co-Creation) để xây dựng hệ thống quy trình, KPI và giải pháp may đo riêng.
-            </p>
-          </div>
-
-          <div class="bg-[#f8fafb] rounded-2xl p-6 border border-slate-200 taste-card">
-            <div class="w-10 h-10 rounded-xl bg-[#153e4d] text-white font-bold flex items-center justify-center mb-4 text-sm font-heading shadow-sm">
-              03
-            </div>
-            <h3 class="text-lg font-bold font-heading text-[#0a0a0a]">Triển khai & Chuyển giao</h3>
-            <p class="mt-2 text-sm text-slate-600 leading-relaxed">
-              Huấn luyện đào tạo nhân sự trực tiếp, giám sát thực thi giai đoạn đầu và chuyển giao toàn diện tài liệu, biểu mẫu.
-            </p>
-          </div>
-
-          <div class="bg-[#f8fafb] rounded-2xl p-6 border border-slate-200 taste-card">
-            <div class="w-10 h-10 rounded-xl bg-[#fbee41] text-[#0a0a0a] font-bold flex items-center justify-center mb-4 text-sm font-heading shadow-sm">
-              04
-            </div>
-            <h3 class="text-lg font-bold font-heading text-[#0a0a0a]">Đo lường & Tối ưu hóa</h3>
-            <p class="mt-2 text-sm text-slate-600 leading-relaxed">
-              Đánh giá chỉ số ROI, đo lường sự thay đổi hành vi tổ chức và hỗ trợ tinh chỉnh định kỳ để đảm bảo hiệu quả dài hạn.
-            </p>
-          </div>
-
-        </div>
-
-        <div class="mt-12 text-center">
-          <a href="about.html" class="inline-flex items-center gap-2 text-sm font-bold text-[#153e4d] hover:text-[#165751]">
-            <span>Tìm hiểu chi tiết triết lý hoạt động của Toplinks</span>
-            <i data-lucide="arrow-right" class="w-4 h-4"></i>
           </a>
         </div>
-
       </div>
     </section>
 
-    <!-- Leadership Spotlight on Homepage -->
-    <section class="py-20 bg-[#f8fafb]">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center max-w-2xl mx-auto mb-16">
-          <div class="badge-toplinks-navy mb-3">
-            <i data-lucide="award" class="w-3.5 h-3.5"></i>
-            Đội ngũ lãnh đạo & Cố vấn
-          </div>
-          <h2 class="text-3xl font-bold font-heading text-[#0a0a0a] tracking-tight">
-            Người Dẫn Dắt & Cố Vấn Của TOPLINKS
-          </h2>
-          <p class="mt-3 text-slate-600 text-sm">
-            Những chuyên gia thực chiến mang trọn tâm huyết đồng hành cùng sự bứt phá của doanh nghiệp.
-          </p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          
-          <!-- Leader 1: Lê Thị Thảo Trang -->
-          <div class="bg-white rounded-2xl border border-slate-200 p-6 flex flex-col sm:flex-row items-center gap-6 taste-card">
-            <img src="assets/images/avatar-thao-trang.png" alt="Lê Thị Thảo Trang - CEO Toplinks" class="w-28 h-28 rounded-2xl object-cover shadow-sm border border-slate-200 shrink-0">
-            <div>
-              <span class="text-xs font-bold uppercase tracking-wider text-[#153e4d]">Chief Executive Officer</span>
-              <h3 class="text-xl font-bold font-heading text-[#0a0a0a] mt-1">Lê Thị Thảo Trang</h3>
-              <p class="text-xs font-semibold text-slate-500 mb-2">CEO TOPLINKS</p>
-              <p class="text-xs text-slate-600 leading-relaxed">
-                Định hướng chiến lược phát triển hệ thống tư vấn và đưa triết lý "Hiệp lực kiến tạo" trở thành kim chỉ nam phụng sự các doanh nghiệp Việt.
-              </p>
-            </div>
-          </div>
-
-          <!-- Leader 2: Nguyễn Huỳnh Minh Duy -->
-          <div class="bg-white rounded-2xl border border-slate-200 p-6 flex flex-col sm:flex-row items-center gap-6 taste-card">
-            <img src="assets/images/avatar-minh-duy.png" alt="Nguyễn Huỳnh Minh Duy - Co-Founder Toplinks" class="w-28 h-28 rounded-2xl object-cover shadow-sm border border-slate-200 shrink-0">
-            <div>
-              <span class="text-xs font-bold uppercase tracking-wider text-[#153e4d]">Executive Leader & Founder</span>
-              <h3 class="text-xl font-bold font-heading text-[#0a0a0a] mt-1">Nguyễn Huỳnh Minh Duy</h3>
-              <p class="text-xs font-semibold text-slate-500 mb-2">Đồng Sáng Lập & Chuyên Gia Cố Vấn</p>
-              <p class="text-xs text-slate-600 leading-relaxed">
-                Chuyên gia tư vấn tái cấu trúc, thiết lập hệ thống KPI và tiên phong tích hợp AI vào nâng cao năng lực cạnh tranh cho doanh nghiệp.
-              </p>
-            </div>
-          </div>
-
+    <!-- Philosophy band -->
+    <section class="section band" aria-labelledby="method-title">
+      <div class="band-media"><img src="assets/images/workshop-discussion.jpg" width="1500" height="1000" alt="" loading="lazy"></div>
+      <div class="wrap">
+        <p class="kicker">Hiệp lực kiến tạo</p>
+        <h2 id="method-title">Chúng tôi không giao giải pháp rồi rời đi. Chúng tôi ngồi cùng bàn với bạn.</h2>
+        <ol class="steps">
+          <li class="step"><span class="step-num" aria-hidden="true">1</span><h3>Chẩn đoán và thấu cảm</h3><p>Khảo sát hiện trạng, phỏng vấn các cấp lãnh đạo, tìm điểm nghẽn thật.</p></li>
+          <li class="step"><span class="step-num" aria-hidden="true">2</span><h3>Đồng kiến tạo giải pháp</h3><p>Workshop cùng đội ngũ của bạn để xây quy trình và KPI may đo.</p></li>
+          <li class="step"><span class="step-num" aria-hidden="true">3</span><h3>Triển khai và chuyển giao</h3><p>Huấn luyện trực tiếp, kèm thực thi giai đoạn đầu, bàn giao đầy đủ.</p></li>
+          <li class="step"><span class="step-num" aria-hidden="true">4</span><h3>Đo lường và tối ưu</h3><p>Đánh giá ROI và thay đổi hành vi, tinh chỉnh định kỳ.</p></li>
+        </ol>
+        <div class="band-foot">
+          <p><strong>Bước 1 miễn phí.</strong> Một buổi chẩn đoán 1:1 để hai bên biết có nên đi tiếp.</p>
+          <a href="contact.html#consultation-form" class="btn btn-gold">Đặt lịch chẩn đoán <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
         </div>
       </div>
     </section>
 
-    <!-- Testimonials / Client Quotes -->
-    <section class="py-20 bg-white border-t border-slate-200">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        <div class="text-center max-w-2xl mx-auto mb-16">
-          <div class="badge-toplinks-navy mb-3">
-            <i data-lucide="message-square" class="w-3.5 h-3.5"></i>
-            Đánh giá từ khách hàng
+    <!-- Diagnostic -->
+    <section class="section paper" aria-labelledby="diag-title">
+      <div class="wrap diag diag-grid">
+        <fieldset>
+          <legend>
+            <span class="kicker">Bắt đầu từ vấn đề của bạn</span>
+            <h2 id="diag-title" class="section-title" style="margin-top:20px">Doanh nghiệp của bạn đang vướng ở đâu?</h2>
+          </legend>
+          <div class="diag-options">
+            <div class="diag-option"><input type="radio" name="diag" id="d1" value="1" checked><label for="d1">KPI đã có nhưng không kéo được doanh thu</label></div>
+            <div class="diag-option"><input type="radio" name="diag" id="d2" value="2"><label for="d2">Quản lý cấp trung giỏi chuyên môn, chưa biết dẫn dắt</label></div>
+            <div class="diag-option"><input type="radio" name="diag" id="d3" value="3"><label for="d3">Muốn đưa AI vào công việc nhưng chưa biết bắt đầu từ đâu</label></div>
+            <div class="diag-option"><input type="radio" name="diag" id="d4" value="4"><label for="d4">Tuyển sai người ở vị trí then chốt, khó giữ người giỏi</label></div>
+            <div class="diag-option"><input type="radio" name="diag" id="d5" value="5"><label for="d5">Chưa hiểu rõ thế mạnh của từng người trong đội</label></div>
           </div>
-          <h2 class="text-3xl sm:text-4xl font-bold font-heading text-[#0a0a0a] tracking-tight">
-            Khách Hàng Nói Gì Về TOPLINKS
-          </h2>
+        </fieldset>
+        <div>
+          <div class="answer" data-answer="1"><div class="answer-card">
+            <p class="answer-label">TOPLINKS đề xuất</p>
+            <h3>Tư vấn doanh nghiệp và hệ thống KPI/OKR</h3>
+            <ul>
+              <li><svg aria-hidden="true"><use href="#i-check"/></svg>Chẩn đoán bộ chỉ số hiện tại và chỗ nó lệch khỏi mục tiêu doanh thu</li>
+              <li><svg aria-hidden="true"><use href="#i-check"/></svg>Cùng trưởng phòng xây lại KPI/BSC gắn với kết quả kinh doanh</li>
+              <li><svg aria-hidden="true"><use href="#i-check"/></svg>Kèm vận hành giai đoạn đầu để chỉ số được dùng thật</li>
+            </ul>
+            <div class="answer-actions"><a href="contact.html#consultation-form" class="btn btn-gold">Đặt lịch tư vấn về KPI</a><a href="solutions.html" class="more">Xem giải pháp</a></div>
+          </div></div>
+          <div class="answer" data-answer="2"><div class="answer-card">
+            <p class="answer-label">TOPLINKS đề xuất</p>
+            <h3>Đào tạo năng lực lãnh đạo và quản lý</h3>
+            <ul>
+              <li><svg aria-hidden="true"><use href="#i-check"/></svg>Đánh giá năng lực đội quản lý cấp trung trước khi đào tạo</li>
+              <li><svg aria-hidden="true"><use href="#i-check"/></svg>Chương trình may đo theo tình huống thật của doanh nghiệp</li>
+              <li><svg aria-hidden="true"><use href="#i-check"/></svg>Theo dõi thay đổi hành vi sau khóa học</li>
+            </ul>
+            <div class="answer-actions"><a href="contact.html#consultation-form" class="btn btn-gold">Đặt lịch tư vấn đào tạo</a><a href="training.html" class="more">Xem chương trình</a></div>
+          </div></div>
+          <div class="answer" data-answer="3"><div class="answer-card">
+            <p class="answer-label">TOPLINKS đề xuất</p>
+            <h3>AI Competency: đưa AI vào quy trình làm việc</h3>
+            <ul>
+              <li><svg aria-hidden="true"><use href="#i-check"/></svg>Chọn 2–3 quy trình có lợi ích rõ nhất để bắt đầu</li>
+              <li><svg aria-hidden="true"><use href="#i-check"/></svg>Huấn luyện đội ngũ dùng AI trên chính công việc hằng ngày</li>
+              <li><svg aria-hidden="true"><use href="#i-check"/></svg>Đặt quy tắc sử dụng an toàn trước khi mở rộng</li>
+            </ul>
+            <div class="answer-actions"><a href="contact.html#consultation-form" class="btn btn-gold">Đặt lịch tư vấn về AI</a><a href="training.html" class="more">Xem khóa AI</a></div>
+          </div></div>
+          <div class="answer" data-answer="4"><div class="answer-card">
+            <p class="answer-label">TOPLINKS đề xuất</p>
+            <h3>Dịch vụ nhân sự toàn diện</h3>
+            <ul>
+              <li><svg aria-hidden="true"><use href="#i-check"/></svg>Tuyển dụng nhân sự cấp cao với bộ tiêu chí rõ ràng</li>
+              <li><svg aria-hidden="true"><use href="#i-check"/></svg>Hệ thống lương thưởng, đãi ngộ giữ được người giỏi</li>
+              <li><svg aria-hidden="true"><use href="#i-check"/></svg>Kiểm toán nhân sự để biết đội ngũ đang thiếu ở đâu</li>
+            </ul>
+            <div class="answer-actions"><a href="contact.html#consultation-form" class="btn btn-gold">Đặt lịch tư vấn nhân sự</a><a href="solutions.html" class="more">Xem dịch vụ</a></div>
+          </div></div>
+          <div class="answer" data-answer="5"><div class="answer-card">
+            <p class="answer-label">TOPLINKS đề xuất</p>
+            <h3>Coaching 1:1 và bộ công cụ đánh giá</h3>
+            <ul>
+              <li><svg aria-hidden="true"><use href="#i-check"/></svg>Đánh giá phong cách hành vi bằng MBTI, DISC, sinh trắc vân tay</li>
+              <li><svg aria-hidden="true"><use href="#i-check"/></svg>Đọc kết quả cùng chuyên gia để xếp đúng người, đúng việc</li>
+              <li><svg aria-hidden="true"><use href="#i-check"/></svg>Coaching 1:1 cho lãnh đạo khi doanh nghiệp mở rộng</li>
+            </ul>
+            <div class="answer-actions"><a href="contact.html#consultation-form" class="btn btn-gold">Đặt lịch tư vấn coaching</a><a href="tools.html" class="more">Xem công cụ</a></div>
+          </div></div>
+          <p id="diag-live" class="sr-only" aria-live="polite"></p>
         </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          
-          <div class="bg-[#f8fafb] p-8 rounded-2xl border border-slate-200 taste-card flex flex-col justify-between">
-            <div>
-              <div class="flex items-center gap-1 text-[#fbee41] mb-4">
-                <i data-lucide="star" class="w-4 h-4 fill-[#fbee41] text-[#fbee41]"></i>
-                <i data-lucide="star" class="w-4 h-4 fill-[#fbee41] text-[#fbee41]"></i>
-                <i data-lucide="star" class="w-4 h-4 fill-[#fbee41] text-[#fbee41]"></i>
-                <i data-lucide="star" class="w-4 h-4 fill-[#fbee41] text-[#fbee41]"></i>
-                <i data-lucide="star" class="w-4 h-4 fill-[#fbee41] text-[#fbee41]"></i>
-              </div>
-              <p class="text-slate-700 text-sm leading-relaxed italic">
-                "Điều tôi đánh giá cao nhất ở Toplinks là tinh thần 'Hiệp lực'. Họ không nói lý thuyết trên mây mà ngồi lại cùng từng trưởng phòng của chúng tôi để xây dựng bộ KPI gắn chặt với doanh thu."
-              </p>
-            </div>
-            <div class="mt-6 pt-6 border-t border-slate-200 flex items-center gap-3">
-              <div class="w-10 h-10 rounded-xl bg-[#153e4d] text-white font-bold flex items-center justify-center text-xs">
-                TL
-              </div>
-              <div>
-                <p class="text-sm font-bold text-[#0a0a0a]">Nguyễn Thành Long</p>
-                <p class="text-xs text-slate-500">Tổng Giám đốc - Tập đoàn Sản xuất & Phân phối</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="bg-[#f8fafb] p-8 rounded-2xl border border-slate-200 taste-card flex flex-col justify-between">
-            <div>
-              <div class="flex items-center gap-1 text-[#fbee41] mb-4">
-                <i data-lucide="star" class="w-4 h-4 fill-[#fbee41] text-[#fbee41]"></i>
-                <i data-lucide="star" class="w-4 h-4 fill-[#fbee41] text-[#fbee41]"></i>
-                <i data-lucide="star" class="w-4 h-4 fill-[#fbee41] text-[#fbee41]"></i>
-                <i data-lucide="star" class="w-4 h-4 fill-[#fbee41] text-[#fbee41]"></i>
-                <i data-lucide="star" class="w-4 h-4 fill-[#fbee41] text-[#fbee41]"></i>
-              </div>
-              <p class="text-slate-700 text-sm leading-relaxed italic">
-                "Khóa đào tạo AI Competency Framework do Toplinks tổ chức đã thay đổi tư duy làm việc của hơn 60 quản lý tại công ty tôi. Năng suất xử lý dữ liệu và tuyển dụng tăng rõ rệt sau 1 tháng."
-              </p>
-            </div>
-            <div class="mt-6 pt-6 border-t border-slate-200 flex items-center gap-3">
-              <div class="w-10 h-10 rounded-xl bg-[#165751] text-white font-bold flex items-center justify-center text-xs">
-                HM
-              </div>
-              <div>
-                <p class="text-sm font-bold text-[#0a0a0a]">Trần Hoàng Mai</p>
-                <p class="text-xs text-slate-500">Giám đốc Nhân sự (CHRO) - Chuỗi Bán lẻ</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="bg-[#f8fafb] p-8 rounded-2xl border border-slate-200 taste-card flex flex-col justify-between">
-            <div>
-              <div class="flex items-center gap-1 text-[#fbee41] mb-4">
-                <i data-lucide="star" class="w-4 h-4 fill-[#fbee41] text-[#fbee41]"></i>
-                <i data-lucide="star" class="w-4 h-4 fill-[#fbee41] text-[#fbee41]"></i>
-                <i data-lucide="star" class="w-4 h-4 fill-[#fbee41] text-[#fbee41]"></i>
-                <i data-lucide="star" class="w-4 h-4 fill-[#fbee41] text-[#fbee41]"></i>
-                <i data-lucide="star" class="w-4 h-4 fill-[#fbee41] text-[#fbee41]"></i>
-              </div>
-              <p class="text-slate-700 text-sm leading-relaxed italic">
-                "Chương trình Coaching 1:1 đã giúp tôi nhìn nhận lại cấu trúc quản trị công ty khi mở rộng quy mô từ 50 lên 200 nhân sự. Các chuyên gia Toplinks rất thực chiến và uy tín."
-              </p>
-            </div>
-            <div class="mt-6 pt-6 border-t border-slate-200 flex items-center gap-3">
-              <div class="w-10 h-10 rounded-xl bg-[#153e4d] text-white font-bold flex items-center justify-center text-xs">
-                ĐK
-              </div>
-              <div>
-                <p class="text-sm font-bold text-[#0a0a0a]">Vũ Đình Khoa</p>
-                <p class="text-xs text-slate-500">Founder & CEO - Công ty Công nghệ</p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
       </div>
     </section>
 
-    <!-- Bottom Conversion CTA Section (Confident Toplinks Navy & Yellow Button) -->
-    <section class="py-20 bg-[#153e4d] text-white relative">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 class="text-3xl sm:text-4xl font-bold font-heading max-w-2xl mx-auto leading-tight">
-          Cùng TOPLINKS Bứt Phá Hiệu Suất Doanh Nghiệp Ngay Hôm Nay
-        </h2>
-        <p class="mt-4 text-slate-200 max-w-xl mx-auto text-base sm:text-lg">
-          Hãy để đội ngũ chuyên gia của chúng tôi cùng bạn phân tích hiện trạng và kiến tạo giải pháp phát triển bền vững nhất.
-        </p>
-        <div class="mt-8 flex flex-col sm:flex-row justify-center items-center gap-4">
-          <a href="contact.html" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-[#fbee41] hover:bg-[#f0de2b] text-[#0a0a0a] font-bold text-base shadow-lg transition-all flex items-center justify-center gap-2">
-            <span>Đăng ký nhận buổi tư vấn chẩn đoán 1:1</span>
-            <i data-lucide="arrow-right" class="w-5 h-5"></i>
-          </a>
-          <a href="tools.html" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-white/10 hover:bg-white/20 text-white border border-white/20 font-semibold text-base transition-all flex items-center justify-center gap-2">
-            <i data-lucide="check-square" class="w-5 h-5 text-[#fbee41]"></i>
-            <span>Làm bài khảo sát nhanh</span>
-          </a>
+    <!-- Experts -->
+    <section class="section" id="chuyen-gia" aria-labelledby="experts-title">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="kicker">Đội ngũ chuyên gia</p>
+            <h2 id="experts-title" class="section-title">14 chuyên gia thực chiến đồng hành cùng bạn</h2>
+          </div>
+          <a href="about.html#team" class="btn btn-outline">Xem hồ sơ chuyên gia</a>
+        </div>
+        <ul class="experts-grid">
+          <li class="expert expert-lead"><div class="expert-photo"><img src="assets/images/experts/le-thi-thao-trang.webp" width="480" height="600" alt="Lê Thị Thảo Trang" loading="lazy"></div><h3>Lê Thị Thảo Trang</h3><p>CEO TOPLINKS</p></li>
+          <li class="expert"><div class="expert-photo"><img src="assets/images/experts/nguyen-huynh-minh-duy.webp" width="480" height="600" alt="Nguyễn Huỳnh Minh Duy" loading="lazy"></div><h3>Nguyễn Huỳnh Minh Duy</h3><p>Đồng sáng lập</p></li>
+          <li class="expert"><div class="expert-photo"><img src="assets/images/experts/tran-bang-viet.webp" width="480" height="600" alt="Trần Bằng Việt" loading="lazy"></div><h3>Trần Bằng Việt</h3></li>
+          <li class="expert"><div class="expert-photo"><img src="assets/images/experts/le-van.webp" width="480" height="600" alt="Lê Văn" loading="lazy"></div><h3>Lê Văn</h3></li>
+          <li class="expert"><div class="expert-photo"><img src="assets/images/experts/dinh-thi-thanh-thuy.webp" width="480" height="600" alt="Đinh Thị Thanh Thùy" loading="lazy"></div><h3>Đinh Thị Thanh Thùy</h3></li>
+          <li class="expert"><div class="expert-photo"><img src="assets/images/experts/vu-van-tuan.webp" width="480" height="600" alt="Vũ Văn Tuấn" loading="lazy"></div><h3>Vũ Văn Tuấn</h3></li>
+          <li class="expert"><div class="expert-photo"><img src="assets/images/experts/le-duy-quang.webp" width="480" height="600" alt="Lê Duy Quang" loading="lazy"></div><h3>Lê Duy Quang</h3></li>
+          <li class="expert"><div class="expert-photo"><img src="assets/images/experts/paul-huynh.webp" width="480" height="600" alt="Paul Huynh" loading="lazy"></div><h3>Paul Huynh</h3></li>
+          <li class="expert"><div class="expert-photo"><img src="assets/images/experts/pham-mai.webp" width="480" height="600" alt="Phạm Mai" loading="lazy"></div><h3>Phạm Mai</h3></li>
+          <li class="expert"><div class="expert-photo"><img src="assets/images/experts/le-quang-cuong.webp" width="480" height="600" alt="Lê Quang Cương" loading="lazy"></div><h3>Lê Quang Cương</h3></li>
+          <li class="expert"><div class="expert-photo"><img src="assets/images/experts/to-dinh-hieu.webp" width="480" height="600" alt="Tô Đình Hiếu" loading="lazy"></div><h3>Tô Đình Hiếu</h3></li>
+          <li class="expert"><div class="expert-photo"><img src="assets/images/experts/tong-thi-nhi-ha.webp" width="480" height="600" alt="Tống Thị Nhị Hà" loading="lazy"></div><h3>Tống Thị Nhị Hà</h3></li>
+          <li class="expert"><div class="expert-photo"><img src="assets/images/experts/pham-ngoc-bao.webp" width="480" height="600" alt="Phạm Ngọc Bảo" loading="lazy"></div><h3>Phạm Ngọc Bảo</h3></li>
+          <li class="expert"><div class="expert-photo"><img src="assets/images/experts/luong-nhan-dung.webp" width="480" height="600" alt="Lương Nhân Dũng" loading="lazy"></div><h3>Lương Nhân Dũng</h3></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Voices & events -->
+    <section class="section paper" aria-labelledby="voices-title">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="kicker">Khách hàng nói gì</p>
+            <h2 id="voices-title" class="section-title">Kết quả đo được, từ chính người trong cuộc</h2>
+          </div>
+        </div>
+        <div class="voices-grid">
+          <figure class="voice voice-lead">
+            <blockquote><p>Điều tôi đánh giá cao nhất ở TOPLINKS là tinh thần hiệp lực. Họ không nói lý thuyết mà ngồi lại cùng từng trưởng phòng của chúng tôi để xây bộ KPI gắn chặt với doanh thu.</p></blockquote>
+            <figcaption><span class="voice-initials" aria-hidden="true">TL</span><div><strong>Nguyễn Thành Long</strong><span>Tổng giám đốc, tập đoàn sản xuất và phân phối</span></div></figcaption>
+          </figure>
+          <figure class="event-card">
+            <img src="assets/images/event-hoi-thao-2024.webp" width="820" height="547" alt="Diễn giả phát biểu tại Hội thảo An toàn thông tin trong chuyển đổi số 2024, Cần Thơ" loading="lazy">
+            <figcaption><strong>Hội thảo An toàn thông tin trong chuyển đổi số 2024</strong><span>Cần Thơ, 24.09.2024</span></figcaption>
+          </figure>
+          <figure class="voice voice-small">
+            <blockquote><p>Khóa AI Competency Framework thay đổi cách làm việc của hơn 60 quản lý tại công ty tôi. Tốc độ xử lý dữ liệu và tuyển dụng tăng rõ sau một tháng.</p></blockquote>
+            <figcaption><span class="voice-initials" aria-hidden="true">HM</span><div><strong>Trần Hoàng Mai</strong><span>Giám đốc nhân sự, chuỗi bán lẻ</span></div></figcaption>
+          </figure>
+          <figure class="voice voice-small">
+            <blockquote><p>Coaching 1:1 giúp tôi nhìn lại cấu trúc quản trị khi công ty mở rộng từ 50 lên 200 nhân sự.</p></blockquote>
+            <figcaption><span class="voice-initials" aria-hidden="true">ĐK</span><div><strong>Vũ Đình Khoa</strong><span>Nhà sáng lập và CEO, công ty công nghệ</span></div></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="section" aria-labelledby="cta-title">
+      <div class="wrap">
+        <div class="cta-panel">
+          <div>
+            <h2 id="cta-title">Bắt đầu bằng một buổi chẩn đoán 1:1, miễn phí</h2>
+            <p>Chúng tôi lắng nghe, tìm điểm nghẽn gốc và gợi ý một đến hai việc nên làm trước, dù bạn có làm tiếp cùng TOPLINKS hay không.</p>
+          </div>
+          <div class="cta-actions">
+            <a href="contact.html#consultation-form" class="btn btn-gold">Đặt lịch tư vấn miễn phí <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            <a href="tel:0934011500" class="cta-phone"><span>Hoặc gọi hotline</span><strong>0934 011 500</strong></a>
+          </div>
         </div>
       </div>
     </section>
 
   </main>
 
-  <!-- Global Footer (Toplinks Authentic Address & Identity) -->
-  <footer class="bg-[#0f2c37] text-slate-300 text-sm border-t border-[#153e4d]">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
-        
-        <!-- Company Info -->
-        <div class="lg:col-span-2 space-y-4">
-          <div class="flex items-center gap-3">
-            <img src="assets/images/logo.png" alt="TOPLINKS" class="h-10 w-auto bg-white p-1.5 rounded-lg">
-            <div>
-              <span class="font-bold text-white text-lg font-heading">CÔNG TY TNHH TOPLINKS</span>
-              <p class="text-xs text-[#fbee41] uppercase font-bold">Co-Creation for Success</p>
-            </div>
-          </div>
-          <p class="text-slate-300 text-xs sm:text-sm leading-relaxed max-w-sm">
-            Nơi hội tụ các Chuyên gia hàng đầu đầy khát vọng cho sự đổi mới, hiệp lực kiến tạo nên các giải pháp tiên phong và tối ưu giúp Doanh nghiệp, Cá nhân sẵn sàng chuyển hóa để phát triển vượt trội và bền vững.
-          </p>
-          <div class="space-y-2 text-xs text-slate-200 pt-2">
-            <p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-[#fbee41] shrink-0"></i> Trụ sở chính: 152 Võ Văn Kiệt, Phường Nguyễn Thái Bình, Quận 1, Tp.HCM</p>
-            <p class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-[#fbee41] shrink-0"></i> Hotline: 0909.xxx.xxx</p>
-            <p class="flex items-center gap-2"><i data-lucide="mail" class="w-4 h-4 text-[#fbee41] shrink-0"></i> Email: academy@toplinks.vn | info@toplinks.vn</p>
-          </div>
-        </div>
-
-        <!-- Quick Links -->
-        <div>
-          <h4 class="text-white font-bold text-sm mb-4 font-heading">Về TOPLINKS</h4>
-          <ul class="space-y-2.5 text-xs sm:text-sm">
-            <li><a href="about.html" class="hover:text-[#fbee41] transition-colors">Giới thiệu chung</a></li>
-            <li><a href="about.html#philosophy" class="hover:text-[#fbee41] transition-colors">Triết lý Co-Creation</a></li>
-            <li><a href="about.html#team" class="hover:text-[#fbee41] transition-colors">Đội ngũ chuyên gia</a></li>
-            <li><a href="contact.html" class="hover:text-[#fbee41] transition-colors">Tin tức & Sự kiện</a></li>
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="index.html" class="brand">
+            <img src="assets/images/logo-mark-light.png" width="50" height="53" alt="">
+            <span class="brand-text"><span class="brand-word">TOPLINKS</span><span class="brand-tag">Hiệp lực kiến tạo</span></span>
+          </a>
+          <p><span class="slogan">Co-Creation for Success.</span> Công ty TNHH TOPLINKS, nơi các chuyên gia hiệp lực kiến tạo giải pháp giúp doanh nghiệp và cá nhân phát triển bền vững.</p>
+          <ul class="footer-contact">
+            <li><i data-lucide="map-pin" aria-hidden="true"></i><span>TINI Building, 152 Võ Văn Kiệt, phường Nguyễn Thái Bình, quận 1, TP.HCM</span></li>
+            <li><i data-lucide="phone" aria-hidden="true"></i><a href="tel:0934011500">0934 011 500</a></li>
+            <li><i data-lucide="mail" aria-hidden="true"></i><a href="mailto:academy@toplinks.vn">academy@toplinks.vn</a></li>
           </ul>
         </div>
-
-        <!-- Solutions -->
-        <div>
-          <h4 class="text-white font-bold text-sm mb-4 font-heading">Giải Pháp & Dịch Vụ</h4>
-          <ul class="space-y-2.5 text-xs sm:text-sm">
-            <li><a href="solutions.html" class="hover:text-[#fbee41] transition-colors">Tư vấn Doanh nghiệp</a></li>
-            <li><a href="solutions.html" class="hover:text-[#fbee41] transition-colors">Thiết lập hệ thống KPI</a></li>
-            <li><a href="solutions.html" class="hover:text-[#fbee41] transition-colors">Dịch vụ Nhân sự (HR)</a></li>
-            <li><a href="training.html" class="hover:text-[#fbee41] transition-colors">Đào tạo năng lực lãnh đạo</a></li>
-            <li><a href="training.html" class="hover:text-[#fbee41] transition-colors">AI Competency Framework</a></li>
-          </ul>
-        </div>
-
-        <!-- Tools & Support -->
-        <div>
-          <h4 class="text-white font-bold text-sm mb-4 font-heading">Công Cụ & Khảo Sát</h4>
-          <ul class="space-y-2.5 text-xs sm:text-sm">
-            <li><a href="tools.html" class="hover:text-[#fbee41] transition-colors">Sinh trắc vân tay (STVT)</a></li>
-            <li><a href="tools.html" class="hover:text-[#fbee41] transition-colors">Trắc nghiệm MBTI</a></li>
-            <li><a href="tools.html" class="hover:text-[#fbee41] transition-colors">Đánh giá hành vi DISC</a></li>
-            <li><a href="contact.html" class="hover:text-[#fbee41] transition-colors">Liên hệ hỗ trợ</a></li>
-          </ul>
-        </div>
-
+        <nav aria-labelledby="f-about">
+          <h2 id="f-about">Về TOPLINKS</h2>
+          <a href="about.html">Giới thiệu</a>
+          <a href="about.html#team">Đội ngũ chuyên gia</a>
+          <a href="about.html#philosophy">Triết lý Co-Creation</a>
+          <a href="contact.html">Liên hệ</a>
+        </nav>
+        <nav aria-labelledby="f-solutions">
+          <h2 id="f-solutions">Giải pháp</h2>
+          <a href="solutions.html">Tư vấn doanh nghiệp</a>
+          <a href="solutions.html">Dịch vụ nhân sự</a>
+          <a href="training.html">Đào tạo lãnh đạo</a>
+          <a href="training.html">AI Competency</a>
+        </nav>
+        <nav aria-labelledby="f-tools">
+          <h2 id="f-tools">Công cụ</h2>
+          <a href="tools.html">Sinh trắc vân tay</a>
+          <a href="tools.html">Trắc nghiệm MBTI</a>
+          <a href="tools.html">Đánh giá DISC</a>
+        </nav>
       </div>
-
-      <!-- Copyright & Bottom Strip -->
-      <div class="mt-12 pt-8 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-4">
-        <p>&copy; <span id="current-year">2026</span> CÔNG TY TNHH TOPLINKS. Tất cả quyền được bảo lưu.</p>
-        <div class="flex items-center gap-6">
-          <a href="contact.html" class="hover:text-white">Điều khoản dịch vụ</a>
-          <a href="contact.html" class="hover:text-white">Chính sách bảo mật</a>
-          <a href="contact.html" class="hover:text-white">Quy định bản quyền</a>
-        </div>
+      <div class="footer-bottom">
+        <p>© <span id="current-year">2026</span> Công ty TNHH TOPLINKS, MST 0317381989</p>
+        <nav aria-label="Pháp lý">
+          <a href="contact.html">Điều khoản dịch vụ</a>
+          <a href="contact.html">Chính sách bảo mật</a>
+        </nav>
       </div>
     </div>
   </footer>
 
-  <!-- Scripts -->
   <script src="assets/js/main.js"></script>
+  <script>
+
+    // Hero figures count up once on load
+    if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.querySelectorAll('[data-count]').forEach((el) => {
+        const end = +el.dataset.count, suffix = el.dataset.suffix || '', t0 = performance.now(), dur = 1400;
+        const tick = (t) => {
+          const k = Math.min((t - t0) / dur, 1), eased = 1 - Math.pow(1 - k, 3);
+          el.textContent = Math.round(end * eased) + suffix;
+          if (k < 1) requestAnimationFrame(tick);
+        };
+        requestAnimationFrame(tick);
+      });
+    }
+
+    // Announce the suggested programme when the diagnostic choice changes
+    document.querySelectorAll('input[name="diag"]').forEach((input) => {
+      input.addEventListener('change', () => {
+        const title = document.querySelector(`[data-answer="${input.value}"] h3`);
+        document.getElementById('diag-live').textContent = `Đề xuất: ${title.textContent}`;
+      });
+    });
+  </script>
 </body>
 </html>

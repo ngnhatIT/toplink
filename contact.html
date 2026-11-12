@@ -1,432 +1,297 @@
 <!DOCTYPE html>
-<html lang="vi" class="scroll-smooth" data-type="service">
+<html lang="vi">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="page-type" content="service">
-  <meta name="site-kind" content="other">
-  <title>Liên Hệ & Đặt Lịch Tư Vấn - TOPLINKS | Co-Creation For Success</title>
-  <meta name="description" content="Liên hệ với đội ngũ chuyên gia tư vấn TOPLINKS để được khảo sát sơ bộ và tư vấn chiến lược, đào tạo nhân sự, xây dựng KPI cho doanh nghiệp của bạn.">
-  
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <title>Liên hệ và đặt lịch tư vấn | TOPLINKS</title>
+  <meta name="description" content="Đặt lịch buổi chẩn đoán 1:1 miễn phí với chuyên gia TOPLINKS. Hotline 0934 011 500, email academy@toplinks.vn, văn phòng tại 152 Võ Văn Kiệt, quận 1, TP.HCM.">
+  <meta name="theme-color" content="#08353c">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/v2.css">
+  <link rel="stylesheet" href="assets/css/pages/contact.css">
+  <script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js" defer></script>
 </head>
-<body class="bg-white text-[#0a0a0a] font-sans antialiased flex flex-col min-h-screen">
+<body class="v2">
+  <a href="#main" class="skip-link">Bỏ qua, tới nội dung chính</a>
 
-  <!-- Top Announcement Bar -->
-  <div class="bg-[#153e4d] text-slate-200 text-xs py-2 px-4 border-b border-[#0f2c37]">
-    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
-      <div class="flex items-center gap-3">
-        <span class="inline-flex items-center gap-2 text-[#fbee41] font-semibold">
-          <i data-lucide="clock" class="w-3.5 h-3.5 fill-[#fbee41]"></i>
-          Cam kết: Đội ngũ chuyên gia phản hồi và xếp lịch tư vấn trong vòng 2 giờ làm việc
-        </span>
-      </div>
-      <div class="flex items-center gap-6 text-slate-300">
-        <a href="tel:0909000000" class="hover:text-[#fbee41] flex items-center gap-1.5 transition-colors">
-          <i data-lucide="phone" class="w-3.5 h-3.5 text-[#fbee41]"></i> Hotline: 0909.xxx.xxx
-        </a>
-        <a href="mailto:academy@toplinks.vn" class="hover:text-[#fbee41] flex items-center gap-1.5 transition-colors">
-          <i data-lucide="mail" class="w-3.5 h-3.5 text-[#fbee41]"></i> academy@toplinks.vn
-        </a>
-      </div>
-    </div>
-  </div>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  </svg>
 
-  <!-- Header -->
-  <header id="site-header" class="sticky top-0 z-40 bg-white/95 backdrop-blur-sm transition-all duration-200 border-b border-slate-200">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-      <a href="index.html" class="flex items-center gap-3 group focus:outline-none">
-        <img src="assets/images/logo.png" alt="TOPLINKS" class="h-11 w-auto object-contain transition-transform">
+  <header id="site-header" class="site-header">
+    <div class="wrap header-inner">
+      <a href="index.html" class="brand" aria-label="TOPLINKS, về trang chủ">
+        <img src="assets/images/logo-mark.png" width="44" height="46" alt="">
+        <span class="brand-text"><span class="brand-word">TOPLINKS</span><span class="brand-tag">Co-Creation for Success</span></span>
       </a>
-
-      <nav class="hidden md:flex items-center gap-8">
-        <a href="index.html" data-nav-link="desktop" class="text-sm font-medium text-slate-700 hover:text-[#153e4d] transition-colors py-1">Trang chủ</a>
-        <a href="about.html" data-nav-link="desktop" class="text-sm font-medium text-slate-700 hover:text-[#153e4d] transition-colors py-1">Về chúng tôi</a>
-        <a href="solutions.html" data-nav-link="desktop" class="text-sm font-medium text-slate-700 hover:text-[#153e4d] transition-colors py-1">Giải pháp Doanh nghiệp</a>
-        <a href="training.html" data-nav-link="desktop" class="text-sm font-medium text-slate-700 hover:text-[#153e4d] transition-colors py-1">Đào tạo & Coaching</a>
-        <a href="tools.html" data-nav-link="desktop" class="text-sm font-medium text-slate-700 hover:text-[#153e4d] transition-colors py-1">Bộ công cụ trắc nghiệm</a>
-        <a href="contact.html" data-nav-link="desktop" class="text-sm font-semibold text-[#153e4d] py-1 border-b-2 border-[#153e4d]">Liên hệ</a>
+      <nav class="nav" aria-label="Điều hướng chính">
+        <a href="index.html" data-nav-link="desktop">Trang chủ</a>
+        <a href="about.html" data-nav-link="desktop">Về chúng tôi</a>
+        <a href="solutions.html" data-nav-link="desktop">Giải pháp</a>
+        <a href="training.html" data-nav-link="desktop">Đào tạo &amp; coaching</a>
+        <a href="tools.html" data-nav-link="desktop">Công cụ trắc nghiệm</a>
+        <a href="contact.html" data-nav-link="desktop" aria-current="page">Liên hệ</a>
       </nav>
-
-      <div class="hidden md:flex items-center gap-3">
-        <a href="contact.html" class="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-lg text-sm font-bold text-[#0a0a0a] bg-[#fbee41] hover:bg-[#f0de2b] shadow-sm transition-all">
-          <span>Đăng ký tư vấn</span>
-          <i data-lucide="arrow-right" class="w-4 h-4"></i>
-        </a>
-      </div>
-
-      <button id="mobile-menu-btn" type="button" class="md:hidden p-2 rounded-lg text-slate-700 hover:text-[#153e4d]" aria-label="Mở menu">
-        <i data-lucide="menu" class="w-6 h-6"></i>
-      </button>
-    </div>
-
-    <!-- Mobile Drawer -->
-    <div id="mobile-menu" class="hidden md:hidden fixed inset-0 z-50 bg-[#153e4d]/70 backdrop-blur-sm">
-      <div class="fixed inset-y-0 right-0 w-full max-w-xs bg-white shadow-2xl p-6 flex flex-col justify-between">
-        <div>
-          <div class="flex items-center justify-between pb-6 border-b border-slate-100">
-            <img src="assets/images/logo.png" alt="TOPLINKS" class="h-9 w-auto object-contain">
-            <button id="close-mobile-menu" class="p-2 text-slate-500 hover:text-slate-900">
-              <i data-lucide="x" class="w-5 h-5"></i>
-            </button>
-          </div>
-          <div class="flex flex-col gap-4 mt-6">
-            <a href="index.html" data-nav-link="mobile" class="text-base font-medium text-slate-800 hover:text-[#153e4d] py-2 border-b border-slate-100">Trang chủ</a>
-            <a href="about.html" data-nav-link="mobile" class="text-base font-medium text-slate-800 hover:text-[#153e4d] py-2 border-b border-slate-100">Về chúng tôi</a>
-            <a href="solutions.html" data-nav-link="mobile" class="text-base font-medium text-slate-800 hover:text-[#153e4d] py-2 border-b border-slate-100">Giải pháp Doanh nghiệp</a>
-            <a href="training.html" data-nav-link="mobile" class="text-base font-medium text-slate-800 hover:text-[#153e4d] py-2 border-b border-slate-100">Đào tạo & Coaching</a>
-            <a href="tools.html" data-nav-link="mobile" class="text-base font-medium text-slate-800 hover:text-[#153e4d] py-2 border-b border-slate-100">Bộ công cụ trắc nghiệm</a>
-            <a href="contact.html" data-nav-link="mobile" class="text-base font-semibold text-[#153e4d] py-2">Liên hệ</a>
-          </div>
-        </div>
-        <div class="pt-6 border-t border-slate-100">
-          <a href="contact.html" class="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-lg bg-[#fbee41] hover:bg-[#f0de2b] text-[#0a0a0a] font-bold text-center text-sm shadow">
-            <span>Đăng ký tư vấn miễn phí</span>
-            <i data-lucide="arrow-right" class="w-4 h-4"></i>
-          </a>
-        </div>
+      <div class="header-actions">
+        <a href="tel:0934011500" class="header-phone"><svg aria-hidden="true"><use href="#i-phone"/></svg>0934 011 500</a>
+        <a href="contact.html#consultation-form" class="btn btn-deep header-cta">Đặt lịch tư vấn</a>
+        <button id="mobile-menu-btn" type="button" class="menu-btn" aria-label="Mở menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg>
+        </button>
       </div>
     </div>
   </header>
 
-  <main class="flex-grow">
-    
-    <!-- Hero Banner (Toplinks Deep Navy Style) -->
-    <section class="bg-[#153e4d] text-white py-20 relative">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div class="max-w-3xl">
-          <div class="badge-toplinks mb-4">
-            <i data-lucide="message-square" class="w-3.5 h-3.5"></i>
-            Kết nối cùng chuyên gia
-          </div>
-          <h1 class="text-4xl sm:text-5xl font-bold font-heading text-white tracking-tight">
-            Liên Hệ & Đặt Lịch Tư Vấn Chiến Lược
-          </h1>
-          <p class="mt-6 text-lg text-slate-200 leading-relaxed font-normal">
-            Mỗi doanh nghiệp là một thực thể độc đáo. Hãy chia sẻ với TOPLINKS về thách thức bạn đang gặp phải, chúng tôi sẵn sàng lắng nghe và cùng bạn tháo gỡ.
-          </p>
-        </div>
+  <div id="mobile-menu" class="drawer-backdrop hidden">
+    <div class="drawer">
+      <div class="drawer-top">
+        <a href="index.html" class="brand">
+          <img src="assets/images/logo-mark.png" width="36" height="38" alt="">
+          <span class="brand-word">TOPLINKS</span>
+        </a>
+        <button id="close-mobile-menu" type="button" class="menu-btn" aria-label="Đóng menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+        </button>
+      </div>
+      <nav aria-label="Điều hướng trên di động">
+        <a href="index.html" data-nav-link="mobile">Trang chủ</a>
+        <a href="about.html" data-nav-link="mobile">Về chúng tôi</a>
+        <a href="solutions.html" data-nav-link="mobile">Giải pháp</a>
+        <a href="training.html" data-nav-link="mobile">Đào tạo &amp; coaching</a>
+        <a href="tools.html" data-nav-link="mobile">Công cụ trắc nghiệm</a>
+        <a href="contact.html" data-nav-link="mobile" aria-current="page">Liên hệ</a>
+      </nav>
+      <a href="contact.html#consultation-form" class="btn btn-deep">Đặt lịch tư vấn miễn phí</a>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <!-- Compact page hero -->
+    <section class="page-hero compact">
+      <div class="wrap">
+        <nav class="crumbs" aria-label="Đường dẫn">
+          <a href="index.html">Trang chủ</a><span aria-hidden="true">/</span><span aria-current="page">Liên hệ</span>
+        </nav>
+        <h1>Đặt lịch buổi chẩn đoán 1:1</h1>
+        <p class="lead">Chia sẻ với TOPLINKS thách thức doanh nghiệp đang gặp. Chuyên gia phản hồi và xếp lịch trao đổi trong vòng 2 giờ làm việc.</p>
       </div>
     </section>
 
-    <!-- Main Contact Grid -->
-    <section class="py-20 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
-          
-          <!-- Left Info Column with Real Office / Team Photo -->
-          <div class="lg:col-span-5 space-y-8">
-            <div>
-              <h2 class="text-2xl font-bold font-heading text-[#0a0a0a]">
-                Thông Tin Trụ Sở & Hỗ Trợ
-              </h2>
-              <p class="text-sm text-slate-600 mt-2 leading-relaxed">
-                Đội ngũ cố vấn của chúng tôi làm việc trực tiếp tại hai đầu cầu kinh tế trọng điểm TP. Hồ Chí Minh và Hà Nội.
-              </p>
-            </div>
+    <!-- Form + contact info -->
+    <section class="section">
+      <div class="wrap split contact-split">
 
-            <!-- Team Activity Image -->
-            <div class="rounded-2xl overflow-hidden shadow-sm border border-slate-200 photo-frame">
-              <img src="assets/images/about-team.jpg" alt="Văn phòng làm việc Toplinks" class="w-full h-44 object-cover">
-            </div>
-
-            <!-- Offices -->
-            <div class="space-y-4">
-              <div class="flex items-start gap-4 p-5 rounded-2xl bg-[#f8fafb] border border-slate-200 taste-card">
-                <div class="w-10 h-10 rounded-xl bg-[#153e4d]/10 text-[#153e4d] flex items-center justify-center shrink-0">
-                  <i data-lucide="map-pin" class="w-5 h-5"></i>
-                </div>
-                <div>
-                  <h4 class="font-bold text-[#0a0a0a] text-sm">Trụ sở chính TP. Hồ Chí Minh</h4>
-                  <p class="text-xs text-slate-600 mt-1 leading-relaxed">
-                    152 Võ Văn Kiệt, Phường Nguyễn Thái Bình, Quận 1, Tp.HCM
-                  </p>
-                  <p class="text-xs text-[#153e4d] font-semibold mt-1">Giờ mở cửa: 08:30 - 18:00 (Thứ 2 - Thứ 6)</p>
-                </div>
+        <div class="form-card">
+          <h2 id="form-title">Phiếu đăng ký tư vấn</h2>
+          <p>Điền thông tin bên dưới, chuyên viên phụ trách sẽ gọi lại để chọn thời gian thuận tiện nhất. Các mục có ghi “bắt buộc” cần được điền.</p>
+          <form id="consultation-form" onsubmit="handleFormSubmit(event)" aria-labelledby="form-title">
+            <div class="form-grid">
+              <div class="field">
+                <label for="fullName">Họ và tên <span class="req">(bắt buộc)</span></label>
+                <input type="text" id="fullName" name="fullName" required autocomplete="name" placeholder="Nguyễn Văn A">
               </div>
-
-              <div class="flex items-start gap-4 p-5 rounded-2xl bg-[#f8fafb] border border-slate-200 taste-card">
-                <div class="w-10 h-10 rounded-xl bg-[#165751]/10 text-[#165751] flex items-center justify-center shrink-0">
-                  <i data-lucide="map-pin" class="w-5 h-5"></i>
-                </div>
-                <div>
-                  <h4 class="font-bold text-[#0a0a0a] text-sm">Văn phòng Hà Nội</h4>
-                  <p class="text-xs text-slate-600 mt-1 leading-relaxed">
-                    Tầng 6, Tòa nhà Tri thức, Phố Duy Tân, Quận Cầu Giấy, Hà Nội
-                  </p>
-                  <p class="text-xs text-[#165751] font-semibold mt-1">Hỗ trợ đối tác & Doanh nghiệp phía Bắc</p>
-                </div>
+              <div class="field">
+                <label for="phoneNumber">Số điện thoại <span class="req">(bắt buộc)</span></label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" required autocomplete="tel" inputmode="tel" placeholder="Số di động của bạn">
               </div>
-            </div>
-
-            <!-- Communication Channels -->
-            <div class="p-6 rounded-2xl bg-[#153e4d] text-white space-y-4">
-              <h4 class="font-bold text-sm tracking-wide text-[#fbee41] uppercase">Kênh liên hệ trực tiếp</h4>
-              <div class="space-y-3 text-xs sm:text-sm">
-                <a href="tel:0909000000" class="flex items-center gap-3 text-slate-200 hover:text-white transition-colors">
-                  <i data-lucide="phone-call" class="w-4 h-4 text-[#fbee41]"></i> Hotline Doanh nghiệp: 0909.xxx.xxx
-                </a>
-                <a href="mailto:info@toplinks.vn" class="flex items-center gap-3 text-slate-200 hover:text-white transition-colors">
-                  <i data-lucide="mail" class="w-4 h-4 text-[#fbee41]"></i> Tư vấn dự án: info@toplinks.vn
-                </a>
-                <a href="mailto:academy@toplinks.vn" class="flex items-center gap-3 text-slate-200 hover:text-white transition-colors">
-                  <i data-lucide="graduation-cap" class="w-4 h-4 text-[#fbee41]"></i> Đào tạo & Học viện: academy@toplinks.vn
-                </a>
+              <div class="field">
+                <label for="workEmail">Email công việc <span class="req">(bắt buộc)</span></label>
+                <input type="email" id="workEmail" name="workEmail" required autocomplete="email" placeholder="ten@congty.vn">
+              </div>
+              <div class="field">
+                <label for="companyName">Tên doanh nghiệp hoặc tổ chức <span class="req">(bắt buộc)</span></label>
+                <input type="text" id="companyName" name="companyName" required autocomplete="organization" placeholder="Công ty CP ABC">
+              </div>
+              <div class="field">
+                <label for="companySize">Quy mô nhân sự</label>
+                <select id="companySize" name="companySize">
+                  <option value="under_50">Dưới 50 nhân sự</option>
+                  <option value="50_200" selected>Từ 50 đến 200 nhân sự</option>
+                  <option value="200_500">Từ 200 đến 500 nhân sự</option>
+                  <option value="over_500">Trên 500 nhân sự</option>
+                  <option value="individual">Cá nhân (coaching hoặc trắc nghiệm)</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="serviceInterest">Dịch vụ quan tâm chính <span class="req">(bắt buộc)</span></label>
+                <select id="serviceInterest" name="serviceInterest" required>
+                  <option value="consulting">Tư vấn chiến lược và tái cấu trúc</option>
+                  <option value="kpi">Thiết lập hệ thống KPI, OKR</option>
+                  <option value="training_ai">Đào tạo AI Competency Framework</option>
+                  <option value="training_leadership">Đào tạo lãnh đạo và quản lý</option>
+                  <option value="hr_solutions">Dịch vụ nhân sự (tuyển dụng cấp cao, lương 3P)</option>
+                  <option value="coaching_1on1">Coaching 1:1</option>
+                  <option value="assessment_stvt">Công cụ đánh giá (sinh trắc vân tay, MBTI, DISC)</option>
+                </select>
+              </div>
+              <div class="field full">
+                <label for="challengeNote">Thách thức hoặc mục tiêu ưu tiên hiện nay</label>
+                <textarea id="challengeNote" name="challengeNote" rows="4" placeholder="Ví dụ: cần chuẩn hóa lại KPI cho đội bán hàng và quản lý cấp trung trong quý 3"></textarea>
+              </div>
+              <div class="form-actions full">
+                <button type="submit" id="submit-btn" class="btn btn-deep">Gửi yêu cầu đặt lịch <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+                <p class="form-note">Khi gửi, bạn đồng ý để TOPLINKS dùng thông tin này nhằm liên hệ và xếp lịch tư vấn. <a href="contact.html">Chính sách bảo mật</a></p>
               </div>
             </div>
+          </form>
+        </div>
 
-            <!-- Security Commitment -->
-            <div class="p-4 rounded-xl bg-emerald-50 border border-emerald-200 text-xs text-emerald-900 flex items-start gap-3">
-              <i data-lucide="shield-check" class="w-5 h-5 text-emerald-600 shrink-0 mt-0.5"></i>
-              <div>
-                <p class="font-bold">Cam kết bảo mật dữ liệu tuyệt đối (NDA):</p>
-                <p class="text-emerald-800 mt-0.5">Mọi thông tin về tình hình tài chính, nhân sự và chiến lược doanh nghiệp của bạn cung cấp đều được bảo vệ nghiêm ngặt theo quy chuẩn pháp lý.</p>
-              </div>
-            </div>
+        <div class="contact-info">
+          <p class="kicker">Buổi chẩn đoán miễn phí</p>
+          <h2 class="section-title">Buổi chẩn đoán gồm những gì</h2>
+          <ul class="check-list">
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg>Chuyên gia lắng nghe bối cảnh và mục tiêu của doanh nghiệp bạn</li>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg>Cùng tìm điểm nghẽn gốc, không dừng ở triệu chứng</li>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg>Gợi ý một đến hai việc nên làm trước, dù bạn có làm tiếp cùng TOPLINKS hay không</li>
+          </ul>
 
-          </div>
+          <h3>Liên hệ trực tiếp</h3>
+          <ul class="info-list">
+            <li>
+              <span class="info-icon"><svg aria-hidden="true"><use href="#i-phone"/></svg></span>
+              <div><strong>Hotline</strong><a href="tel:0934011500">0934 011 500</a></div>
+            </li>
+            <li>
+              <span class="info-icon"><i data-lucide="mail" aria-hidden="true"></i></span>
+              <div><strong>Email</strong><a href="mailto:info@toplinks.vn">info@toplinks.vn (tư vấn dự án)</a><a href="mailto:academy@toplinks.vn">academy@toplinks.vn (đào tạo và học viện)</a></div>
+            </li>
+            <li>
+              <span class="info-icon"><i data-lucide="map-pin" aria-hidden="true"></i></span>
+              <div><strong>Trụ sở chính TP.HCM</strong><span>TINI Building, 152 Võ Văn Kiệt, phường Nguyễn Thái Bình, quận 1, TP.HCM</span><span>Giờ mở cửa: 8:30 đến 18:00, thứ Hai đến thứ Sáu</span></div>
+            </li>
+            <li>
+              <span class="info-icon"><i data-lucide="building-2" aria-hidden="true"></i></span>
+              <div><strong>Văn phòng Hà Nội</strong><span>Tầng 6, tòa nhà Tri thức, phố Duy Tân, quận Cầu Giấy, Hà Nội</span><span>Hỗ trợ đối tác và doanh nghiệp phía Bắc</span></div>
+            </li>
+            <li>
+              <span class="info-icon"><i data-lucide="file-text" aria-hidden="true"></i></span>
+              <div><strong>Công ty TNHH TOPLINKS</strong><span>Mã số thuế 0317381989</span></div>
+            </li>
+          </ul>
 
-          <!-- Right Smart Form Column -->
-          <div class="lg:col-span-7">
-            <div class="bg-white border border-slate-200 rounded-3xl p-6 sm:p-10 shadow-sm taste-card">
-              <div class="mb-6">
-                <h3 class="text-xl font-bold font-heading text-[#0a0a0a]">
-                  Phiếu Đăng Ký Tư Vấn Doanh Nghiệp
-                </h3>
-                <p class="text-xs sm:text-sm text-slate-500 mt-1">
-                  Vui lòng điền thông tin bên dưới để chuyên viên phụ trách liên hệ xếp lịch trao đổi thuận tiện nhất.
-                </p>
-              </div>
-
-              <form id="consultation-form" onsubmit="handleFormSubmit(event)" class="space-y-4">
-                
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div>
-                    <label for="fullName" class="block text-xs font-bold text-slate-700 mb-1">Họ và tên *</label>
-                    <input type="text" id="fullName" required placeholder="Nguyễn Văn A" class="w-full px-4 py-2.5 text-sm rounded-xl border border-slate-200 focus:border-[#153e4d] focus:ring-2 focus:ring-[#153e4d]/20 outline-none transition-all">
-                  </div>
-                  <div>
-                    <label for="phoneNumber" class="block text-xs font-bold text-slate-700 mb-1">Số điện thoại *</label>
-                    <input type="tel" id="phoneNumber" required placeholder="0909 xxx xxx" class="w-full px-4 py-2.5 text-sm rounded-xl border border-slate-200 focus:border-[#153e4d] focus:ring-2 focus:ring-[#153e4d]/20 outline-none transition-all">
-                  </div>
-                </div>
-
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div>
-                    <label for="workEmail" class="block text-xs font-bold text-slate-700 mb-1">Email công việc *</label>
-                    <input type="email" id="workEmail" required placeholder="ceo@company.com" class="w-full px-4 py-2.5 text-sm rounded-xl border border-slate-200 focus:border-[#153e4d] focus:ring-2 focus:ring-[#153e4d]/20 outline-none transition-all">
-                  </div>
-                  <div>
-                    <label for="companyName" class="block text-xs font-bold text-slate-700 mb-1">Tên Doanh nghiệp / Tổ chức *</label>
-                    <input type="text" id="companyName" required placeholder="Công ty CP ABC" class="w-full px-4 py-2.5 text-sm rounded-xl border border-slate-200 focus:border-[#153e4d] focus:ring-2 focus:ring-[#153e4d]/20 outline-none transition-all">
-                  </div>
-                </div>
-
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div>
-                    <label for="companySize" class="block text-xs font-bold text-slate-700 mb-1">Quy mô nhân sự</label>
-                    <select id="companySize" class="w-full px-4 py-2.5 text-sm rounded-xl border border-slate-200 focus:border-[#153e4d] focus:ring-2 focus:ring-[#153e4d]/20 outline-none transition-all bg-white text-slate-700">
-                      <option value="under_50">Dưới 50 nhân sự</option>
-                      <option value="50_200" selected>Từ 50 - 200 nhân sự</option>
-                      <option value="200_500">Từ 200 - 500 nhân sự</option>
-                      <option value="over_500">Trên 500 nhân sự</option>
-                      <option value="individual">Cá nhân (Coaching / Trắc nghiệm)</option>
-                    </select>
-                  </div>
-                  <div>
-                    <label for="serviceInterest" class="block text-xs font-bold text-slate-700 mb-1">Dịch vụ quan tâm chính *</label>
-                    <select id="serviceInterest" required class="w-full px-4 py-2.5 text-sm rounded-xl border border-slate-200 focus:border-[#153e4d] focus:ring-2 focus:ring-[#153e4d]/20 outline-none transition-all bg-white text-slate-700">
-                      <option value="consulting">Tư vấn Chiến lược & Tái cấu trúc</option>
-                      <option value="kpi">Thiết lập Hệ thống KPI / OKRs</option>
-                      <option value="training_ai">Đào tạo AI Competency Framework</option>
-                      <option value="training_leadership">Đào tạo Lãnh đạo & Quản lý</option>
-                      <option value="hr_solutions">Dịch vụ Nhân sự (Headhunt, Lương 3P)</option>
-                      <option value="coaching_1on1">Khai vấn cá nhân (Coaching 1:1)</option>
-                      <option value="assessment_stvt">Bộ công cụ đánh giá (STVT, MBTI, DISC)</option>
-                    </select>
-                  </div>
-                </div>
-
-                <div>
-                  <label for="challengeNote" class="block text-xs font-bold text-slate-700 mb-1">Thách thức hoặc mục tiêu ưu tiên hiện nay</label>
-                  <textarea id="challengeNote" rows="3" placeholder="Ví dụ: Cần chuẩn hóa lại KPI cho đội ngũ bán hàng và quản lý cấp trung trong quý 3..." class="w-full px-4 py-2.5 text-sm rounded-xl border border-slate-200 focus:border-[#153e4d] focus:ring-2 focus:ring-[#153e4d]/20 outline-none transition-all"></textarea>
-                </div>
-
-                <div class="pt-2">
-                  <button type="submit" id="submit-btn" class="w-full py-3.5 px-6 rounded-xl bg-[#fbee41] hover:bg-[#f0de2b] text-[#0a0a0a] font-bold text-sm shadow transition-all flex items-center justify-center gap-2">
-                    <span>Gửi yêu cầu tư vấn chiến lược</span>
-                    <i data-lucide="send" class="w-4 h-4"></i>
-                  </button>
-                  <p class="text-center text-[11px] text-slate-400 mt-2.5">
-                    Bằng việc nhấn gửi, bạn đồng ý với chính sách xử lý thông tin bảo mật của Toplinks.
-                  </p>
-                </div>
-
-              </form>
-            </div>
-          </div>
-
+          <p class="nda-note"><strong>Bảo mật thông tin.</strong> Mọi thông tin về tài chính, nhân sự và chiến lược bạn chia sẻ đều được bảo vệ. TOPLINKS ký thỏa thuận bảo mật (NDA) trước khi tiếp cận tài liệu nội bộ.</p>
         </div>
 
       </div>
     </section>
 
-    <!-- FAQ Accordion Section -->
-    <section class="py-20 bg-[#f8fafb] border-t border-slate-200">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        <div class="text-center mb-12">
-          <div class="badge-toplinks-navy mb-3">
-            <i data-lucide="help-circle" class="w-3.5 h-3.5"></i>
-            Giải đáp thắc mắc
+    <!-- FAQ -->
+    <section class="section paper" aria-labelledby="faq-title">
+      <div class="wrap faq-wrap">
+        <div class="section-head">
+          <div>
+            <p class="kicker">Giải đáp thắc mắc</p>
+            <h2 id="faq-title" class="section-title">Câu hỏi thường gặp</h2>
           </div>
-          <h2 class="text-2xl sm:text-3xl font-bold font-heading text-[#0a0a0a]">
-            Câu Hỏi Thường Gặp (FAQ)
-          </h2>
         </div>
-
-        <div class="space-y-4">
-          
-          <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden taste-card p-0">
-            <button type="button" data-accordion-btn class="w-full px-6 py-4 text-left flex items-center justify-between font-bold text-[#0a0a0a] text-sm hover:text-[#153e4d] transition-colors">
-              <span>1. Quy trình một dự án tư vấn doanh nghiệp thường kéo dài bao lâu?</span>
-              <i data-lucide="chevron-down" data-accordion-icon class="w-4 h-4 transition-transform duration-200"></i>
-            </button>
-            <div class="px-6 pb-4 text-xs sm:text-sm text-slate-600 leading-relaxed hidden">
-              Tùy vào quy mô và phạm vi, một dự án tư vấn chuẩn hóa KPI hoặc tái cấu trúc thường diễn ra trong vòng 2 đến 4 tháng. Trong đó giai đoạn chẩn đoán kéo dài 2-3 tuần, giai đoạn đồng kiến tạo (Co-Creation) diễn ra từ 4-6 tuần, tiếp theo là huấn luyện thực thi và theo dõi đo lường.
-            </div>
+        <div class="accordion">
+          <div class="acc-item">
+            <button type="button" class="acc-btn" data-accordion-btn aria-expanded="false" aria-controls="faq-1">Một dự án tư vấn doanh nghiệp thường kéo dài bao lâu?<svg aria-hidden="true"><use href="#i-plus"/></svg></button>
+            <div id="faq-1" class="acc-panel hidden"><p>Tùy quy mô và phạm vi, một dự án chuẩn hóa KPI hoặc tái cấu trúc thường kéo dài 2 đến 4 tháng. Giai đoạn chẩn đoán mất 2 đến 3 tuần, giai đoạn đồng kiến tạo từ 4 đến 6 tuần, sau đó là huấn luyện thực thi và theo dõi đo lường.</p></div>
           </div>
-
-          <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden taste-card p-0">
-            <button type="button" data-accordion-btn class="w-full px-6 py-4 text-left flex items-center justify-between font-bold text-[#0a0a0a] text-sm hover:text-[#153e4d] transition-colors">
-              <span>2. TOPLINKS có cam kết kết quả đầu ra cho dự án không?</span>
-              <i data-lucide="chevron-down" data-accordion-icon class="w-4 h-4 transition-transform duration-200"></i>
-            </button>
-            <div class="px-6 pb-4 text-xs sm:text-sm text-slate-600 leading-relaxed hidden">
-              Có. Chúng tôi cam kết bằng hợp đồng với các mốc bàn giao cụ thể (SOPs, bộ từ điển KPI, ma trận phân quyền, phần mềm/bảng theo dõi). Hơn thế nữa, chuyên gia TOPLINKS đồng hành chuyển giao năng lực trực tiếp cho đội ngũ nhân sự của bạn tự vận hành độc lập trước khi kết thúc hợp đồng.
-            </div>
+          <div class="acc-item">
+            <button type="button" class="acc-btn" data-accordion-btn aria-expanded="false" aria-controls="faq-2">TOPLINKS có cam kết kết quả đầu ra cho dự án không?<svg aria-hidden="true"><use href="#i-plus"/></svg></button>
+            <div id="faq-2" class="acc-panel hidden"><p>Có. Chúng tôi cam kết bằng hợp đồng với các mốc bàn giao cụ thể: SOP, bộ từ điển KPI, ma trận phân quyền, bảng theo dõi. Chuyên gia TOPLINKS chuyển giao năng lực trực tiếp để đội ngũ của bạn tự vận hành trước khi kết thúc hợp đồng.</p></div>
           </div>
-
-          <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden taste-card p-0">
-            <button type="button" data-accordion-btn class="w-full px-6 py-4 text-left flex items-center justify-between font-bold text-[#0a0a0a] text-sm hover:text-[#153e4d] transition-colors">
-              <span>3. Khóa đào tạo AI Competency Framework có khó tiếp thu với người không rành công nghệ?</span>
-              <i data-lucide="chevron-down" data-accordion-icon class="w-4 h-4 transition-transform duration-200"></i>
-            </button>
-            <div class="px-6 pb-4 text-xs sm:text-sm text-slate-600 leading-relaxed hidden">
-              Hoàn toàn không. Chương trình được thiết kế theo phương pháp "Cầm tay chỉ việc - Học để làm ngay". Chúng tôi tập trung vào tư duy ra lệnh (Prompting), ứng dụng các công cụ AI không cần code để giải quyết các tác vụ hàng ngày của nhân viên văn phòng, Marketing và Nhân sự.
-            </div>
+          <div class="acc-item">
+            <button type="button" class="acc-btn" data-accordion-btn aria-expanded="false" aria-controls="faq-3">Khóa AI Competency Framework có khó với người không rành công nghệ?<svg aria-hidden="true"><use href="#i-plus"/></svg></button>
+            <div id="faq-3" class="acc-panel hidden"><p>Không. Chương trình theo phương pháp cầm tay chỉ việc, học để làm ngay. Học viên tập trung vào cách ra lệnh cho AI (prompting) và các công cụ không cần lập trình để giải quyết việc hằng ngày trong văn phòng, marketing và nhân sự.</p></div>
           </div>
-
-          <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden taste-card p-0">
-            <button type="button" data-accordion-btn class="w-full px-6 py-4 text-left flex items-center justify-between font-bold text-[#0a0a0a] text-sm hover:text-[#153e4d] transition-colors">
-              <span>4. Thông tin và bí mật kinh doanh của chúng tôi được bảo vệ ra sao?</span>
-              <i data-lucide="chevron-down" data-accordion-icon class="w-4 h-4 transition-transform duration-200"></i>
-            </button>
-            <div class="px-6 pb-4 text-xs sm:text-sm text-slate-600 leading-relaxed hidden">
-              Trước khi tiếp cận bất kỳ tài liệu nội bộ nào của khách hàng, TOPLINKS luôn ký kết Thỏa thuận Bảo mật Thông tin (Non-Disclosure Agreement - NDA) với chế tài pháp lý nghiêm ngặt. Đội ngũ chuyên gia tuân thủ tuyệt đối quy tắc đạo đức nghề nghiệp quốc tế.
-            </div>
+          <div class="acc-item">
+            <button type="button" class="acc-btn" data-accordion-btn aria-expanded="false" aria-controls="faq-4">Thông tin và bí mật kinh doanh của chúng tôi được bảo vệ ra sao?<svg aria-hidden="true"><use href="#i-plus"/></svg></button>
+            <div id="faq-4" class="acc-panel hidden"><p>Trước khi tiếp cận bất kỳ tài liệu nội bộ nào, TOPLINKS ký thỏa thuận bảo mật thông tin (NDA) với chế tài pháp lý rõ ràng. Đội ngũ chuyên gia tuân thủ quy tắc đạo đức nghề nghiệp trong suốt dự án.</p></div>
           </div>
-
         </div>
-
       </div>
     </section>
 
   </main>
 
-  <!-- Global Footer -->
-  <footer class="bg-[#0f2c37] text-slate-300 text-sm border-t border-[#153e4d]">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
-        
-        <div class="lg:col-span-2 space-y-4">
-          <div class="flex items-center gap-3">
-            <img src="assets/images/logo.png" alt="TOPLINKS" class="h-10 w-auto bg-white p-1.5 rounded-lg">
-            <div>
-              <span class="font-bold text-white text-lg font-heading">CÔNG TY TNHH TOPLINKS</span>
-              <p class="text-xs text-[#fbee41] uppercase font-bold">Co-Creation for Success</p>
-            </div>
-          </div>
-          <p class="text-slate-300 text-xs sm:text-sm leading-relaxed max-w-sm">
-            Nơi hội tụ các Chuyên gia hàng đầu đầy khát vọng cho sự đổi mới, hiệp lực kiến tạo nên các giải pháp tiên phong và tối ưu giúp Doanh nghiệp, Cá nhân sẵn sàng chuyển hóa để phát triển vượt trội và bền vững.
-          </p>
-          <div class="space-y-2 text-xs text-slate-200 pt-2">
-            <p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-[#fbee41] shrink-0"></i> Trụ sở chính: 152 Võ Văn Kiệt, Phường Nguyễn Thái Bình, Quận 1, Tp.HCM</p>
-            <p class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-[#fbee41] shrink-0"></i> Hotline: 0909.xxx.xxx</p>
-            <p class="flex items-center gap-2"><i data-lucide="mail" class="w-4 h-4 text-[#fbee41] shrink-0"></i> Email: academy@toplinks.vn | info@toplinks.vn</p>
-          </div>
-        </div>
-
-        <div>
-          <h4 class="text-white font-bold text-sm mb-4 font-heading">Về TOPLINKS</h4>
-          <ul class="space-y-2.5 text-xs sm:text-sm">
-            <li><a href="about.html" class="hover:text-[#fbee41] transition-colors">Giới thiệu chung</a></li>
-            <li><a href="about.html#philosophy" class="hover:text-[#fbee41] transition-colors">Triết lý Co-Creation</a></li>
-            <li><a href="about.html#team" class="hover:text-[#fbee41] transition-colors">Đội ngũ chuyên gia</a></li>
-            <li><a href="contact.html" class="hover:text-[#fbee41] transition-colors">Tin tức & Sự kiện</a></li>
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="index.html" class="brand">
+            <img src="assets/images/logo-mark-light.png" width="50" height="53" alt="">
+            <span class="brand-text"><span class="brand-word">TOPLINKS</span><span class="brand-tag">Hiệp lực kiến tạo</span></span>
+          </a>
+          <p><span class="slogan">Co-Creation for Success.</span> Công ty TNHH TOPLINKS, nơi các chuyên gia hiệp lực kiến tạo giải pháp giúp doanh nghiệp và cá nhân phát triển bền vững.</p>
+          <ul class="footer-contact">
+            <li><i data-lucide="map-pin" aria-hidden="true"></i><span>TINI Building, 152 Võ Văn Kiệt, phường Nguyễn Thái Bình, quận 1, TP.HCM</span></li>
+            <li><i data-lucide="phone" aria-hidden="true"></i><a href="tel:0934011500">0934 011 500</a></li>
+            <li><i data-lucide="mail" aria-hidden="true"></i><a href="mailto:academy@toplinks.vn">academy@toplinks.vn</a></li>
           </ul>
         </div>
-
-        <div>
-          <h4 class="text-white font-bold text-sm mb-4 font-heading">Giải Pháp & Dịch Vụ</h4>
-          <ul class="space-y-2.5 text-xs sm:text-sm">
-            <li><a href="solutions.html" class="hover:text-[#fbee41] transition-colors">Tư vấn Doanh nghiệp</a></li>
-            <li><a href="solutions.html" class="hover:text-[#fbee41] transition-colors">Thiết lập hệ thống KPI</a></li>
-            <li><a href="solutions.html" class="hover:text-[#fbee41] transition-colors">Dịch vụ Nhân sự (HR)</a></li>
-            <li><a href="training.html" class="hover:text-[#fbee41] transition-colors">Đào tạo năng lực lãnh đạo</a></li>
-            <li><a href="training.html" class="hover:text-[#fbee41] transition-colors">AI Competency Framework</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h4 class="text-white font-bold text-sm mb-4 font-heading">Công Cụ & Khảo Sát</h4>
-          <ul class="space-y-2.5 text-xs sm:text-sm">
-            <li><a href="tools.html" class="hover:text-[#fbee41] transition-colors">Sinh trắc vân tay (STVT)</a></li>
-            <li><a href="tools.html" class="hover:text-[#fbee41] transition-colors">Trắc nghiệm MBTI</a></li>
-            <li><a href="tools.html" class="hover:text-[#fbee41] transition-colors">Đánh giá hành vi DISC</a></li>
-            <li><a href="contact.html" class="hover:text-[#fbee41] transition-colors">Liên hệ hỗ trợ</a></li>
-          </ul>
-        </div>
-
+        <nav aria-labelledby="f-about">
+          <h2 id="f-about">Về TOPLINKS</h2>
+          <a href="about.html">Giới thiệu</a>
+          <a href="about.html#team">Đội ngũ chuyên gia</a>
+          <a href="about.html#philosophy">Triết lý Co-Creation</a>
+          <a href="contact.html">Liên hệ</a>
+        </nav>
+        <nav aria-labelledby="f-solutions">
+          <h2 id="f-solutions">Giải pháp</h2>
+          <a href="solutions.html">Tư vấn doanh nghiệp</a>
+          <a href="solutions.html">Dịch vụ nhân sự</a>
+          <a href="training.html">Đào tạo lãnh đạo</a>
+          <a href="training.html">AI Competency</a>
+        </nav>
+        <nav aria-labelledby="f-tools">
+          <h2 id="f-tools">Công cụ</h2>
+          <a href="tools.html">Sinh trắc vân tay</a>
+          <a href="tools.html">Trắc nghiệm MBTI</a>
+          <a href="tools.html">Đánh giá DISC</a>
+        </nav>
       </div>
-
-      <div class="mt-12 pt-8 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-4">
-        <p>&copy; <span id="current-year">2026</span> CÔNG TY TNHH TOPLINKS. Tất cả quyền được bảo lưu.</p>
-        <div class="flex items-center gap-6">
-          <a href="contact.html" class="hover:text-white">Điều khoản dịch vụ</a>
-          <a href="contact.html" class="hover:text-white">Chính sách bảo mật</a>
-          <a href="contact.html" class="hover:text-white">Quy định bản quyền</a>
-        </div>
+      <div class="footer-bottom">
+        <p>© <span id="current-year">2026</span> Công ty TNHH TOPLINKS, MST 0317381989</p>
+        <nav aria-label="Pháp lý">
+          <a href="contact.html">Điều khoản dịch vụ</a>
+          <a href="contact.html">Chính sách bảo mật</a>
+        </nav>
       </div>
     </div>
   </footer>
 
   <script src="assets/js/main.js"></script>
   <script>
+    function notify(message, type) {
+      if (window.ToplinksCore && typeof window.ToplinksCore.showToast === 'function') {
+        window.ToplinksCore.showToast(message, type);
+      } else {
+        alert(message);
+      }
+    }
+
     function handleFormSubmit(e) {
       e.preventDefault();
       const btn = document.getElementById('submit-btn');
       const originalText = btn.innerHTML;
-      
+
       btn.disabled = true;
-      btn.innerHTML = `<span class="inline-block w-4 h-4 border-2 border-[#0a0a0a] border-t-transparent rounded-full animate-spin"></span> Đang gửi yêu cầu...`;
+      btn.textContent = 'Đang gửi yêu cầu...';
 
       setTimeout(() => {
         btn.disabled = false;
         btn.innerHTML = originalText;
-        
-        if (window.ToplinksCore && typeof window.ToplinksCore.showToast === 'function') {
-          window.ToplinksCore.showToast('Gửi yêu cầu thành công! Chuyên viên TOPLINKS sẽ liên hệ lại trong vòng 2 giờ.');
-        } else {
-          alert('Gửi yêu cầu thành công! Chuyên viên TOPLINKS sẽ liên hệ lại trong vòng 2 giờ.');
-        }
-        
+        notify('Gửi yêu cầu thành công. Chuyên viên TOPLINKS sẽ liên hệ lại trong vòng 2 giờ làm việc.', 'success');
         document.getElementById('consultation-form').reset();
       }, 1000);
     }
+
+    // One error toast per failed submit; the browser still marks the first invalid field
+    let invalidShown = false;
+    const form = document.getElementById('consultation-form');
+    form.addEventListener('invalid', () => {
+      if (invalidShown) return;
+      invalidShown = true;
+      notify('Chưa gửi được. Vui lòng điền đủ các mục bắt buộc và kiểm tra lại email, số điện thoại.', 'error');
+      setTimeout(() => { invalidShown = false; }, 0);
+    }, true);
   </script>
 </body>
 </html>
