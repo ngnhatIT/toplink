@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bộ Công Cụ Trắc Nghiệm & Đánh Giá - TOPLINKS | Co-Creation For Success</title>
+  <meta name="description" content="Ứng dụng Sinh trắc vân tay (STVT), MBTI, DISC và các bài test thẩm định năng lực chuẩn quốc tế trong tuyển dụng, quản trị nhân sự và phát triển bản thân.">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans antialiased flex flex-col min-h-screen">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-slate-900 text-slate-300 text-xs py-2 px-4 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div class="flex items-center gap-4">
+        <span class="inline-flex items-center gap-1.5 text-sky-400 font-medium">
+          <span class="w-2 h-2 rounded-full bg-sky-400 animate-pulse"></span>
+          Trải nghiệm bài Mini-Assessment phong cách lãnh đạo trực tuyến hoàn toàn miễn phí
+        </span>
+      </div>
+      <div class="flex items-center gap-6 text-slate-400">
+        <a href="tel:0909000000" class="hover:text-white flex items-center gap-1 transition-colors">
+          <i data-lucide="phone" class="w-3.5 h-3.5 text-sky-400"></i> Hotline: 0909.xxx.xxx
+        </a>
+        <a href="mailto:info@toplinks.vn" class="hover:text-white flex items-center gap-1 transition-colors">
+          <i data-lucide="mail" class="w-3.5 h-3.5 text-sky-400"></i> info@toplinks.vn
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header id="site-header" class="sticky top-0 z-40 bg-white transition-all duration-200 border-b border-slate-200/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3 group focus:outline-none">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-slate-900 via-sky-900 to-sky-600 flex items-center justify-center text-white font-bold text-xl shadow-md group-hover:scale-105 transition-transform">
+          TL
+        </div>
+        <div class="flex flex-col">
+          <span class="font-extrabold text-xl tracking-tight text-slate-900 font-heading leading-tight group-hover:text-sky-700 transition-colors">TOPLINKS</span>
+          <span class="text-[10px] tracking-wider uppercase font-semibold text-sky-600">Co-Creation for Success</span>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8">
+        <a href="index.html" data-nav-link="desktop" class="text-sm font-medium text-slate-700 hover:text-sky-600 transition-colors py-1">Trang chủ</a>
+        <a href="about.html" data-nav-link="desktop" class="text-sm font-medium text-slate-700 hover:text-sky-600 transition-colors py-1">Về chúng tôi</a>
+        <a href="solutions.html" data-nav-link="desktop" class="text-sm font-medium text-slate-700 hover:text-sky-600 transition-colors py-1">Giải pháp Doanh nghiệp</a>
+        <a href="training.html" data-nav-link="desktop" class="text-sm font-medium text-slate-700 hover:text-sky-600 transition-colors py-1">Đào tạo & Coaching</a>
+        <a href="tools.html" data-nav-link="desktop" class="text-sm font-medium text-slate-700 hover:text-sky-600 transition-colors py-1">Bộ công cụ trắc nghiệm</a>
+        <a href="contact.html" data-nav-link="desktop" class="text-sm font-medium text-slate-700 hover:text-sky-600 transition-colors py-1">Liên hệ</a>
+      </nav>
+
+      <div class="hidden md:flex items-center gap-3">
+        <a href="contact.html" class="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-lg text-sm font-semibold text-white bg-sky-600 hover:bg-sky-700 shadow-sm transition-all">
+          <span>Đăng ký tư vấn</span>
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+      </div>
+
+      <button id="mobile-menu-btn" type="button" class="md:hidden p-2 rounded-lg text-slate-600 hover:text-slate-900" aria-label="Mở menu">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobile-menu" class="hidden md:hidden fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm">
+      <div class="fixed inset-y-0 right-0 w-full max-w-xs bg-white shadow-2xl p-6 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between pb-6 border-b border-slate-100">
+            <div class="flex items-center gap-2">
+              <div class="w-9 h-9 rounded-lg bg-slate-900 text-white flex items-center justify-center font-bold">TL</div>
+              <span class="font-bold text-slate-900">TOPLINKS</span>
+            </div>
+            <button id="close-mobile-menu" class="p-2 text-slate-500 hover:text-slate-900">
+              <i data-lucide="x" class="w-5 h-5"></i>
+            </button>
+          </div>
+          <div class="flex flex-col gap-4 mt-6">
+            <a href="index.html" data-nav-link="mobile" class="text-base font-medium text-slate-800 hover:text-sky-600 py-2 border-b border-slate-50">Trang chủ</a>
+            <a href="about.html" data-nav-link="mobile" class="text-base font-medium text-slate-800 hover:text-sky-600 py-2 border-b border-slate-50">Về chúng tôi</a>
+            <a href="solutions.html" data-nav-link="mobile" class="text-base font-medium text-slate-800 hover:text-sky-600 py-2 border-b border-slate-50">Giải pháp Doanh nghiệp</a>
+            <a href="training.html" data-nav-link="mobile" class="text-base font-medium text-slate-800 hover:text-sky-600 py-2 border-b border-slate-50">Đào tạo & Coaching</a>
+            <a href="tools.html" data-nav-link="mobile" class="text-base font-medium text-slate-800 hover:text-sky-600 py-2 border-b border-slate-50">Bộ công cụ trắc nghiệm</a>
+            <a href="contact.html" data-nav-link="mobile" class="text-base font-medium text-slate-800 hover:text-sky-600 py-2">Liên hệ</a>
+          </div>
+        </div>
+        <div class="pt-6 border-t border-slate-100">
+          <a href="contact.html" class="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-lg bg-sky-600 hover:bg-sky-700 text-white font-semibold text-center text-sm shadow">
+            <span>Đăng ký tư vấn miễn phí</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow">
+    
+    <!-- Hero Banner -->
+    <section class="bg-corporate-mesh text-white py-20 relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="max-w-3xl">
+          <div class="badge-trust mb-4 bg-sky-500/20 text-sky-300 border-sky-400/30">
+            <i data-lucide="scan" class="w-3.5 h-3.5"></i>
+            Khoa học Hành vi & Tâm lý Quản trị
+          </div>
+          <h1 class="text-4xl sm:text-5xl font-bold font-heading text-white tracking-tight">
+            Bộ Công Cụ Thẩm Định Năng Lực & Tâm Lý
+          </h1>
+          <p class="mt-6 text-lg text-slate-300 leading-relaxed font-light">
+            Sử dụng các công cụ khoa học chuẩn xác để "đặt đúng người vào đúng việc", thấu hiểu phong cách hành vi lãnh đạo và tối ưu hóa năng suất làm việc nhóm.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Assessment Widget (Conversion Hook) -->
+    <section class="py-16 bg-white border-b border-slate-200">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div id="assessment-widget" class="bg-slate-50 border border-slate-200 rounded-3xl p-6 sm:p-10 shadow-lg relative overflow-hidden">
+          <div class="max-w-2xl mx-auto text-center mb-8">
+            <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sky-100 text-sky-800 text-xs font-semibold mb-3">
+              <i data-lucide="zap" class="w-3.5 h-3.5"></i> Trải nghiệm nhanh 60 giây
+            </span>
+            <h2 class="text-2xl sm:text-3xl font-bold font-heading text-slate-900">
+              Khảo Sát Nhanh Phong Cách Làm Việc & Lãnh Đạo
+            </h2>
+            <p class="text-xs sm:text-sm text-slate-600 mt-2">
+              Trả lời 3 câu hỏi tình huống thực tế để nhận diện ngay phong cách hành vi nổi trội của bạn.
+            </p>
+          </div>
+
+          <!-- Quiz Container -->
+          <div id="quiz-container">
+            
+            <!-- Step Indicator -->
+            <div class="flex items-center justify-between text-xs font-semibold text-slate-500 mb-4">
+              <span id="quiz-step-text">Câu hỏi 1 / 3</span>
+              <div class="w-36 h-2 bg-slate-200 rounded-full overflow-hidden">
+                <div id="quiz-progress-bar" class="h-full bg-sky-600 transition-all duration-300 w-1/3"></div>
+              </div>
+            </div>
+
+            <!-- Question 1 -->
+            <div id="q1" class="quiz-question space-y-4">
+              <h3 class="text-base sm:text-lg font-bold text-slate-900">
+                1. Khi đối mặt với một sự cố bất ngờ trong dự án, phản xạ đầu tiên của bạn là gì?
+              </h3>
+              <div class="space-y-2.5">
+                <button type="button" onclick="selectAnswer('D', 1)" class="w-full text-left p-4 rounded-xl bg-white border border-slate-200 hover:border-sky-500 hover:bg-sky-50/50 transition-all flex items-center justify-between group">
+                  <span class="text-sm text-slate-800 font-medium">Quyết liệt đưa ra quyết định hành động ngay để kiểm soát tình hình.</span>
+                  <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400 group-hover:text-sky-600 shrink-0"></i>
+                </button>
+                <button type="button" onclick="selectAnswer('I', 1)" class="w-full text-left p-4 rounded-xl bg-white border border-slate-200 hover:border-sky-500 hover:bg-sky-50/50 transition-all flex items-center justify-between group">
+                  <span class="text-sm text-slate-800 font-medium">Họp nhanh toàn đội ngũ, truyền cảm hứng và cùng nhau động não tìm giải pháp.</span>
+                  <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400 group-hover:text-sky-600 shrink-0"></i>
+                </button>
+                <button type="button" onclick="selectAnswer('S', 1)" class="w-full text-left p-4 rounded-xl bg-white border border-slate-200 hover:border-sky-500 hover:bg-sky-50/50 transition-all flex items-center justify-between group">
+                  <span class="text-sm text-slate-800 font-medium">Giữ bình tĩnh, lắng nghe ý kiến của từng người và duy trì sự ổn định của team.</span>
+                  <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400 group-hover:text-sky-600 shrink-0"></i>
+                </button>
+                <button type="button" onclick="selectAnswer('C', 1)" class="w-full text-left p-4 rounded-xl bg-white border border-slate-200 hover:border-sky-500 hover:bg-sky-50/50 transition-all flex items-center justify-between group">
+                  <span class="text-sm text-slate-800 font-medium">Thu thập toàn bộ dữ liệu, kiểm tra quy trình và tìm nguyên nhân gốc rễ (Root Cause).</span>
+                  <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400 group-hover:text-sky-600 shrink-0"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- Question 2 (Hidden initially) -->
+            <div id="q2" class="quiz-question space-y-4 hidden">
+              <h3 class="text-base sm:text-lg font-bold text-slate-900">
+                2. Điều gì thúc đẩy và tạo năng lượng lớn nhất cho bạn trong công việc?
+              </h3>
+              <div class="space-y-2.5">
+                <button type="button" onclick="selectAnswer('D', 2)" class="w-full text-left p-4 rounded-xl bg-white border border-slate-200 hover:border-sky-500 hover:bg-sky-50/50 transition-all flex items-center justify-between group">
+                  <span class="text-sm text-slate-800 font-medium">Chinh phục các mục tiêu thách thức và vượt qua đối thủ cạnh tranh.</span>
+                  <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400 group-hover:text-sky-600 shrink-0"></i>
+                </button>
+                <button type="button" onclick="selectAnswer('I', 2)" class="w-full text-left p-4 rounded-xl bg-white border border-slate-200 hover:border-sky-500 hover:bg-sky-50/50 transition-all flex items-center justify-between group">
+                  <span class="text-sm text-slate-800 font-medium">Được kết nối, giao lưu, tạo ảnh hưởng và nhận sự ghi nhận từ mọi người.</span>
+                  <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400 group-hover:text-sky-600 shrink-0"></i>
+                </button>
+                <button type="button" onclick="selectAnswer('S', 2)" class="w-full text-left p-4 rounded-xl bg-white border border-slate-200 hover:border-sky-500 hover:bg-sky-50/50 transition-all flex items-center justify-between group">
+                  <span class="text-sm text-slate-800 font-medium">Môi trường làm việc hòa đồng, tin cậy và gắn kết lâu dài như một gia đình.</span>
+                  <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400 group-hover:text-sky-600 shrink-0"></i>
+                </button>
+                <button type="button" onclick="selectAnswer('C', 2)" class="w-full text-left p-4 rounded-xl bg-white border border-slate-200 hover:border-sky-500 hover:bg-sky-50/50 transition-all flex items-center justify-between group">
+                  <span class="text-sm text-slate-800 font-medium">Mọi công việc đều có trật tự, chuẩn xác, bài bản và không có sai sót.</span>
+                  <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400 group-hover:text-sky-600 shrink-0"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- Question 3 (Hidden initially) -->
+            <div id="q3" class="quiz-question space-y-4 hidden">
+              <h3 class="text-base sm:text-lg font-bold text-slate-900">
+                3. Cách bạn giải quyết khi hai thành viên trong nhóm bất đồng quan điểm?
+              </h3>
+              <div class="space-y-2.5">
+                <button type="button" onclick="selectAnswer('D', 3)" class="w-full text-left p-4 rounded-xl bg-white border border-slate-200 hover:border-sky-500 hover:bg-sky-50/50 transition-all flex items-center justify-between group">
+                  <span class="text-sm text-slate-800 font-medium">Yêu cầu dừng tranh luận, chọn phương án hiệu quả nhất và bắt buộc thực thi.</span>
+                  <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400 group-hover:text-sky-600 shrink-0"></i>
+                </button>
+                <button type="button" onclick="selectAnswer('I', 3)" class="w-full text-left p-4 rounded-xl bg-white border border-slate-200 hover:border-sky-500 hover:bg-sky-50/50 transition-all flex items-center justify-between group">
+                  <span class="text-sm text-slate-800 font-medium">Dùng khiếu hài hước xoa dịu căng thẳng và thuyết phục hai bên bắt tay nhau.</span>
+                  <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400 group-hover:text-sky-600 shrink-0"></i>
+                </button>
+                <button type="button" onclick="selectAnswer('S', 3)" class="w-full text-left p-4 rounded-xl bg-white border border-slate-200 hover:border-sky-500 hover:bg-sky-50/50 transition-all flex items-center justify-between group">
+                  <span class="text-sm text-slate-800 font-medium">Gặp riêng từng người để lắng nghe tâm tư và tìm điểm đồng thuận nhẹ nhàng.</span>
+                  <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400 group-hover:text-sky-600 shrink-0"></i>
+                </button>
+                <button type="button" onclick="selectAnswer('C', 3)" class="w-full text-left p-4 rounded-xl bg-white border border-slate-200 hover:border-sky-500 hover:bg-sky-50/50 transition-all flex items-center justify-between group">
+                  <span class="text-sm text-slate-800 font-medium">Đối chiếu lại bảng tiêu chí, số liệu thực tế và quy định chung để phân xử.</span>
+                  <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400 group-hover:text-sky-600 shrink-0"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- Quiz Result Container (Hidden initially) -->
+            <div id="quiz-result" class="hidden text-center py-6 space-y-6">
+              <div class="w-16 h-16 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center mx-auto">
+                <i data-lucide="award" class="w-8 h-8"></i>
+              </div>
+              <div>
+                <span class="text-xs font-bold uppercase tracking-wider text-sky-600">Kết quả sơ bộ của bạn</span>
+                <h3 id="result-title" class="text-2xl font-bold font-heading text-slate-900 mt-1">
+                  Nhà Tiên Phong Quyết Đoán (Dominance)
+                </h3>
+                <p id="result-desc" class="text-sm text-slate-600 max-w-xl mx-auto mt-3 leading-relaxed">
+                  Bạn có xu hướng hành động nhanh, hướng đến kết quả và không ngại đương đầu với thách thức. Điểm cần lưu ý là lắng nghe phản hồi của đồng đội để tránh tạo cảm giác áp lực quá mức.
+                </p>
+              </div>
+
+              <div class="p-4 rounded-xl bg-sky-50 border border-sky-100 max-w-md mx-auto text-left text-xs text-sky-900">
+                <p class="font-bold mb-1 flex items-center gap-1.5"><i data-lucide="lightbulb" class="w-4 h-4 text-sky-600"></i> Lời khuyên phát triển từ TOPLINKS:</p>
+                <p>Nên kết hợp bài phân tích Sinh trắc vân tay chuyên sâu hoặc MBTI để nhìn thấy trọn vẹn 8 vùng năng lực bẩm sinh và điểm mù trong giao tiếp quản lý.</p>
+              </div>
+
+              <div class="flex flex-col sm:flex-row justify-center gap-3 pt-2">
+                <a href="contact.html" class="px-6 py-3 rounded-xl bg-sky-600 hover:bg-sky-700 text-white font-semibold text-sm shadow">
+                  Đăng ký nhận báo cáo phân tích năng lực chi tiết
+                </a>
+                <button type="button" onclick="resetQuiz()" class="px-6 py-3 rounded-xl bg-slate-200 hover:bg-slate-300 text-slate-700 font-semibold text-sm">
+                  Làm lại khảo sát
+                </button>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Comprehensive Assessment Tool Suite -->
+    <section class="py-20 bg-slate-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-2xl mx-auto mb-16">
+          <div class="badge-trust mb-3">
+            <i data-lucide="layers" class="w-3.5 h-3.5"></i>
+            Hệ thống công cụ chuẩn mực
+          </div>
+          <h2 class="text-3xl font-bold font-heading text-slate-900 tracking-tight">
+            4 Công Cụ Thẩm Định Cốt Lõi Tại TOPLINKS
+          </h2>
+          <p class="mt-4 text-slate-600 text-sm sm:text-base">
+            Được chuyển giao bài bản, có căn cứ khoa học rõ ràng và được các chuyên gia giàu kinh nghiệm giải mã trực tiếp 1:1.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          
+          <!-- Tool 1: Sinh trắc vân tay -->
+          <div class="bg-white p-8 rounded-2xl border border-slate-200 card-hover-effect flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-sky-100 text-sky-700 flex items-center justify-center mb-6">
+                <i data-lucide="fingerprint" class="w-6 h-6"></i>
+              </div>
+              <h3 class="text-xl font-bold font-heading text-slate-900">
+                Sinh Trắc Vân Tay (Dermatoglyphics STVT)
+              </h3>
+              <p class="mt-3 text-slate-600 text-sm leading-relaxed">
+                Phương pháp khoa học nghiên cứu mối liên hệ mật thiết giữa dấu vân tay và cấu trúc các thùy não bộ. Cung cấp bức tranh toàn diện về mật độ nơ-ron thần kinh, 8 loại hình thông minh và phong cách học tập bẩm sinh (VAK).
+              </p>
+              <div class="mt-4 space-y-2 text-xs text-slate-600">
+                <p><strong>Ứng dụng trong Doanh nghiệp:</strong> Tuyển dụng đúng thế mạnh bẩm sinh, bố trí đúng người đúng vị trí và giảm thiểu chi phí thử việc sai người.</p>
+                <p><strong>Ứng dụng Cá nhân:</strong> Định hướng nghề nghiệp chuẩn xác, thấu hiểu con cái và khai phá tài năng tiềm ẩn.</p>
+              </div>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
+              <span class="text-xs text-slate-500">Độ chính xác > 90%</span>
+              <a href="contact.html" class="text-sm font-semibold text-sky-600 hover:text-sky-800">Đăng ký scan vân tay &rarr;</a>
+            </div>
+          </div>
+
+          <!-- Tool 2: MBTI -->
+          <div class="bg-white p-8 rounded-2xl border border-slate-200 card-hover-effect flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-indigo-100 text-indigo-700 flex items-center justify-center mb-6">
+                <i data-lucide="brain-circuit" class="w-6 h-6"></i>
+              </div>
+              <h3 class="text-xl font-bold font-heading text-slate-900">
+                Trắc Nghiệm Tính Cách MBTI (16 Nhóm Tính Cách)
+              </h3>
+              <p class="mt-3 text-slate-600 text-sm leading-relaxed">
+                Bộ công cụ trắc nghiệm tâm lý phổ biến nhất toàn cầu, phân loại con người dựa trên 4 cặp đối lập: Hướng ngoại/Hướng nội (E/I), Giác quan/Trực giác (S/N), Lý trí/Cảm xúc (T/F), Nguyên tắc/Linh hoạt (J/P).
+              </p>
+              <div class="mt-4 space-y-2 text-xs text-slate-600">
+                <p><strong>Ứng dụng trong Doanh nghiệp:</strong> Thấu hiểu cách tiếp cận vấn đề của từng nhân viên, tối ưu hóa phối hợp nhóm và giải quyết xung đột phong cách làm việc.</p>
+                <p><strong>Ứng dụng Cá nhân:</strong> Nâng cao năng lực trí tuệ cảm xúc (EQ) và phát triển phong cách lãnh đạo tương thích.</p>
+              </div>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
+              <span class="text-xs text-slate-500">Tiêu chuẩn quốc tế</span>
+              <a href="contact.html" class="text-sm font-semibold text-indigo-600 hover:text-indigo-800">Làm test MBTI &rarr;</a>
+            </div>
+          </div>
+
+          <!-- Tool 3: DISC -->
+          <div class="bg-white p-8 rounded-2xl border border-slate-200 card-hover-effect flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center mb-6">
+                <i data-lucide="compass" class="w-6 h-6"></i>
+              </div>
+              <h3 class="text-xl font-bold font-heading text-slate-900">
+                Mô Hình Hành Vi DISC (Quản Trị Hành Vi)
+              </h3>
+              <p class="mt-3 text-slate-600 text-sm leading-relaxed">
+                Đo lường các phản ứng hành vi tự nhiên trong công việc thông qua 4 trục: Dominance (Thống trị), Influence (Ảnh hưởng), Steadiness (Kiên định), Conscientiousness (Tuân thủ).
+              </p>
+              <div class="mt-4 space-y-2 text-xs text-slate-600">
+                <p><strong>Ứng dụng trong Doanh nghiệp:</strong> Tuyệt chiêu đắc nhân tâm cho nhà quản lý: giao việc đúng cách cho từng nhóm tính khí và xây dựng đội ngũ bán hàng bách chiến bách thắng.</p>
+              </div>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
+              <span class="text-xs text-slate-500">Ứng dụng thực chiến</span>
+              <a href="contact.html" class="text-sm font-semibold text-amber-600 hover:text-amber-800">Nhận biểu mẫu DISC &rarr;</a>
+            </div>
+          </div>
+
+          <!-- Tool 4: Bản Đồ Năng Lực & Thần Số Học Ứng Dụng -->
+          <div class="bg-white p-8 rounded-2xl border border-slate-200 card-hover-effect flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-purple-100 text-purple-700 flex items-center justify-center mb-6">
+                <i data-lucide="sparkles" class="w-6 h-6"></i>
+              </div>
+              <h3 class="text-xl font-bold font-heading text-slate-900">
+                Bản Đồ Năng Lực & Thần Số Học Ứng Dụng
+              </h3>
+              <p class="mt-3 text-slate-600 text-sm leading-relaxed">
+                Công cụ hỗ trợ bổ trợ giúp thấu hiểu các chặng đường phát triển cá nhân, chu kỳ năm đỉnh cao sự nghiệp và những bài học thách thức cần vượt qua để hoàn thiện nội tâm.
+              </p>
+              <div class="mt-4 space-y-2 text-xs text-slate-600">
+                <p><strong>Ứng dụng:</strong> Giúp các nhà lãnh đạo và cá nhân có thêm góc nhìn chiêm nghiệm đa chiều, cân bằng tâm trí và định hướng chu kỳ hành động phù hợp.</p>
+              </div>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
+              <span class="text-xs text-slate-500">Góc nhìn đa chiều</span>
+              <a href="contact.html" class="text-sm font-semibold text-purple-600 hover:text-purple-800">Khám phá chi tiết &rarr;</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="bg-slate-950 text-slate-400 text-sm border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+        
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-sky-600 text-white font-bold flex items-center justify-center text-lg">TL</div>
+            <div>
+              <span class="font-bold text-white text-lg font-heading">CÔNG TY TNHH TOPLINKS</span>
+              <p class="text-xs text-sky-400 uppercase font-semibold">Co-Creation for Success</p>
+            </div>
+          </div>
+          <p class="text-slate-400 text-xs sm:text-sm leading-relaxed max-w-sm">
+            Tổ chức hàng đầu tại Việt Nam cung cấp giải pháp tư vấn quản trị, đào tạo nhân sự và chuyển đổi số theo triết lý hiệp lực đồng hành cùng doanh nghiệp.
+          </p>
+          <div class="space-y-2 text-xs text-slate-300 pt-2">
+            <p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-sky-400 shrink-0"></i> Hà Nội: Tầng 6, Tòa nhà Tri thức, Cầu Giấy, Hà Nội</p>
+            <p class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-sky-400 shrink-0"></i> Hotline: 0909.xxx.xxx</p>
+            <p class="flex items-center gap-2"><i data-lucide="mail" class="w-4 h-4 text-sky-400 shrink-0"></i> Email: info@toplinks.vn | academy@toplinks.vn</p>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="text-white font-semibold text-sm mb-4 font-heading">Về TOPLINKS</h4>
+          <ul class="space-y-2.5 text-xs sm:text-sm">
+            <li><a href="about.html" class="hover:text-white transition-colors">Giới thiệu chung</a></li>
+            <li><a href="about.html#philosophy" class="hover:text-white transition-colors">Triết lý Co-Creation</a></li>
+            <li><a href="about.html#team" class="hover:text-white transition-colors">Đội ngũ chuyên gia</a></li>
+            <li><a href="contact.html" class="hover:text-white transition-colors">Tin tức & Sự kiện</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-white font-semibold text-sm mb-4 font-heading">Giải Pháp & Dịch Vụ</h4>
+          <ul class="space-y-2.5 text-xs sm:text-sm">
+            <li><a href="solutions.html" class="hover:text-white transition-colors">Tư vấn Doanh nghiệp</a></li>
+            <li><a href="solutions.html" class="hover:text-white transition-colors">Thiết lập hệ thống KPI</a></li>
+            <li><a href="solutions.html" class="hover:text-white transition-colors">Dịch vụ Nhân sự (HR)</a></li>
+            <li><a href="training.html" class="hover:text-white transition-colors">Đào tạo năng lực lãnh đạo</a></li>
+            <li><a href="training.html" class="hover:text-white transition-colors">AI Competency Framework</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-white font-semibold text-sm mb-4 font-heading">Công Cụ & Khảo Sát</h4>
+          <ul class="space-y-2.5 text-xs sm:text-sm">
+            <li><a href="tools.html" class="hover:text-white transition-colors">Sinh trắc vân tay (STVT)</a></li>
+            <li><a href="tools.html" class="hover:text-white transition-colors">Trắc nghiệm MBTI</a></li>
+            <li><a href="tools.html" class="hover:text-white transition-colors">Đánh giá hành vi DISC</a></li>
+            <li><a href="contact.html" class="hover:text-white transition-colors">Liên hệ hỗ trợ</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="mt-12 pt-8 border-t border-slate-900 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+        <p>&copy; <span id="current-year">2026</span> TOPLINKS Co., Ltd. Tất cả quyền được bảo lưu.</p>
+        <div class="flex items-center gap-6">
+          <a href="contact.html" class="hover:text-slate-400">Điều khoản dịch vụ</a>
+          <a href="contact.html" class="hover:text-slate-400">Chính sách bảo mật</a>
+          <a href="contact.html" class="hover:text-slate-400">Quy định bản quyền</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    // Mini-Assessment Quiz Logic
+    const answers = { D: 0, I: 0, S: 0, C: 0 };
+    
+    function selectAnswer(type, questionIndex) {
+      answers[type] = (answers[type] || 0) + 1;
+      
+      const qCurrent = document.getElementById('q' + questionIndex);
+      const qNext = document.getElementById('q' + (questionIndex + 1));
+      const stepText = document.getElementById('quiz-step-text');
+      const progressBar = document.getElementById('quiz-progress-bar');
+      
+      if (qNext) {
+        qCurrent.classList.add('hidden');
+        qNext.classList.remove('hidden');
+        stepText.textContent = `Câu hỏi ${questionIndex + 1} / 3`;
+        progressBar.style.width = `${((questionIndex + 1) / 3) * 100}%`;
+      } else {
+        // Show result
+        qCurrent.classList.add('hidden');
+        document.getElementById('quiz-result').classList.remove('hidden');
+        stepText.textContent = `Hoàn thành bài khảo sát`;
+        progressBar.style.width = '100%';
+        
+        // Calculate max type
+        let highest = 'D';
+        let maxVal = -1;
+        for (const [k, v] of Object.entries(answers)) {
+          if (v > maxVal) {
+            maxVal = v;
+            highest = k;
+          }
+        }
+        
+        const profiles = {
+          D: {
+            title: "Nhóm D: Nhà Tiên Phong Quyết Đoán (Dominance)",
+            desc: "Bạn có phong cách quyết liệt, hướng thẳng đến mục tiêu và không ngại đối mặt với áp lực. Bạn là người dẫn dắt xuất sắc trong các giai đoạn khủng hoảng hoặc cần đột phá tốc độ."
+          },
+          I: {
+            title: "Nhóm I: Nhà Kết Nối Truyền Cảm Hứng (Influence)",
+            desc: "Bạn có khả năng lan tỏa năng lượng tích cực, thuyết phục và tạo bầu không khí hào hứng cho tập thể. Điểm mạnh vượt trội là khả năng ngoại giao và gắn kết các cá nhân."
+          },
+          S: {
+            title: "Nhóm S: Người Đồng Hành Tận Tụy (Steadiness)",
+            desc: "Bạn điềm tĩnh, đáng tin cậy, luôn lắng nghe và giữ gìn sự hòa hợp cho tổ chức. Bạn là chỗ dựa tinh thần vững chắc và luôn hoàn thành công việc với sự kiên trì tuyệt đối."
+          },
+          C: {
+            title: "Nhóm C: Chuyên Gia Phân Tích Chuẩn Mực (Conscientiousness)",
+            desc: "Bạn coi trọng tính chính xác, quy chuẩn và số liệu thực tế. Bạn luôn cân nhắc kỹ lưỡng để đảm bảo không có rủi ro hay sai sót nào xảy ra trong kế hoạch vận hành."
+          }
+        };
+        
+        const res = profiles[highest] || profiles.D;
+        document.getElementById('result-title').textContent = res.title;
+        document.getElementById('result-desc').textContent = res.desc;
+        
+        if (window.ToplinksCore && typeof window.ToplinksCore.showToast === 'function') {
+          window.ToplinksCore.showToast('Đã tính toán xong kết quả phong cách làm việc của bạn!');
+        }
+      }
+      
+      // Re-trigger lucide icons
+      if (window.lucide && typeof window.lucide.createIcons === 'function') {
+        window.lucide.createIcons();
+      }
+    }
+
+    function resetQuiz() {
+      answers.D = 0;
+      answers.I = 0;
+      answers.S = 0;
+      answers.C = 0;
+      
+      document.getElementById('quiz-result').classList.add('hidden');
+      document.getElementById('q1').classList.remove('hidden');
+      document.getElementById('q2').classList.add('hidden');
+      document.getElementById('q3').classList.add('hidden');
+      document.getElementById('quiz-step-text').textContent = 'Câu hỏi 1 / 3';
+      document.getElementById('quiz-progress-bar').style.width = '33.3%';
+    }
+  </script>
+</body>
+</html>
