@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TOPLINKS - Co-Creation For Success | Tư vấn Doanh nghiệp & Đào tạo Lãnh đạo</title>
+  <meta name="description" content="TOPLINKS - Đơn vị tiên phong tư vấn quản trị doanh nghiệp, đào tạo năng lực lãnh đạo, chuyển đổi số AI và giải pháp nhân sự toàn diện theo triết lý Hiệp lực kiến tạo.">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- Custom Design Tokens & Styles -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans antialiased flex flex-col min-h-screen">
+
+  <!-- Top Notification / Announcement Bar -->
+  <div class="bg-slate-900 text-slate-300 text-xs py-2 px-4 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div class="flex items-center gap-4">
+        <span class="inline-flex items-center gap-1.5 text-sky-400 font-medium">
+          <span class="w-2 h-2 rounded-full bg-sky-400 animate-pulse"></span>
+          Tuyển sinh: AI Competency Framework 2026 cho Lãnh đạo & Quản lý
+        </span>
+      </div>
+      <div class="flex items-center gap-6 text-slate-400">
+        <a href="tel:0909000000" class="hover:text-white flex items-center gap-1 transition-colors">
+          <i data-lucide="phone" class="w-3.5 h-3.5 text-sky-400"></i> Hotline: 0909.xxx.xxx
+        </a>
+        <a href="mailto:info@toplinks.vn" class="hover:text-white flex items-center gap-1 transition-colors">
+          <i data-lucide="mail" class="w-3.5 h-3.5 text-sky-400"></i> info@toplinks.vn
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header id="site-header" class="sticky top-0 z-40 bg-white transition-all duration-200 border-b border-slate-200/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="index.html" class="flex items-center gap-3 group focus:outline-none">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-slate-900 via-sky-900 to-sky-600 flex items-center justify-center text-white font-bold text-xl shadow-md group-hover:scale-105 transition-transform">
+          TL
+        </div>
+        <div class="flex flex-col">
+          <span class="font-extrabold text-xl tracking-tight text-slate-900 font-heading leading-tight group-hover:text-sky-700 transition-colors">TOPLINKS</span>
+          <span class="text-[10px] tracking-wider uppercase font-semibold text-sky-600">Co-Creation for Success</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="hidden md:flex items-center gap-8">
+        <a href="index.html" data-nav-link="desktop" class="text-sm font-medium text-slate-700 hover:text-sky-600 transition-colors py-1">Trang chủ</a>
+        <a href="about.html" data-nav-link="desktop" class="text-sm font-medium text-slate-700 hover:text-sky-600 transition-colors py-1">Về chúng tôi</a>
+        <a href="solutions.html" data-nav-link="desktop" class="text-sm font-medium text-slate-700 hover:text-sky-600 transition-colors py-1">Giải pháp Doanh nghiệp</a>
+        <a href="training.html" data-nav-link="desktop" class="text-sm font-medium text-slate-700 hover:text-sky-600 transition-colors py-1">Đào tạo & Coaching</a>
+        <a href="tools.html" data-nav-link="desktop" class="text-sm font-medium text-slate-700 hover:text-sky-600 transition-colors py-1">Bộ công cụ trắc nghiệm</a>
+        <a href="contact.html" data-nav-link="desktop" class="text-sm font-medium text-slate-700 hover:text-sky-600 transition-colors py-1">Liên hệ</a>
+      </nav>
+
+      <!-- Desktop CTA Button -->
+      <div class="hidden md:flex items-center gap-3">
+        <a href="contact.html" class="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-lg text-sm font-semibold text-white bg-sky-600 hover:bg-sky-700 shadow-sm hover:shadow transition-all duration-200">
+          <span>Đăng ký tư vấn</span>
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button id="mobile-menu-btn" type="button" class="md:hidden p-2 rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-colors" aria-label="Mở menu">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer Overlay -->
+    <div id="mobile-menu" class="hidden md:hidden fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm">
+      <div class="fixed inset-y-0 right-0 w-full max-w-xs bg-white shadow-2xl p-6 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between pb-6 border-b border-slate-100">
+            <div class="flex items-center gap-2">
+              <div class="w-9 h-9 rounded-lg bg-slate-900 text-white flex items-center justify-center font-bold">TL</div>
+              <span class="font-bold text-slate-900">TOPLINKS</span>
+            </div>
+            <button id="close-mobile-menu" class="p-2 text-slate-500 hover:text-slate-900">
+              <i data-lucide="x" class="w-5 h-5"></i>
+            </button>
+          </div>
+          <div class="flex flex-col gap-4 mt-6">
+            <a href="index.html" data-nav-link="mobile" class="text-base font-medium text-slate-800 hover:text-sky-600 py-2 border-b border-slate-50">Trang chủ</a>
+            <a href="about.html" data-nav-link="mobile" class="text-base font-medium text-slate-800 hover:text-sky-600 py-2 border-b border-slate-50">Về chúng tôi</a>
+            <a href="solutions.html" data-nav-link="mobile" class="text-base font-medium text-slate-800 hover:text-sky-600 py-2 border-b border-slate-50">Giải pháp Doanh nghiệp</a>
+            <a href="training.html" data-nav-link="mobile" class="text-base font-medium text-slate-800 hover:text-sky-600 py-2 border-b border-slate-50">Đào tạo & Coaching</a>
+            <a href="tools.html" data-nav-link="mobile" class="text-base font-medium text-slate-800 hover:text-sky-600 py-2 border-b border-slate-50">Bộ công cụ trắc nghiệm</a>
+            <a href="contact.html" data-nav-link="mobile" class="text-base font-medium text-slate-800 hover:text-sky-600 py-2">Liên hệ</a>
+          </div>
+        </div>
+        <div class="pt-6 border-t border-slate-100">
+          <a href="contact.html" class="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-lg bg-sky-600 hover:bg-sky-700 text-white font-semibold text-center text-sm shadow">
+            <span>Đăng ký tư vấn miễn phí</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow">
+    
+    <!-- Hero Section -->
+    <section class="relative bg-corporate-mesh text-white pt-20 pb-28 overflow-hidden">
+      <!-- Glow Decor -->
+      <div class="absolute -top-40 -right-40 w-96 h-96 bg-sky-500/20 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute -bottom-20 -left-20 w-80 h-80 bg-blue-600/15 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <!-- Hero Left Content -->
+          <div class="lg:col-span-7 space-y-6">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-sky-500/10 border border-sky-400/30 text-sky-300 text-xs font-semibold tracking-wide uppercase">
+              <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+              Hiệp lực kiến tạo để thành công
+            </div>
+            
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold font-heading text-white tracking-tight leading-[1.15]">
+              CO-CREATION <br class="hidden sm:inline">FOR SUCCESS
+            </h1>
+            
+            <p class="text-lg sm:text-xl text-slate-300 font-light max-w-2xl leading-relaxed">
+              TOPLINKS không mang đến những giải pháp áp đặt sẵn từ bên ngoài. Chúng tôi đồng hành cùng đội ngũ của bạn, đánh thức nội lực doanh nghiệp để kiến tạo hệ thống quản trị, đào tạo nhân sự và tối ưu hiệu suất vượt trội.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-4">
+              <a href="contact.html" class="inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-xl font-semibold text-white bg-sky-500 hover:bg-sky-600 shadow-lg shadow-sky-500/25 transition-all text-base">
+                <span>Đặt lịch tư vấn chiến lược</span>
+                <i data-lucide="arrow-up-right" class="w-5 h-5"></i>
+              </a>
+              <a href="solutions.html" class="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl font-semibold text-slate-200 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 transition-all text-base backdrop-blur-sm">
+                <i data-lucide="compass" class="w-5 h-5 text-sky-400"></i>
+                <span>Khám phá các giải pháp</span>
+              </a>
+            </div>
+
+            <!-- Trust Metrics Strip -->
+            <div class="grid grid-cols-3 gap-6 pt-10 border-t border-slate-800">
+              <div>
+                <p class="text-3xl font-extrabold text-white font-heading">100+</p>
+                <p class="text-xs sm:text-sm text-slate-400 mt-1">Doanh nghiệp đồng hành</p>
+              </div>
+              <div>
+                <p class="text-3xl font-extrabold text-sky-400 font-heading">98%</p>
+                <p class="text-xs sm:text-sm text-slate-400 mt-1">Tỷ lệ hài lòng & tái ký</p>
+              </div>
+              <div>
+                <p class="text-3xl font-extrabold text-white font-heading">15+</p>
+                <p class="text-xs sm:text-sm text-slate-400 mt-1">Năm kinh nghiệm chuyên gia</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Right Visual Card -->
+          <div class="lg:col-span-5 relative">
+            <div class="relative rounded-2xl bg-gradient-to-b from-slate-800/80 to-slate-900/90 border border-slate-700/60 p-6 sm:p-8 shadow-2xl backdrop-blur-md">
+              <div class="flex items-center justify-between pb-6 border-b border-slate-700">
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-lg bg-sky-500/20 text-sky-400 flex items-center justify-center">
+                    <i data-lucide="activity" class="w-5 h-5"></i>
+                  </div>
+                  <div>
+                    <h2 class="text-white font-semibold text-sm">Hệ sinh thái Hiệp Lực</h2>
+                    <p class="text-xs text-slate-400">Toàn diện từ cá nhân đến tổ chức</p>
+                  </div>
+                </div>
+                <span class="px-2.5 py-1 rounded bg-emerald-500/10 text-emerald-400 text-xs font-medium border border-emerald-500/20">Active</span>
+              </div>
+
+              <!-- Interactive Highlights in Hero -->
+              <div class="space-y-4 mt-6">
+                <div class="p-3.5 rounded-xl bg-slate-800/60 border border-slate-700/40 hover:border-sky-500/40 transition-colors flex items-start gap-3">
+                  <div class="p-2 rounded-lg bg-sky-900/50 text-sky-400 shrink-0 mt-0.5">
+                    <i data-lucide="briefcase" class="w-4 h-4"></i>
+                  </div>
+                  <div>
+                    <h3 class="text-sm font-semibold text-white">Tư vấn Quản trị & KPI</h3>
+                    <p class="text-xs text-slate-300 mt-0.5">Chuẩn hóa hệ thống đo lường hiệu suất và vận hành tinh gọn.</p>
+                  </div>
+                </div>
+
+                <div class="p-3.5 rounded-xl bg-slate-800/60 border border-slate-700/40 hover:border-sky-500/40 transition-colors flex items-start gap-3">
+                  <div class="p-2 rounded-lg bg-sky-900/50 text-sky-400 shrink-0 mt-0.5">
+                    <i data-lucide="cpu" class="w-4 h-4"></i>
+                  </div>
+                  <div>
+                    <h3 class="text-sm font-semibold text-white">AI Competency Framework</h3>
+                    <p class="text-xs text-slate-300 mt-0.5">Làm chủ trí tuệ nhân tạo, nâng cấp năng lực làm việc gấp 3-5 lần.</p>
+                  </div>
+                </div>
+
+                <div class="p-3.5 rounded-xl bg-slate-800/60 border border-slate-700/40 hover:border-sky-500/40 transition-colors flex items-start gap-3">
+                  <div class="p-2 rounded-lg bg-sky-900/50 text-sky-400 shrink-0 mt-0.5">
+                    <i data-lucide="user-check" class="w-4 h-4"></i>
+                  </div>
+                  <div>
+                    <h3 class="text-sm font-semibold text-white">Executive Coaching 1:1</h3>
+                    <p class="text-xs text-slate-300 mt-0.5">Khai vấn phát triển năng lực lãnh đạo và hoạch định sự nghiệp cấp cao.</p>
+                  </div>
+                </div>
+
+                <div class="p-3.5 rounded-xl bg-slate-800/60 border border-slate-700/40 hover:border-sky-500/40 transition-colors flex items-start gap-3">
+                  <div class="p-2 rounded-lg bg-sky-900/50 text-sky-400 shrink-0 mt-0.5">
+                    <i data-lucide="scan" class="w-4 h-4"></i>
+                  </div>
+                  <div>
+                    <h3 class="text-sm font-semibold text-white">Thẩm định Tâm lý & Năng lực</h3>
+                    <p class="text-xs text-slate-300 mt-0.5">Ứng dụng MBTI, DISC, Sinh trắc vân tay trong bố trí nhân sự chính xác.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-6 pt-4 border-t border-slate-700/60 flex items-center justify-between text-xs text-slate-400">
+                <span class="flex items-center gap-1.5">
+                  <i data-lucide="shield-check" class="w-4 h-4 text-sky-400"></i> Cam kết bảo mật thông tin
+                </span>
+                <a href="contact.html" class="text-sky-400 hover:text-sky-300 font-medium">Đặt hẹn ngay &rarr;</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Social Proof / Partner Logos Strip -->
+    <section class="py-12 bg-white border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <p class="text-center text-xs font-semibold uppercase tracking-wider text-slate-600 mb-8">
+          Được tin tưởng bởi các doanh nghiệp, tập đoàn và tổ chức hàng đầu
+        </p>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-8 items-center justify-center opacity-70 grayscale hover:grayscale-0 transition-all duration-300">
+          <div class="flex justify-center items-center font-bold text-slate-700 text-lg tracking-wider">VINAGROUP</div>
+          <div class="flex justify-center items-center font-bold text-slate-700 text-lg tracking-wider">TECHCORP</div>
+          <div class="flex justify-center items-center font-bold text-slate-700 text-lg tracking-wider">VIETLOGISTICS</div>
+          <div class="flex justify-center items-center font-bold text-slate-700 text-lg tracking-wider">ECOHOLDINGS</div>
+          <div class="flex justify-center items-center font-bold text-slate-700 text-lg tracking-wider">ALPHA PHARMA</div>
+          <div class="flex justify-center items-center font-bold text-slate-700 text-lg tracking-wider">SAIGON FOODS</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Solutions Bento Grid -->
+    <section class="py-24 bg-slate-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <div class="badge-trust mb-3">
+            <i data-lucide="layers" class="w-3.5 h-3.5"></i>
+            Hệ sinh thái giải pháp TOPLINKS
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-bold font-heading text-slate-900 tracking-tight">
+            Giải Pháp Toàn Diện Cho Sự Tăng Trưởng Bền Vững
+          </h2>
+          <p class="mt-4 text-base sm:text-lg text-slate-600 leading-relaxed">
+            Chúng tôi tích hợp các trụ cột thiết yếu giúp doanh nghiệp xây dựng nền móng quản trị vững chắc, nâng tầm đội ngũ và đón đầu công nghệ.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          
+          <!-- Card 1: Tư vấn doanh nghiệp (Featured Large) -->
+          <div class="lg:col-span-2 bg-white rounded-2xl p-8 border border-slate-200 card-hover-effect flex flex-col justify-between relative overflow-hidden group">
+            <div class="absolute top-0 right-0 w-64 h-64 bg-sky-50 rounded-full blur-2xl -mr-20 -mt-20 group-hover:bg-sky-100 transition-colors"></div>
+            <div class="relative z-10">
+              <div class="w-12 h-12 rounded-xl bg-sky-100 text-sky-700 flex items-center justify-center mb-6">
+                <i data-lucide="trending-up" class="w-6 h-6"></i>
+              </div>
+              <span class="text-xs font-bold uppercase tracking-wider text-sky-600">Trọng tâm chiến lược</span>
+              <h3 class="text-2xl font-bold font-heading text-slate-900 mt-2">
+                Tư vấn Doanh nghiệp & Hệ thống Quản trị Hiệu suất (KPI / OKR)
+              </h3>
+              <p class="mt-4 text-slate-600 leading-relaxed">
+                Tái cấu trúc tổ chức, chuẩn hóa quy trình vận hành và thiết lập hệ thống chỉ số đo lường hiệu suất thực chất. Giúp ban lãnh đạo kiểm soát bức tranh kinh doanh minh bạch và điều hướng mục tiêu chuẩn xác.
+              </p>
+              
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-6">
+                <div class="flex items-center gap-2 text-sm text-slate-700">
+                  <i data-lucide="check-circle" class="w-4 h-4 text-sky-600"></i> Thiết lập KPI/BSC gắn kết mục tiêu
+                </div>
+                <div class="flex items-center gap-2 text-sm text-slate-700">
+                  <i data-lucide="check-circle" class="w-4 h-4 text-sky-600"></i> Tối ưu hóa quy trình nghiệp vụ (SOP)
+                </div>
+                <div class="flex items-center gap-2 text-sm text-slate-700">
+                  <i data-lucide="check-circle" class="w-4 h-4 text-sky-600"></i> Xây dựng văn hóa doanh nghiệp
+                </div>
+                <div class="flex items-center gap-2 text-sm text-slate-700">
+                  <i data-lucide="check-circle" class="w-4 h-4 text-sky-600"></i> Khảo sát sức khỏe tổ chức định kỳ
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-8 pt-6 border-t border-slate-100 flex items-center justify-between relative z-10">
+              <a href="solutions.html" class="inline-flex items-center gap-2 text-sm font-semibold text-sky-600 hover:text-sky-800 transition-colors">
+                Xem chi tiết giải pháp tư vấn <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </a>
+              <span class="text-xs text-slate-600">Đã áp dụng tại 100+ doanh nghiệp</span>
+            </div>
+          </div>
+
+          <!-- Card 2: Dịch vụ Đào tạo chất lượng cao -->
+          <div class="bg-white rounded-2xl p-8 border border-slate-200 card-hover-effect flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center mb-6">
+                <i data-lucide="graduation-cap" class="w-6 h-6"></i>
+              </div>
+              <span class="text-xs font-bold uppercase tracking-wider text-indigo-600">Phát triển nguồn lực</span>
+              <h3 class="text-xl font-bold font-heading text-slate-900 mt-2">
+                Dịch vụ Đào tạo Lãnh đạo & Quản lý
+              </h3>
+              <p class="mt-3 text-slate-600 text-sm leading-relaxed">
+                Các chương trình đào tạo may đo sát sườn cho cấp quản lý cấp trung, năng lực lãnh đạo thực chiến, kỹ năng giao tiếp và khởi nghiệp.
+              </p>
+              <ul class="mt-4 space-y-2 text-xs text-slate-600">
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-indigo-600"></i> Năng lực lãnh đạo thời biến động</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-indigo-600"></i> Quản lý cấp trung hiệu quả</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-indigo-600"></i> Đào tạo chuyên môn HR chuyên sâu</li>
+              </ul>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-100">
+              <a href="training.html" class="inline-flex items-center gap-1.5 text-sm font-semibold text-indigo-600 hover:text-indigo-800">
+                Khám phá chương trình <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 3: AI Competency Framework (Hot Highlight) -->
+          <div class="bg-white rounded-2xl p-8 border border-slate-200 card-hover-effect flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center mb-6">
+                <i data-lucide="bot" class="w-6 h-6"></i>
+              </div>
+              <span class="text-xs font-bold uppercase tracking-wider text-purple-600">Công nghệ tiên phong</span>
+              <h3 class="text-xl font-bold font-heading text-slate-900 mt-2">
+                AI Competency: Làm chủ Trí tuệ Nhân tạo
+              </h3>
+              <p class="mt-3 text-slate-600 text-sm leading-relaxed">
+                Đưa AI vào quy trình làm việc thực tế: từ HR, Marketing, Quản trị vận hành cho đến tự động hóa phân tích báo cáo doanh nghiệp.
+              </p>
+              <ul class="mt-4 space-y-2 text-xs text-slate-600">
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-purple-600"></i> Ứng dụng AI trong Nhân sự & Tuyển dụng</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-purple-600"></i> Tự động hóa báo cáo và phân tích số liệu</li>
+              </ul>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-100">
+              <a href="training.html" class="inline-flex items-center gap-1.5 text-sm font-semibold text-purple-600 hover:text-purple-800">
+                Tìm hiểu khóa AI <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 4: Dịch vụ Nhân sự toàn diện -->
+          <div class="bg-white rounded-2xl p-8 border border-slate-200 card-hover-effect flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-6">
+                <i data-lucide="users" class="w-6 h-6"></i>
+              </div>
+              <span class="text-xs font-bold uppercase tracking-wider text-emerald-600">Giải pháp nhân sự</span>
+              <h3 class="text-xl font-bold font-heading text-slate-900 mt-2">
+                Dịch vụ Nhân sự Toàn diện (HR Solutions)
+              </h3>
+              <p class="mt-3 text-slate-600 text-sm leading-relaxed">
+                Hỗ trợ doanh nghiệp tháo gỡ điểm nghẽn tuyển dụng nhân sự cấp cao, xây dựng hệ thống lương thưởng đãi ngộ (C&B) và kiểm toán nhân sự.
+              </p>
+              <ul class="mt-4 space-y-2 text-xs text-slate-600">
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Headhunting nhân sự cấp cao</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Thiết kế thang bảng lương 3P</li>
+              </ul>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-100">
+              <a href="solutions.html" class="inline-flex items-center gap-1.5 text-sm font-semibold text-emerald-600 hover:text-emerald-800">
+                Xem chi tiết HR <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 5: Coaching & Bộ công cụ đánh giá (STVT, MBTI, DISC) -->
+          <div class="bg-white rounded-2xl p-8 border border-slate-200 card-hover-effect flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center mb-6">
+                <i data-lucide="compass" class="w-6 h-6"></i>
+              </div>
+              <span class="text-xs font-bold uppercase tracking-wider text-amber-600">Khai mở tiềm năng</span>
+              <h3 class="text-xl font-bold font-heading text-slate-900 mt-2">
+                Coaching 1:1 & Bộ Công cụ Trắc nghiệm
+              </h3>
+              <p class="mt-3 text-slate-600 text-sm leading-relaxed">
+                Khai vấn sự nghiệp cho cá nhân và thẩm định phong cách hành vi tổ chức thông qua bộ công cụ chuẩn quốc tế (MBTI, DISC, Sinh trắc vân tay).
+              </p>
+              <ul class="mt-4 space-y-2 text-xs text-slate-600">
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-600"></i> Huấn luyện lãnh đạo 1:1 (Leadership Coach)</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-600"></i> Bài test trắc nghiệm tính cách & năng lực</li>
+              </ul>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-100">
+              <a href="tools.html" class="inline-flex items-center gap-1.5 text-sm font-semibold text-amber-600 hover:text-amber-800">
+                Khám phá công cụ <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Co-Creation 4-Step Methodology -->
+    <section class="py-24 bg-white border-y border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <div class="badge-trust mb-3">
+            <i data-lucide="workflow" class="w-3.5 h-3.5"></i>
+            Phương pháp luận độc quyền
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-bold font-heading text-slate-900 tracking-tight">
+            Mô Hình "Hiệp Lực Kiến Tạo" 4 Giai Đoạn
+          </h2>
+          <p class="mt-4 text-base sm:text-lg text-slate-600 leading-relaxed">
+            Chúng tôi không đóng gói giải pháp lý thuyết suông. Mọi can thiệp đều bắt nguồn từ sự thấu hiểu sâu sắc và cùng hành động với khách hàng.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
+          
+          <!-- Step 1 -->
+          <div class="relative bg-slate-50 rounded-2xl p-6 border border-slate-200 card-hover-effect">
+            <div class="w-10 h-10 rounded-full bg-slate-900 text-white font-bold flex items-center justify-center mb-4 text-sm font-heading shadow">
+              01
+            </div>
+            <h3 class="text-lg font-bold font-heading text-slate-900">Chẩn đoán & Thấu cảm</h3>
+            <p class="mt-2 text-sm text-slate-600 leading-relaxed">
+              Khảo sát hiện trạng, phỏng vấn sâu các cấp lãnh đạo và kiểm toán các điểm nghẽn vận hành thực tế.
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="relative bg-slate-50 rounded-2xl p-6 border border-slate-200 card-hover-effect">
+            <div class="w-10 h-10 rounded-full bg-sky-600 text-white font-bold flex items-center justify-center mb-4 text-sm font-heading shadow">
+              02
+            </div>
+            <h3 class="text-lg font-bold font-heading text-slate-900">Đồng kiến tạo giải pháp</h3>
+            <p class="mt-2 text-sm text-slate-600 leading-relaxed">
+              Tổ chức các workshop đồng sáng tạo (Co-Creation) để xây dựng hệ thống quy trình, KPI và giải pháp may đo riêng.
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="relative bg-slate-50 rounded-2xl p-6 border border-slate-200 card-hover-effect">
+            <div class="w-10 h-10 rounded-full bg-slate-900 text-white font-bold flex items-center justify-center mb-4 text-sm font-heading shadow">
+              03
+            </div>
+            <h3 class="text-lg font-bold font-heading text-slate-900">Triển khai & Chuyển giao</h3>
+            <p class="mt-2 text-sm text-slate-600 leading-relaxed">
+              Huấn luyện đào tạo nhân sự trực tiếp, giám sát thực thi giai đoạn đầu và chuyển giao toàn diện tài liệu, biểu mẫu.
+            </p>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="relative bg-slate-50 rounded-2xl p-6 border border-slate-200 card-hover-effect">
+            <div class="w-10 h-10 rounded-full bg-sky-600 text-white font-bold flex items-center justify-center mb-4 text-sm font-heading shadow">
+              04
+            </div>
+            <h3 class="text-lg font-bold font-heading text-slate-900">Đo lường & Tối ưu hóa</h3>
+            <p class="mt-2 text-sm text-slate-600 leading-relaxed">
+              Đánh giá chỉ số ROI, đo lường sự thay đổi hành vi tổ chức và hỗ trợ tinh chỉnh định kỳ để đảm bảo hiệu quả dài hạn.
+            </p>
+          </div>
+
+        </div>
+
+        <div class="mt-12 text-center">
+          <a href="about.html" class="inline-flex items-center gap-2 text-sm font-semibold text-sky-600 hover:text-sky-800">
+            <span>Tìm hiểu chi tiết triết lý hoạt động của Toplinks</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Testimonials / Client Quotes -->
+    <section class="py-24 bg-slate-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-2xl mx-auto mb-16">
+          <div class="badge-trust mb-3">
+            <i data-lucide="message-square" class="w-3.5 h-3.5"></i>
+            Đánh giá từ khách hàng
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-bold font-heading text-slate-900 tracking-tight">
+            Khách Hàng Nói Gì Về TOPLINKS
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <!-- Review 1 -->
+          <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-1 text-amber-400 mb-4">
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed italic">
+                "Điều tôi đánh giá cao nhất ở Toplinks là tinh thần 'Hiệp lực'. Họ không nói lý thuyết trên mây mà ngồi lại cùng từng trưởng phòng của chúng tôi để xây dựng bộ KPI gắn chặt với doanh thu."
+              </p>
+            </div>
+            <div class="mt-6 pt-6 border-t border-slate-100 flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-slate-200 text-slate-700 font-bold flex items-center justify-center text-xs">
+                TL
+              </div>
+              <div>
+                <p class="text-sm font-bold text-slate-900">Nguyễn Thành Long</p>
+                <p class="text-xs text-slate-500">Tổng Giám đốc - Tập đoàn Sản xuất & Phân phối</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-1 text-amber-400 mb-4">
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed italic">
+                "Khóa đào tạo AI Competency Framework do Toplinks tổ chức đã thay đổi tư duy làm việc của hơn 60 quản lý tại công ty tôi. Năng suất xử lý dữ liệu và tuyển dụng tăng rõ rệt sau 1 tháng."
+              </p>
+            </div>
+            <div class="mt-6 pt-6 border-t border-slate-100 flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-sky-100 text-sky-700 font-bold flex items-center justify-center text-xs">
+                HM
+              </div>
+              <div>
+                <p class="text-sm font-bold text-slate-900">Trần Hoàng Mai</p>
+                <p class="text-xs text-slate-500">Giám đốc Nhân sự (CHRO) - Chuỗi Bán lẻ</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-1 text-amber-400 mb-4">
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed italic">
+                "Chương trình Coaching 1:1 đã giúp tôi nhìn nhận lại cấu trúc quản trị công ty khi mở rộng quy mô từ 50 lên 200 nhân sự. Các chuyên gia Toplinks rất thực chiến và uy tín."
+              </p>
+            </div>
+            <div class="mt-6 pt-6 border-t border-slate-100 flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-indigo-100 text-indigo-700 font-bold flex items-center justify-center text-xs">
+                ĐK
+              </div>
+              <div>
+                <p class="text-sm font-bold text-slate-900">Vũ Đình Khoa</p>
+                <p class="text-xs text-slate-500">Founder & CEO - Công ty Công nghệ</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Bottom Conversion CTA Section -->
+    <section class="py-20 bg-slate-900 text-white relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+        <h2 class="text-3xl sm:text-4xl font-bold font-heading max-w-2xl mx-auto leading-tight">
+          Cùng TOPLINKS Bứt Phá Hiệu Suất Doanh Nghiệp Ngay Hôm Nay
+        </h2>
+        <p class="mt-4 text-slate-300 max-w-xl mx-auto text-base sm:text-lg">
+          Hãy để đội ngũ chuyên gia của chúng tôi cùng bạn phân tích hiện trạng và kiến tạo giải pháp phát triển bền vững nhất.
+        </p>
+        <div class="mt-8 flex flex-col sm:flex-row justify-center items-center gap-4">
+          <a href="contact.html" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-sky-500 hover:bg-sky-600 text-white font-semibold text-base shadow-lg shadow-sky-500/30 transition-all flex items-center justify-center gap-2">
+            <span>Đăng ký nhận buổi tư vấn chẩn đoán 1:1</span>
+            <i data-lucide="arrow-right" class="w-5 h-5"></i>
+          </a>
+          <a href="tools.html" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-semibold text-base transition-all flex items-center justify-center gap-2">
+            <i data-lucide="check-square" class="w-5 h-5 text-sky-400"></i>
+            <span>Làm bài khảo sát nhanh</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="bg-slate-950 text-slate-400 text-sm border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+        
+        <!-- Company Info -->
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-sky-600 text-white font-bold flex items-center justify-center text-lg">TL</div>
+            <div>
+              <span class="font-bold text-white text-lg font-heading">CÔNG TY TNHH TOPLINKS</span>
+              <p class="text-xs text-sky-400 uppercase font-semibold">Co-Creation for Success</p>
+            </div>
+          </div>
+          <p class="text-slate-400 text-xs sm:text-sm leading-relaxed max-w-sm">
+            Tổ chức hàng đầu tại Việt Nam cung cấp giải pháp tư vấn quản trị, đào tạo nhân sự và chuyển đổi số theo triết lý hiệp lực đồng hành cùng doanh nghiệp.
+          </p>
+          <div class="space-y-2 text-xs text-slate-300 pt-2">
+            <p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-sky-400 shrink-0"></i> Hà Nội: Tầng 6, Tòa nhà Tri thức, Cầu Giấy, Hà Nội</p>
+            <p class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-sky-400 shrink-0"></i> Hotline: 0909.xxx.xxx</p>
+            <p class="flex items-center gap-2"><i data-lucide="mail" class="w-4 h-4 text-sky-400 shrink-0"></i> Email: info@toplinks.vn | academy@toplinks.vn</p>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="text-white font-semibold text-sm mb-4 font-heading">Về TOPLINKS</h4>
+          <ul class="space-y-2.5 text-xs sm:text-sm">
+            <li><a href="about.html" class="hover:text-white transition-colors">Giới thiệu chung</a></li>
+            <li><a href="about.html#philosophy" class="hover:text-white transition-colors">Triết lý Co-Creation</a></li>
+            <li><a href="about.html#team" class="hover:text-white transition-colors">Đội ngũ chuyên gia</a></li>
+            <li><a href="contact.html" class="hover:text-white transition-colors">Tin tức & Sự kiện</a></li>
+          </ul>
+        </div>
+
+        <!-- Solutions -->
+        <div>
+          <h4 class="text-white font-semibold text-sm mb-4 font-heading">Giải Pháp & Dịch Vụ</h4>
+          <ul class="space-y-2.5 text-xs sm:text-sm">
+            <li><a href="solutions.html" class="hover:text-white transition-colors">Tư vấn Doanh nghiệp</a></li>
+            <li><a href="solutions.html" class="hover:text-white transition-colors">Thiết lập hệ thống KPI</a></li>
+            <li><a href="solutions.html" class="hover:text-white transition-colors">Dịch vụ Nhân sự (HR)</a></li>
+            <li><a href="training.html" class="hover:text-white transition-colors">Đào tạo năng lực lãnh đạo</a></li>
+            <li><a href="training.html" class="hover:text-white transition-colors">AI Competency Framework</a></li>
+          </ul>
+        </div>
+
+        <!-- Tools & Support -->
+        <div>
+          <h4 class="text-white font-semibold text-sm mb-4 font-heading">Công Cụ & Khảo Sát</h4>
+          <ul class="space-y-2.5 text-xs sm:text-sm">
+            <li><a href="tools.html" class="hover:text-white transition-colors">Sinh trắc vân tay (STVT)</a></li>
+            <li><a href="tools.html" class="hover:text-white transition-colors">Trắc nghiệm MBTI</a></li>
+            <li><a href="tools.html" class="hover:text-white transition-colors">Đánh giá hành vi DISC</a></li>
+            <li><a href="contact.html" class="hover:text-white transition-colors">Liên hệ hỗ trợ</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Copyright & Bottom Strip -->
+      <div class="mt-12 pt-8 border-t border-slate-900 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+        <p>&copy; <span id="current-year">2026</span> TOPLINKS Co., Ltd. Tất cả quyền được bảo lưu.</p>
+        <div class="flex items-center gap-6">
+          <a href="contact.html" class="hover:text-slate-400">Điều khoản dịch vụ</a>
+          <a href="contact.html" class="hover:text-slate-400">Chính sách bảo mật</a>
+          <a href="contact.html" class="hover:text-slate-400">Quy định bản quyền</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
