@@ -8,7 +8,6 @@ const ToplinksCore = {
     this.initMobileMenu();
     this.initStickyHeader();
     this.initAccordion();
-    this.initActiveNav();
     this.initLucideIcons();
     this.initYear();
   },
@@ -33,7 +32,7 @@ const ToplinksCore = {
       mobileMenu.classList.remove('hidden');
       document.body.classList.add('overflow-hidden');
       toggleBtn.setAttribute('aria-expanded', 'true');
-      (focusables()[1] || focusables()[0])?.focus(); // first nav link (index 0 is the close button)
+      (mobileMenu.querySelector('nav a[href]') || focusables()[0])?.focus();
     };
     const close = () => {
       mobileMenu.classList.add('hidden');
@@ -45,9 +44,9 @@ const ToplinksCore = {
     toggleBtn.addEventListener('click', () => (isOpen() ? close() : open()));
     if (closeBtn) closeBtn.addEventListener('click', close);
 
-    // Close on backdrop click
+    // Close on backdrop click, and on any drawer link (same-page #hash links do not reload)
     mobileMenu.addEventListener('click', (e) => {
-      if (e.target === mobileMenu) close();
+      if (e.target === mobileMenu || e.target.closest('a[href]')) close();
     });
 
     // Esc closes; Tab stays inside the open drawer
@@ -59,10 +58,12 @@ const ToplinksCore = {
         const items = focusables();
         const first = items[0];
         const last = items[items.length - 1];
-        if (e.shiftKey && document.activeElement === first) {
+        // focus outside the drawer (e.g. on body after a click) is pulled back in
+        const outside = !mobileMenu.contains(document.activeElement);
+        if (e.shiftKey && (outside || document.activeElement === first)) {
           e.preventDefault();
           last.focus();
-        } else if (!e.shiftKey && document.activeElement === last) {
+        } else if (!e.shiftKey && (outside || document.activeElement === last)) {
           e.preventDefault();
           first.focus();
         }
@@ -78,19 +79,6 @@ const ToplinksCore = {
     const onScroll = () => header.classList.toggle('is-scrolled', window.scrollY > 8);
     window.addEventListener('scroll', onScroll, { passive: true });
     onScroll();
-  },
-
-  initActiveNav() {
-    const currentPath = window.location.pathname.split('/').pop() || 'index.html';
-    const navLinks = document.querySelectorAll('[data-nav-link]');
-
-    navLinks.forEach((link) => {
-      const href = link.getAttribute('href');
-      if (href === currentPath || (currentPath === '' && href === 'index.html')) {
-        // Active styling lives in the HTML (brand navy + border); JS only exposes it to assistive tech
-        link.setAttribute('aria-current', 'page');
-      }
-    });
   },
 
   initAccordion() {
@@ -130,46 +118,46 @@ const ToplinksCore = {
     if (!container) {
       container = document.createElement('div');
       container.id = 'toast-container';
-      container.className = 'fixed bottom-5 right-5 z-50 flex flex-col gap-2 max-w-md w-full px-4 pointer-events-none';
       document.body.appendChild(container);
     }
 
+    // Styling lives in v2.css (#toast-container …); only .opacity-0 and .flex-1 are hooks
     const toast = document.createElement('div');
     const isSuccess = type === 'success';
-    toast.className = `pointer-events-auto flex items-start gap-3 p-4 rounded-xl shadow-xl border transform transition-all duration-300 translate-y-4 opacity-0 ${
-      isSuccess ? 'bg-[#153e4d] border-[#fbee41] text-white' : 'bg-red-900 border-red-500 text-white'
-    }`;
+    toast.className = 'opacity-0';
     toast.setAttribute('role', isSuccess ? 'status' : 'alert');
 
     toast.innerHTML = `
-      <div class="p-1 rounded-full ${isSuccess ? 'bg-[#fbee41]/20 text-[#fbee41]' : 'bg-red-500/20 text-red-400'}">
-        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <div>
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="${
             isSuccess ? 'M5 13l4 4L19 7' : 'M6 18L18 6M6 6l12 12'
           }"></path>
         </svg>
       </div>
       <div class="flex-1">
-        <p class="text-sm font-semibold">${isSuccess ? 'Thông báo' : 'Lỗi'}</p>
-        <p class="text-xs text-slate-300 mt-0.5 leading-relaxed">${message}</p>
+        <p>${isSuccess ? 'Thông báo' : 'Lỗi'}</p>
+        <p></p>
       </div>
-      <button type="button" aria-label="Đóng thông báo" class="text-slate-400 hover:text-white" onclick="this.parentElement.remove()">
-        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <button type="button" aria-label="Đóng thông báo" onclick="this.parentElement.remove()">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
         </svg>
       </button>
     `;
+    // textContent, not innerHTML: message may carry user-derived text
+    toast.querySelector('.flex-1 p + p').textContent = message;
 
     container.appendChild(toast);
 
     // Animate in
     requestAnimationFrame(() => {
-      toast.classList.remove('translate-y-4', 'opacity-0');
+      toast.classList.remove('opacity-0');
     });
 
     // Auto dismiss after 4.5s
     setTimeout(() => {
-      toast.classList.add('opacity-0', 'translate-y-2');
+      toast.classList.add('opacity-0');
       setTimeout(() => toast.remove(), 300);
     }, 4500);
   }

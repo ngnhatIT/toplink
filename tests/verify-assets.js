@@ -12,7 +12,7 @@ const cssContent = fs.readFileSync(cssPath, 'utf8');
 assert(cssContent.includes('--color-primary'), 'style.css must define --color-primary');
 assert(cssContent.includes('--color-accent'), 'style.css must define --color-accent');
 // Be Vietnam Pro replaces Poppins/Plus Jakarta Sans: Poppins has no Vietnamese subset (U+1EA0–1EF9)
-assert(cssContent.includes('Be+Vietnam+Pro'), 'style.css must load Be Vietnam Pro font');
+assert(!cssContent.includes('@import'), 'style.css must not @import fonts (pages load them by <link>)');
 assert(cssContent.includes("--font-heading: 'Be Vietnam Pro'"), 'heading font token must be Be Vietnam Pro');
 assert(cssContent.includes('--color-ring-on-dark'), 'style.css must define a focus ring color for dark surfaces');
 

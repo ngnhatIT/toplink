@@ -1,6 +1,6 @@
 /* TOPLINKS - Design System CSS (Anti-Slop Taste Edition / taste-skill 2.5) */
 /* Be Vietnam Pro: full Vietnamese glyph coverage (Poppins lacks U+1EA0–1EF9, stacked tone marks fell back to system font) */
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap');
+/* Loaded by <link> in each page head (parallel download), not imported here */
 
 :root {
   /* Brand colors directly extracted from toplinks.vn */

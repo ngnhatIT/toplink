@@ -6,6 +6,9 @@
   <title>Đào tạo và coaching | TOPLINKS</title>
   <meta name="description" content="Các khóa đào tạo thực chiến AI Competency Framework, năng lực lãnh đạo, quản lý cấp trung, chuyên môn nhân sự, khởi nghiệp và coaching 1:1 cùng chuyên gia TOPLINKS.">
   <meta name="theme-color" content="#08353c">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/v2.css">
   <link rel="stylesheet" href="assets/css/pages/training.css">
@@ -106,7 +109,7 @@
         </div>
         <p id="course-status" class="catalogue-status" aria-live="polite">Đang hiển thị 5 khóa học</p>
 
-        <div class="card-grid" id="course-grid">
+        <div class="card-grid cols-5 rail" id="course-grid">
           <article class="card course-card" data-category="ai">
             <div class="card-media"><img src="assets/images/event-hoi-thao-2024.webp" width="820" height="547" alt="Diễn giả TOPLINKS tại hội thảo An toàn thông tin trong chuyển đổi số 2024" loading="lazy"></div>
             <ul class="card-meta"><li>AI và chuyển đổi số</li><li>24 giờ</li><li>In-house hoặc public</li></ul>
@@ -237,8 +240,8 @@
       <div class="wrap">
         <div class="cta-panel">
           <div>
-            <h2 id="cta-title">Bắt đầu bằng một buổi chẩn đoán 1:1, miễn phí</h2>
-            <p>Chúng tôi lắng nghe, tìm điểm nghẽn gốc và gợi ý một đến hai việc nên làm trước, dù bạn có làm tiếp cùng TOPLINKS hay không.</p>
+            <h2 id="cta-title">Nhận đề cương may đo cho đội ngũ của bạn</h2>
+            <p>Cho chúng tôi biết quy mô và mục tiêu đào tạo. Chuyên gia sẽ trao đổi 1:1 và đề xuất chương trình phù hợp, miễn phí.</p>
           </div>
           <div class="cta-actions">
             <a href="contact.html#consultation-form" class="btn btn-gold">Đặt lịch tư vấn miễn phí <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
@@ -306,6 +309,8 @@
       chip.addEventListener('click', () => {
         const filter = chip.dataset.filter;
         chips.forEach((c) => c.setAttribute('aria-pressed', String(c === chip)));
+        // the 2-wide + 3 layout only fits the full list of 5
+        document.getElementById('course-grid').classList.toggle('is-filtered', filter !== 'all');
         let shown = 0;
         courses.forEach((card) => {
           const match = filter === 'all' || card.dataset.category === filter;

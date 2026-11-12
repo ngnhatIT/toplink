@@ -6,6 +6,9 @@
   <title>Bộ công cụ trắc nghiệm STVT, MBTI, DISC | TOPLINKS</title>
   <meta name="description" content="Sinh trắc vân tay (STVT), MBTI và DISC tại TOPLINKS: thấu hiểu phong cách hành vi, đặt đúng người vào đúng việc, đọc kết quả cùng chuyên gia 1:1.">
   <meta name="theme-color" content="#08353c">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/v2.css">
   <link rel="stylesheet" href="assets/css/pages/tools.css">
@@ -96,7 +99,7 @@
             <p class="section-lead">Được chuyển giao bài bản, có căn cứ khoa học rõ ràng và được các chuyên gia giàu kinh nghiệm giải mã trực tiếp 1:1.</p>
           </div>
         </div>
-        <div class="card-grid">
+        <div class="card-grid rail">
           <article class="card" id="stvt">
             <span class="card-icon" aria-hidden="true"><i data-lucide="fingerprint"></i></span>
             <h3>Sinh trắc vân tay (Dermatoglyphics, STVT)</h3>
@@ -126,7 +129,7 @@
             <ul class="card-meta"><li>4 nhóm hành vi</li><li>Ứng dụng thực chiến</li></ul>
             <dl>
               <div><dt>Cho nhà quản lý</dt><dd>Giao việc đúng cách cho từng nhóm tính khí và xây dựng đội ngũ bán hàng gắn kết.</dd></div>
-              <div><dt>Thử ngay</dt><dd>Làm bài khảo sát nhanh 3 câu ngay trên trang này để biết phong cách nổi trội của bạn.</dd></div>
+              <div><dt>Thử ngay</dt><dd>Làm bài khảo sát nhanh 8 câu ngay trên trang này để biết phong cách nổi trội của bạn.</dd></div>
             </dl>
             <a href="#assessment-widget" class="text-link">Làm bài DISC nhanh <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
           </article>
@@ -138,46 +141,21 @@
     <section class="section paper" aria-labelledby="quiz-title">
       <div class="wrap diag-grid">
         <div>
-          <p class="kicker">Trải nghiệm nhanh 60 giây</p>
+          <p class="kicker">Trải nghiệm nhanh 2 phút</p>
           <h2 id="quiz-title" class="section-title">Khảo sát nhanh phong cách làm việc và lãnh đạo</h2>
-          <p class="section-lead">Trả lời 3 câu hỏi tình huống thực tế để nhận diện phong cách hành vi nổi trội của bạn theo mô hình DISC.</p>
+          <p class="section-lead">Trả lời 8 câu hỏi tình huống thực tế để nhận diện phong cách hành vi nổi trội của bạn theo mô hình DISC.</p>
           <p class="quiz-note">Kết quả chỉ mang tính tham khảo. Bài đánh giá DISC đầy đủ và buổi đọc kết quả cùng chuyên gia sẽ cho bức tranh chính xác hơn.</p>
         </div>
 
         <div id="assessment-widget" class="quiz">
           <div class="quiz-progress">
-            <span id="quiz-step-text">Câu hỏi 1 / 3</span>
-            <div class="quiz-bar" aria-hidden="true"><div id="quiz-progress-bar" style="width:33.3%"></div></div>
+            <span id="quiz-step-text">Câu hỏi 1 / 8</span>
+            <div class="quiz-bar" aria-hidden="true"><div id="quiz-progress-bar" style="width:0%"></div></div>
           </div>
 
-          <div id="q1" class="quiz-question" role="group" aria-labelledby="q1-title">
-            <h3 id="q1-title" tabindex="-1">1. Khi đối mặt với một sự cố bất ngờ trong dự án, phản xạ đầu tiên của bạn là gì?</h3>
-            <div class="quiz-answers">
-              <button type="button" class="quiz-answer" onclick="selectAnswer('D', 1)">Quyết liệt đưa ra quyết định hành động ngay để kiểm soát tình hình.</button>
-              <button type="button" class="quiz-answer" onclick="selectAnswer('I', 1)">Họp nhanh toàn đội, truyền cảm hứng và cùng nhau động não tìm giải pháp.</button>
-              <button type="button" class="quiz-answer" onclick="selectAnswer('S', 1)">Giữ bình tĩnh, lắng nghe ý kiến của từng người và duy trì sự ổn định của nhóm.</button>
-              <button type="button" class="quiz-answer" onclick="selectAnswer('C', 1)">Thu thập toàn bộ dữ liệu, kiểm tra quy trình và tìm nguyên nhân gốc rễ.</button>
-            </div>
-          </div>
-
-          <div id="q2" class="quiz-question hidden" role="group" aria-labelledby="q2-title">
-            <h3 id="q2-title" tabindex="-1">2. Điều gì tạo động lực và năng lượng lớn nhất cho bạn trong công việc?</h3>
-            <div class="quiz-answers">
-              <button type="button" class="quiz-answer" onclick="selectAnswer('D', 2)">Chinh phục các mục tiêu thách thức và vượt qua đối thủ cạnh tranh.</button>
-              <button type="button" class="quiz-answer" onclick="selectAnswer('I', 2)">Được kết nối, giao lưu, tạo ảnh hưởng và nhận sự ghi nhận từ mọi người.</button>
-              <button type="button" class="quiz-answer" onclick="selectAnswer('S', 2)">Môi trường làm việc hòa đồng, tin cậy và gắn kết lâu dài như một gia đình.</button>
-              <button type="button" class="quiz-answer" onclick="selectAnswer('C', 2)">Mọi công việc đều có trật tự, chuẩn xác, bài bản và không sai sót.</button>
-            </div>
-          </div>
-
-          <div id="q3" class="quiz-question hidden" role="group" aria-labelledby="q3-title">
-            <h3 id="q3-title" tabindex="-1">3. Bạn giải quyết thế nào khi hai thành viên trong nhóm bất đồng quan điểm?</h3>
-            <div class="quiz-answers">
-              <button type="button" class="quiz-answer" onclick="selectAnswer('D', 3)">Yêu cầu dừng tranh luận, chọn phương án hiệu quả nhất và yêu cầu thực thi.</button>
-              <button type="button" class="quiz-answer" onclick="selectAnswer('I', 3)">Dùng sự hài hước xoa dịu căng thẳng và thuyết phục hai bên bắt tay nhau.</button>
-              <button type="button" class="quiz-answer" onclick="selectAnswer('S', 3)">Gặp riêng từng người để lắng nghe tâm tư và tìm điểm đồng thuận nhẹ nhàng.</button>
-              <button type="button" class="quiz-answer" onclick="selectAnswer('C', 3)">Đối chiếu lại bảng tiêu chí, số liệu thực tế và quy định chung để phân xử.</button>
-            </div>
+          <div id="quiz-question" class="quiz-question" role="group" aria-labelledby="quiz-q-title">
+            <h3 id="quiz-q-title" tabindex="-1"></h3>
+            <div id="quiz-answers" class="quiz-answers"></div>
           </div>
 
           <div id="quiz-result" class="hidden">
@@ -222,8 +200,8 @@
       <div class="wrap">
         <div class="cta-panel">
           <div>
-            <h2 id="cta-title">Bắt đầu bằng một buổi chẩn đoán 1:1, miễn phí</h2>
-            <p>Chúng tôi lắng nghe, tìm điểm nghẽn gốc và gợi ý một đến hai việc nên làm trước, dù bạn có làm tiếp cùng TOPLINKS hay không.</p>
+            <h2 id="cta-title">Muốn đọc kết quả cùng chuyên gia?</h2>
+            <p>Đặt một buổi giải mã 1:1 để hiểu điểm mạnh, điểm mù và cách dùng kết quả trong tuyển dụng, giao việc.</p>
           </div>
           <div class="cta-actions">
             <a href="contact.html#consultation-form" class="btn btn-gold">Đặt lịch tư vấn miễn phí <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
@@ -296,50 +274,102 @@
       document.getElementById('quiz-progress-bar').style.width = width;
     }
 
-    function selectAnswer(type, questionIndex) {
-      answers[type] = (answers[type] || 0) + 1;
-      const qCurrent = document.getElementById('q' + questionIndex);
-      const qNext = document.getElementById('q' + (questionIndex + 1));
+    // Each question: text, then its answers in D, I, S, C order
+    const TYPES = ['D', 'I', 'S', 'C'];
+    const questions = [
+      ['Khi đối mặt với một sự cố bất ngờ trong dự án, phản xạ đầu tiên của bạn là gì?', [
+        'Quyết liệt đưa ra quyết định hành động ngay để kiểm soát tình hình.',
+        'Họp nhanh toàn đội, truyền cảm hứng và cùng nhau động não tìm giải pháp.',
+        'Giữ bình tĩnh, lắng nghe ý kiến của từng người và duy trì sự ổn định của nhóm.',
+        'Thu thập toàn bộ dữ liệu, kiểm tra quy trình và tìm nguyên nhân gốc rễ.']],
+      ['Điều gì tạo động lực và năng lượng lớn nhất cho bạn trong công việc?', [
+        'Chinh phục các mục tiêu thách thức và vượt qua đối thủ cạnh tranh.',
+        'Được kết nối, giao lưu, tạo ảnh hưởng và nhận sự ghi nhận từ mọi người.',
+        'Môi trường làm việc hòa đồng, tin cậy và gắn kết lâu dài như một gia đình.',
+        'Mọi công việc đều có trật tự, chuẩn xác, bài bản và không sai sót.']],
+      ['Bạn giải quyết thế nào khi hai thành viên trong nhóm bất đồng quan điểm?', [
+        'Yêu cầu dừng tranh luận, chọn phương án hiệu quả nhất và yêu cầu thực thi.',
+        'Dùng sự hài hước xoa dịu căng thẳng và thuyết phục hai bên bắt tay nhau.',
+        'Gặp riêng từng người để lắng nghe tâm tư và tìm điểm đồng thuận nhẹ nhàng.',
+        'Đối chiếu lại bảng tiêu chí, số liệu thực tế và quy định chung để phân xử.']],
+      ['Khi nhận một dự án mới, bạn thường bắt đầu thế nào?', [
+        'Xác định ngay mục tiêu, mốc thời gian và bắt tay vào việc.',
+        'Kéo mọi người vào bàn ý tưởng và tạo hứng khởi cho cả nhóm.',
+        'Tìm hiểu vai trò của từng người và cách phối hợp nhịp nhàng với nhau.',
+        'Đọc kỹ yêu cầu, lập kế hoạch chi tiết và lường trước rủi ro.']],
+      ['Trong một cuộc họp, bạn thường là người thế nào?', [
+        'Đi thẳng vào vấn đề và thúc đẩy cả nhóm chốt quyết định.',
+        'Khuấy động không khí và đưa ra nhiều ý tưởng mới.',
+        'Lắng nghe nhiều hơn nói, giúp mọi người tìm tiếng nói chung.',
+        'Đặt câu hỏi kiểm chứng và yêu cầu số liệu cụ thể.']],
+      ['Điều gì khiến bạn khó chịu nhất trong công việc?', [
+        'Tiến độ chậm chạp và sự thiếu quyết đoán.',
+        'Phải làm việc một mình, ít được trao đổi với ai.',
+        'Thay đổi đột ngột, không được báo trước.',
+        'Làm việc cẩu thả, thiếu căn cứ và tiêu chuẩn.']],
+      ['Khi cần thuyết phục người khác, bạn dựa vào điều gì?', [
+        'Kết quả cần đạt và lập luận ngắn gọn, dứt khoát.',
+        'Câu chuyện, nhiệt huyết và mối quan hệ sẵn có.',
+        'Sự kiên nhẫn, chân thành và lòng tin đã xây dựng.',
+        'Dữ liệu, phân tích và bằng chứng rõ ràng.']],
+      ['Dưới áp lực thời hạn gấp, bạn thường làm gì?', [
+        'Nắm quyền điều phối và ra quyết định nhanh.',
+        'Động viên tinh thần và kêu gọi mọi người cùng chung sức.',
+        'Âm thầm làm phần của mình và hỗ trợ đồng đội theo kịp.',
+        'Rà soát lại từng chi tiết để chắc chắn không sai sót.']]
+    ];
+    const lastPick = { D: -1, I: -1, S: -1, C: -1 };
+    let step = 0;
+
+    function render(focus) {
+      const [text, options] = questions[step];
+      const title = document.getElementById('quiz-q-title');
+      // Bar shows answered questions, so it only fills on completion
+      setStep(`Câu hỏi ${step + 1} / ${questions.length}`, `${(step / questions.length) * 100}%`);
+      title.textContent = `${step + 1}. ${text}`;
+      // Rotate the answer order per question so no type always sits first
+      document.getElementById('quiz-answers').replaceChildren(...TYPES.map((_, i) => {
+        const k = (i + step) % 4;
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'quiz-answer';
+        btn.textContent = options[k];
+        btn.onclick = () => selectAnswer(TYPES[k]);
+        return btn;
+      }));
+      if (focus) title.focus(); // focus announces the question; no live text needed
+    }
+
+    function selectAnswer(type) {
       const live = document.getElementById('quiz-live');
-      qCurrent.classList.add('hidden');
+      answers[type]++;
+      lastPick[type] = step;
+      step++;
+      live.textContent = '';
+      if (step < questions.length) { render(true); return; }
 
-      if (qNext) {
-        qNext.classList.remove('hidden');
-        setStep(`Câu hỏi ${questionIndex + 1} / 3`, `${((questionIndex + 1) / 3) * 100}%`);
-        live.textContent = `Câu hỏi ${questionIndex + 1} trên 3`;
-        qNext.querySelector('h3').focus();
-        return;
-      }
-
-      // Highest score wins; ties go to the first type in D, I, S, C order
-      let highest = 'D';
-      let maxVal = -1;
-      for (const [k, v] of Object.entries(answers)) {
-        if (v > maxVal) { maxVal = v; highest = k; }
-      }
-      const res = profiles[highest] || profiles.D;
+      // Highest score wins; a tie goes to the tied type picked most recently
+      const highest = TYPES.reduce((a, b) => (answers[b] > answers[a] || (answers[b] === answers[a] && lastPick[b] > lastPick[a]) ? b : a));
+      const res = profiles[highest];
+      document.getElementById('quiz-question').classList.add('hidden');
       document.getElementById('result-title').textContent = res.title;
       document.getElementById('result-desc').textContent = res.desc;
       document.getElementById('quiz-result').classList.remove('hidden');
       setStep('Hoàn thành bài khảo sát', '100%');
-      live.textContent = `Kết quả: ${res.title}. ${res.desc}`;
+      live.textContent = res.desc; // title is announced by the focus move below
       document.getElementById('result-title').focus();
-
-      if (window.ToplinksCore && typeof window.ToplinksCore.showToast === 'function') {
-        window.ToplinksCore.showToast('Đã có kết quả phong cách làm việc của bạn.');
-      }
     }
 
     function resetQuiz() {
-      answers.D = 0; answers.I = 0; answers.S = 0; answers.C = 0;
+      TYPES.forEach((t) => { answers[t] = 0; lastPick[t] = -1; });
+      step = 0;
       document.getElementById('quiz-result').classList.add('hidden');
-      document.getElementById('q2').classList.add('hidden');
-      document.getElementById('q3').classList.add('hidden');
-      document.getElementById('q1').classList.remove('hidden');
-      setStep('Câu hỏi 1 / 3', '33.3%');
-      document.getElementById('quiz-live').textContent = 'Đã làm lại khảo sát. Câu hỏi 1 trên 3';
-      document.getElementById('q1-title').focus();
+      document.getElementById('quiz-question').classList.remove('hidden');
+      document.getElementById('quiz-live').textContent = 'Đã làm lại khảo sát.';
+      render(true);
     }
+
+    render(false);
   </script>
 </body>
 </html>

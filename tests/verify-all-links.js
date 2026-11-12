@@ -24,6 +24,12 @@ pages.forEach(page => {
   // Check shared CSS & JS
   assert(content.includes('assets/css/style.css'), `${page} must link to style.css`);
   assert(content.includes('assets/js/main.js'), `${page} must link to main.js`);
+  assert(content.includes('assets/css/v2.css'), `${page} must link to v2.css`);
+  assert(content.includes('family=Be+Vietnam+Pro'), `${page} must load Be Vietnam Pro font`);
+  // Every local stylesheet a page links must exist (v2.css, pages/*.css)
+  for (const [, href] of content.matchAll(/<link rel="stylesheet" href="(assets\/[^"]+)"/g)) {
+    assert(fs.existsSync(path.join(__dirname, '..', href)), `${page} links missing stylesheet ${href}`);
+  }
 
   // Check links to all other pages
   pages.forEach(targetPage => {
