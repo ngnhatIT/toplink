@@ -1,4 +1,4 @@
-# Design System Master File
+# Design System Master File — TOPLINKS (Anti-Slop Taste Edition)
 
 > **LOGIC:** When building a specific page, first check `design-system/pages/[page-name].md`.
 > If that file exists, its rules **override** this Master file.
@@ -6,210 +6,111 @@
 
 ---
 
-**Project:** toplinks
-**Generated:** 2026-11-12 09:43:41
-**Category:** B2B Service
+**Project:** TOPLINKS (toplinks.vn)  
+**Standard:** tasteskill 2.5.1 / Anti-Slop Corporate Frontend Standard  
+**Category:** B2B Consulting, Leadership Training & HR Solutions  
+**Philosophy:** Co-Creation For Success (Hiệp lực kiến tạo để thành công)
 
 ---
 
 ## Global Rules
 
-### Color Palette
+### Color Palette (Extracted directly from toplinks.vn)
 
-| Role | Hex | CSS Variable |
-|------|-----|--------------|
-| Primary | `#0F172A` | `--color-primary` |
-| On Primary | `#FFFFFF` | `--color-on-primary` |
-| Secondary | `#334155` | `--color-secondary` |
-| On Secondary | `#FFFFFF` | `--color-on-secondary` |
-| Accent/CTA | `#0369A1` | `--color-accent` |
-| On Accent/CTA | `#FFFFFF` | `--color-on-accent` |
-| Background | `#F8FAFC` | `--color-background` |
-| Foreground | `#020617` | `--color-foreground` |
-| Card | `#FFFFFF` | `--color-card` |
-| Card Foreground | `#020617` | `--color-card-foreground` |
-| Muted | `#E8ECF1` | `--color-muted` |
-| Muted Foreground | `#475569` | `--color-muted-foreground` |
-| Border | `#E2E8F0` | `--color-border` |
-| Destructive | `#DC2626` | `--color-destructive` |
-| On Destructive | `#FFFFFF` | `--color-on-destructive` |
-| Ring | `#0F172A` | `--color-ring` |
+| Role | Hex | CSS Variable | Usage |
+|------|-----|--------------|-------|
+| Primary (Toplinks Deep Navy/Teal) | `#153e4d` | `--color-primary` | Header bar, primary buttons, heading highlights, main identity |
+| On Primary | `#FFFFFF` | `--color-on-primary` | Text on primary elements |
+| Secondary (Forest Teal) | `#165751` | `--color-secondary` | Deep accents, sub-banners, hover links |
+| On Secondary | `#FFFFFF` | `--color-on-secondary` | Text on secondary elements |
+| Accent (Toplinks Signature Yellow) | `#fbee41` | `--color-accent` | High-conversion CTA buttons, badge accents, key indicators |
+| Accent Hover | `#f0de2b` | `--color-accent-hover` | Hover state for accent buttons |
+| On Accent | `#0a0a0a` | `--color-on-accent` | Text on accent elements (High contrast AAA) |
+| Background Light | `#FFFFFF` | `--color-background` | Primary clean surface |
+| Background Subdued | `#F8FAFB` | `--color-background-alt`| Alternating section backgrounds |
+| Foreground / Text | `#0a0a0a` | `--color-foreground` | High-contrast body text & titles |
+| Card | `#FFFFFF` | `--color-card` | Content cards (flat, crisp) |
+| Card Foreground | `#0a0a0a` | `--color-card-foreground` | Card title & body |
+| Muted | `#F1F4F6` | `--color-muted` | Subdued tags & borders |
+| Muted Foreground | `#5A6872` | `--color-muted-foreground` | Meta descriptions & dates |
+| Border | `#E2E8EC` | `--color-border` | Crisp, hairline structural dividers |
+| Focus Ring | `#153e4d` | `--color-ring` | High-contrast WCAG 2.1 focus outline |
 
-**Color Notes:** Professional navy + blue CTA
+---
 
 ### Typography
 
-- **Heading Font:** Poppins
-- **Body Font:** Open Sans
-- **Mood:** modern, professional, clean, corporate, friendly, approachable
-- **Google Fonts:** [Poppins + Open Sans](https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap)
-
-**CSS Import:**
+- **Heading Font:** Poppins (600, 700)
+- **Body Font:** Plus Jakarta Sans (400, 500, 600)
+- **Google Fonts Import:**
 ```css
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap');
 ```
-
-### Spacing Variables
-
-| Token | Value | Usage |
-|-------|-------|-------|
-| `--space-xs` | `4px` / `0.25rem` | Tight gaps |
-| `--space-sm` | `8px` / `0.5rem` | Icon gaps, inline spacing |
-| `--space-md` | `16px` / `1rem` | Standard padding |
-| `--space-lg` | `24px` / `1.5rem` | Section padding |
-| `--space-xl` | `32px` / `2rem` | Large gaps |
-| `--space-2xl` | `48px` / `3rem` | Section margins |
-| `--space-3xl` | `64px` / `4rem` | Hero padding |
-
-### Shadow Depths
-
-| Level | Value | Usage |
-|-------|-------|-------|
-| `--shadow-sm` | `0 1px 2px rgba(0,0,0,0.05)` | Subtle lift |
-| `--shadow-md` | `0 4px 6px rgba(0,0,0,0.1)` | Cards, buttons |
-| `--shadow-lg` | `0 10px 15px rgba(0,0,0,0.1)` | Modals, dropdowns |
-| `--shadow-xl` | `0 20px 25px rgba(0,0,0,0.15)` | Hero images, featured cards |
 
 ---
 
-## Component Specs
+### Taste-Skill Micro-Interactions & Motion
+- **Card Lift:** Subtle 2px lift (`transform: translateY(-2px); box-shadow: 0 12px 24px -8px rgba(21, 62, 77, 0.08)`).
+- **Button Active:** `transform: scale(0.98)` on press with `transition: 150ms ease`.
+- **No slop:** Strictly NO purple/pink mesh gradients, NO artificial glassmorphism with heavy blur, NO bouncing/pulsing floating badges.
+- **Images:** Real executive/corporate photography with subtle zoom (1.02) on hover inside rounded frames.
 
-### Buttons
+---
 
+### Component Specifications
+
+#### 1. Primary Button (Deep Teal-Navy)
 ```css
-/* Primary Button */
 .btn-primary {
-  background: #0369A1;
-  color: #FFFFFF;
-  padding: 12px 24px;
+  background-color: #153e4d;
+  color: #ffffff;
+  padding: 10px 22px;
   border-radius: 8px;
   font-weight: 600;
-  transition: all 200ms ease;
-  cursor: pointer;
+  transition: all 180ms ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
 }
-
 .btn-primary:hover {
-  opacity: 0.9;
+  background-color: #0f2c37;
   transform: translateY(-1px);
-}
-
-/* Secondary Button */
-.btn-secondary {
-  background: transparent;
-  color: #0F172A;
-  border: 2px solid #0F172A;
-  padding: 12px 24px;
-  border-radius: 8px;
-  font-weight: 600;
-  transition: all 200ms ease;
-  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(21, 62, 77, 0.2);
 }
 ```
 
-### Cards
-
+#### 2. Accent CTA Button (Toplinks Signature Yellow)
 ```css
-.card {
-  background: #F8FAFC;
+.btn-accent {
+  background-color: #fbee41;
+  color: #0a0a0a;
+  padding: 10px 22px;
+  border-radius: 8px;
+  font-weight: 700;
+  transition: all 180ms ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.btn-accent:hover {
+  background-color: #f0de2b;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(251, 238, 65, 0.4);
+}
+```
+
+#### 3. Cards
+```css
+.taste-card {
+  background-color: #ffffff;
+  border: 1px solid #e2e8ec;
   border-radius: 12px;
   padding: 24px;
-  box-shadow: var(--shadow-md);
-  transition: all 200ms ease;
-  cursor: pointer;
+  transition: transform 200ms ease, box-shadow 200ms ease, border-color 200ms ease;
 }
-
-.card:hover {
-  box-shadow: var(--shadow-lg);
+.taste-card:hover {
   transform: translateY(-2px);
+  border-color: #cbd5e1;
+  box-shadow: 0 12px 24px -8px rgba(21, 62, 77, 0.08);
 }
 ```
-
-### Inputs
-
-```css
-.input {
-  padding: 12px 16px;
-  border: 1px solid #E2E8F0;
-  border-radius: 8px;
-  font-size: 16px;
-  transition: border-color 200ms ease;
-}
-
-.input:focus {
-  border-color: #0F172A;
-  outline: none;
-  box-shadow: 0 0 0 3px #0F172A20;
-}
-```
-
-### Modals
-
-```css
-.modal-overlay {
-  background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(4px);
-}
-
-.modal {
-  background: white;
-  border-radius: 16px;
-  padding: 32px;
-  box-shadow: var(--shadow-xl);
-  max-width: 500px;
-  width: 90%;
-}
-```
-
----
-
-## Style Guidelines
-
-**Style:** Accessible & Ethical
-
-**Keywords:** Accessible, inclusive interface, high contrast, large text (16px+), keyboard navigation, screen reader friendly, accessibility standards aware, focus state, semantic
-
-**Best For:** Government, healthcare, education, inclusive products, large audience, legal compliance, public
-
-**Key Effects:** Clear focus rings (3-4px), ARIA labels, skip links, responsive design, reduced motion, 44x44px touch targets
-
-### Page Pattern
-
-**Pattern Name:** Trust & Authority + Conversion
-
-- **Conversion Strategy:** Security badges. Case studies. Transparent pricing. Low-friction form. Provide pause/stop and stop the logo carousel on focus, hover, and reduced motion. Previous/next controls provide the keyboard equivalent; pause offscreen/hidden and render a static logo set under reduced motion.
-- **CTA Placement:** Contact Sales / Get Quote (primary) + Nav
-- **Section Order:** Hero (mission/credibility) > Proof (logos, certs, stats) > Solution overview > Clear CTA path
-
----
-
-## Anti-Patterns (Do NOT Use)
-
-- ❌ Playful design
-- ❌ Hidden credentials
-- ❌ AI purple/pink gradients
-
-### Additional Forbidden Patterns
-
-- ❌ **Emojis as icons** — Use SVG icons (Heroicons, Lucide, Simple Icons)
-- ❌ **Missing cursor:pointer** — All clickable elements must have cursor:pointer
-- ❌ **Layout-shifting hovers** — Avoid scale transforms that shift layout
-- ❌ **Low contrast text** — Maintain 4.5:1 minimum contrast ratio
-- ❌ **Instant state changes** — Always use transitions (150-300ms)
-- ❌ **Invisible focus states** — Focus states must be visible for a11y
-
----
-
-## Pre-Delivery Checklist
-
-Before delivering any UI code, verify:
-
-- [ ] No emojis used as icons (use SVG instead)
-- [ ] All icons from consistent icon set (Heroicons/Lucide)
-- [ ] `cursor-pointer` on all clickable elements
-- [ ] Hover states with smooth transitions (150-300ms)
-- [ ] Light mode: text contrast 4.5:1 minimum
-- [ ] Focus states visible for keyboard navigation
-- [ ] `prefers-reduced-motion` respected
-- [ ] Responsive: 375px, 768px, 1024px, 1440px
-- [ ] No content hidden behind fixed navbars
-- [ ] No horizontal scroll on mobile
